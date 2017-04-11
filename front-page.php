@@ -8,11 +8,11 @@
 </head>
 <body <?php body_class(); ?>>
 	<div class="page">
-		<div class="header-hero">
-			<div class="header-hero-media">
+		<div class="home-hero">
+			<div class="home-hero-media">
 				<img src="<?php bloginfo( 'template_directory' ); ?>/assets/img/home-hero.jpg" alt="">
 			</div>
-			<div class="header-hero-greeting">
+			<div class="home-hero-message">
 				<h1>Kendra Inman</h1>
 				<span class="tagline">Human Centered Brand Development</span>
 			</div>
