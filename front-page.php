@@ -8,6 +8,9 @@
 </head>
 <body <?php body_class(); ?>>
 	<div class="page">
+		<div class="burgle-the-ham">
+
+		</div>
 		<div class="home-hero">
 			<div class="home-hero-media">
 				<img src="<?php bloginfo( 'template_directory' ); ?>/assets/img/home-hero.jpg" alt="">
@@ -18,7 +21,7 @@
 			</div>
 		</div>
 		<div role="main" class="main">
-			this is the main page content
+			<div class="work">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, veniam? Sit enim ex laborum, aut rem veritatis nulla? Tempora voluptate provident recusandae, labore repellendus et quia, iste quos. Sunt, quia.</div>
 		</div>
 		<footer>this is the footer.</footer>
 	</div>

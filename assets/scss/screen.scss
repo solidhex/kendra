@@ -10,6 +10,38 @@
   @include box-sizing(border-box);
 }
 
+body, html {
+	height: 100%;
+}
+
+// Global
+
+img { width: 100%; height: auto; }
+
+.page { position: relative; }
+
+.burgle-the-ham { 
+	cursor: pointer;
+	height: 22px;
+	left: 82px;
+	position: fixed; 
+	top: 91px;
+	width: 32px;
+	z-index: 100;
+	border: 2px solid #fff;
+	border-style: solid none;
+	&:before {
+		background: #fff;
+		content: '';
+		display: block;
+		height: 2px;
+		left: 0;
+		position: absolute;
+		top: 8px;
+		width: 32px;
+	}
+}
+
 // Home
 
 .home-hero {
@@ -34,4 +66,10 @@
 		width: 100%;
 		position: absolute;
 	}
+}
+
+// Work
+.work {
+	background-color: #fdf8f2;
+	height: 100vh;
 }

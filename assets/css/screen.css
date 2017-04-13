@@ -17,7 +17,18 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 *, *:after, *:before { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
+body, html { height: 100%; }
+
+img { width: 100%; height: auto; }
+
+.page { position: relative; }
+
+.burgle-the-ham { cursor: pointer; height: 22px; left: 82px; position: fixed; top: 91px; width: 32px; z-index: 100; border: 2px solid #fff; border-style: solid none; }
+.burgle-the-ham:before { background: #fff; content: ''; display: block; height: 2px; left: 0; position: absolute; top: 8px; width: 32px; }
+
 .home-hero { position: relative; }
 .home-hero .home-hero-media { height: 100vh; max-height: 100%; overflow: hidden; }
 .home-hero .home-hero-media img { height: 100%; left: 0; object-fit: cover; top: 0; width: 100%; }
 .home-hero .home-hero-message { color: #fff; left: 0; text-align: center; top: 50%; width: 100%; position: absolute; }
+
+.work { background-color: #fdf8f2; height: 100vh; }
