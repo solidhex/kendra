@@ -5,6 +5,10 @@
 // vars
 $dark: #2d2d2c;
 
+// Import typography
+
+@import "typog";
+
 // General selectors
 
 *,
@@ -15,6 +19,7 @@ $dark: #2d2d2c;
 
 body, html {
 	height: 100%;
+	font: 1em 'Futura-Book', sans-serif;
 }
 
 // Global
