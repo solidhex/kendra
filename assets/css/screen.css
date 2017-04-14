@@ -17,11 +17,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 @font-face { font-family: 'Fortescue-Regular'; src: url("../fonts/fortescue-regular/Fortescue-Regular.eot"); src: url("../fonts/fortescue-regular/Fortescue-Regular.woff2") format("woff2"), url("../fonts/fortescue-regular/Fortescue-Regular.woff") format("woff"), url("../fonts/fortescue-regular/Fortescue-Regular.ttf") format("truetype"), url("../fonts/fortescue-regular/Fortescue-Regular.svg#Fortescue-Regular") format("svg"), url("../fonts/fortescue-regular/Fortescue-Regular.eot?#iefix") format("embedded-opentype"); font-weight: normal; font-style: normal; }
 @font-face { font-family: 'Futura-Book'; src: url("../fonts/futura-book/FuturaBT-Book.eot"); src: url("../fonts/futura-book/FuturaBT-Book.woff2") format("woff2"), url("../fonts/futura-book/FuturaBT-Book.woff") format("woff"), url("../fonts/futura-book/FuturaBT-Book.ttf") format("truetype"), url("../fonts/futura-book/FuturaBT-Book.svg#FuturaBT-Book") format("svg"), url("../fonts/futura-book/FuturaBT-Book.eot?#iefix") format("embedded-opentype"); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'MaisonNeue-Mono'; src: url("../fonts/maison-neue/MaisonNeueTRIAL-Mono.eot"); src: url("../fonts/maison-neue/MaisonNeueTRIAL-Mono.woff2") format("woff2"), url("../fonts/maison-neue/MaisonNeueTRIAL-Mono.woff") format("woff"), url("../fonts/maison-neue/MaisonNeueTRIAL-Mono.ttf") format("truetype"), url("../fonts/maison-neue/MaisonNeueTRIAL-Mono.svg#MaisonNeueTRIAL-Mono") format("svg"), url("../fonts/maison-neue/MaisonNeueTRIAL-Mono.eot?#iefix") format("embedded-opentype"); font-weight: normal; font-style: normal; }
 *, *:after, *:before { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
-body, html { height: 100%; font: 1em 'Futura-Book', sans-serif; }
+body, html { color: #2d2d2c; height: 100%; font: 14px/19px 'Futura-Book', sans-serif; }
 
 img { width: 100%; height: auto; }
+
+a { color: #1F15F0; text-decoration: none; }
 
 .page { position: relative; }
 
@@ -34,11 +37,19 @@ img { width: 100%; height: auto; }
 .home-hero .home-hero-media { height: 100vh; max-height: 100%; overflow: hidden; }
 .home-hero .home-hero-media img { height: 100%; left: 0; object-fit: cover; top: 0; width: 100%; }
 .home-hero .home-hero-message { color: #fff; left: 0; text-align: center; top: 50%; width: 100%; position: absolute; }
+.home-hero .home-hero-message h1 { font: 60px/55px 'Fortescue-Regular'; letter-spacing: 1.6px; }
 
 .work { background-color: #fdf8f2; min-height: 100vh; }
 
-.work-header { min-height: 142px; text-align: center; }
+.work-top { min-height: 142px; text-align: center; }
 
-.work-content { max-width: 791px; margin: 0 auto; }
+.work-content .work-heading { padding: 64px 0 0 0; }
+.work-content .work-heading h2 { font: 80px/82px 'Fortescue-Regular', sans-serif; margin: 0 0 60px; padding: 0 72px; position: relative; }
+
+.work-image-wrap { max-width: 791px; margin: 0 auto; }
+
+.read-more { display: inline-block; font: 14px/17px 'MaisonNeue-Mono', monospace; margin: 0 0 0 26px; position: relative; text-transform: uppercase; top: -6px; }
+
+.more { font-size: 24px; line-height: 36px; margin: 0 auto; max-width: 1092px; }
 
 footer { background-color: #2d2d2c; color: #fff; }

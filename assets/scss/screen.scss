@@ -4,10 +4,14 @@
 
 // vars
 $dark: #2d2d2c;
+$link: #1F15F0;
 
 // Import typography
 
 @import "typog";
+
+// Import mixins
+@import "mixins";
 
 // General selectors
 
@@ -18,13 +22,16 @@ $dark: #2d2d2c;
 }
 
 body, html {
+	color: $dark;
 	height: 100%;
-	font: 1em 'Futura-Book', sans-serif;
+	font: 14px/19px 'Futura-Book', sans-serif;
 }
 
 // Global
 
 img { width: 100%; height: auto; }
+
+a { color: $link; text-decoration: none;}
 
 .page { position: relative; }
 
@@ -79,6 +86,10 @@ img { width: 100%; height: auto; }
 		top: 50%;
 		width: 100%;
 		position: absolute;
+		h1 {
+			font: 60px/55px 'Fortescue-Regular';
+			letter-spacing: 1.6px;
+		}
 	}
 }
 
@@ -88,14 +99,42 @@ img { width: 100%; height: auto; }
 	min-height: 100vh;
 }
 
-.work-header {
+.work-top {
 	min-height: 142px;
 	text-align: center;
 }
 
 .work-content {
+	.work-heading {
+		padding: 64px 0 0 0;
+		h2 {
+			font: 80px/82px 'Fortescue-Regular', sans-serif;
+			margin: 0 0 60px;
+			padding: 0 72px;
+			position: relative;
+		}
+	}
+}
+
+.work-image-wrap {
 	max-width: 791px;
 	margin: 0 auto;
+}
+
+.read-more {
+	display: inline-block;
+	font: 14px/17px 'MaisonNeue-Mono', monospace;
+	margin: 0 0 0 26px;
+	position: relative;
+	text-transform: uppercase;
+	top: -6px;
+}
+
+.more {
+	font-size: 24px;
+	line-height: 36px;
+	margin: 0 auto;
+	max-width: 1092px;
 }
 
 // Footer

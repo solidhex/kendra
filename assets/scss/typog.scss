@@ -22,3 +22,15 @@
 	font-style: normal;
 }
 
+@font-face {
+	font-family: 'MaisonNeue-Mono';
+	src: url('../fonts/maison-neue/MaisonNeueTRIAL-Mono.eot');
+	src: url('../fonts/maison-neue/MaisonNeueTRIAL-Mono.woff2') format('woff2'),
+		url('../fonts/maison-neue/MaisonNeueTRIAL-Mono.woff') format('woff'),
+		url('../fonts/maison-neue/MaisonNeueTRIAL-Mono.ttf') format('truetype'),
+		url('../fonts/maison-neue/MaisonNeueTRIAL-Mono.svg#MaisonNeueTRIAL-Mono') format('svg'),
+		url('../fonts/maison-neue/MaisonNeueTRIAL-Mono.eot?#iefix') format('embedded-opentype');
+	font-weight: normal;
+	font-style: normal;
+}
+

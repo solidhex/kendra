@@ -22,17 +22,18 @@
 		</div>
 		<div role="main" class="main">
 			<div class="work">
-				<div class="work-header">
+				<div class="work-top">
 					<h2>Work</h2>
 					<span class="title"><?php bloginfo( 'name' ); ?></span>
 				</div>
 				<div class="work-content">
-					<figure><img src="<?php bloginfo( 'template_directory' ); ?>/assets/img/slide-fpo.jpg" alt=""></figure>
-					<article>
-						<h2>Strategic Brading that Resonates</h2>
-						<a href="" class="read-more">Read More</a>
-						<div class="more"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos odit beatae quas similique unde iusto, nesciunt laudantium vero eius, quasi cumque, sequi, veniam corporis quia numquam eum nostrum eveniet labore!</p></div>
-					</article>
+					<div class="work-image-wrap">
+						<figure><img src="<?php bloginfo( 'template_directory' ); ?>/assets/img/slide-fpo.jpg" alt=""></figure>
+						<div class="work-heading">
+							<h2>Strategic Branding that Resonates<a href="" class="read-more">Read <br>More</a></h2>
+						</div>
+					</div>
+					<div class="more"><p>Fpo for overview of approach, thinking, artist’s statement. Spring is here! And with it we welcome a glamorous new edition of The Gentlewoman with, on the cover, superstar filmmaker Sofia Coppola photographed by Inez & Vinoodh and profiled by Holly Brubach. Inside, a rapturous exposition of female politics, worldly wit and good looks: Nicola Sturgeon, Scotland’s First Minister; the rollicking writer. The Gentlewoman with, on the cover, superstar filmmaker Sofia Coppola photographed by Inez & Vinoodh blah blah bhalll lorem ipsum dolor s</p></div>
 				</div>
 			</div>
 		</div>
