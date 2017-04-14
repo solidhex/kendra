@@ -23,12 +23,20 @@ img { width: 100%; height: auto; }
 
 .page { position: relative; }
 
-.burgle-the-ham { cursor: pointer; height: 22px; left: 82px; position: fixed; top: 91px; width: 32px; z-index: 100; border: 2px solid #fff; border-style: solid none; }
-.burgle-the-ham:before { background: #fff; content: ''; display: block; height: 2px; left: 0; position: absolute; top: 8px; width: 32px; }
+.burger-container { height: 22px; left: 82px; position: absolute; top: 91px; width: 32px; z-index: 100; }
+
+.burgle-the-ham { cursor: pointer; height: 22px; width: 32px; z-index: 100; border: 2px solid #fff; border-style: solid none; }
+.burgle-the-ham:before { background: #fff; content: ''; display: block; height: 2px; left: 0; position: absolute; top: 10px; width: 32px; }
 
 .home-hero { position: relative; }
 .home-hero .home-hero-media { height: 100vh; max-height: 100%; overflow: hidden; }
 .home-hero .home-hero-media img { height: 100%; left: 0; object-fit: cover; top: 0; width: 100%; }
 .home-hero .home-hero-message { color: #fff; left: 0; text-align: center; top: 50%; width: 100%; position: absolute; }
 
-.work { background-color: #fdf8f2; height: 100vh; }
+.work { background-color: #fdf8f2; min-height: 100vh; }
+
+.work-header { min-height: 142px; text-align: center; }
+
+.work-content { max-width: 791px; margin: 0 auto; }
+
+footer { background-color: #2d2d2c; color: #fff; }

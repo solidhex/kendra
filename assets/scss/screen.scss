@@ -2,6 +2,9 @@
 @import "compass/utilities";
 @import "compass/css3";
 
+// vars
+$dark: #2d2d2c;
+
 // General selectors
 
 *,
@@ -20,12 +23,26 @@ img { width: 100%; height: auto; }
 
 .page { position: relative; }
 
+//.sticky-nav {
+//	.burger-container {
+//		background: teal;
+//		top: 0;
+//		border-color: $dark;
+//	}
+//}
+
+.burger-container {
+	height: 22px;
+	left: 82px;
+	position: absolute; 
+	top: 91px;
+	width: 32px;
+	z-index: 100;
+}
+
 .burgle-the-ham { 
 	cursor: pointer;
 	height: 22px;
-	left: 82px;
-	position: fixed; 
-	top: 91px;
 	width: 32px;
 	z-index: 100;
 	border: 2px solid #fff;
@@ -37,7 +54,7 @@ img { width: 100%; height: auto; }
 		height: 2px;
 		left: 0;
 		position: absolute;
-		top: 8px;
+		top: 10px;
 		width: 32px;
 	}
 }
@@ -71,5 +88,21 @@ img { width: 100%; height: auto; }
 // Work
 .work {
 	background-color: #fdf8f2;
-	height: 100vh;
+	min-height: 100vh;
+}
+
+.work-header {
+	min-height: 142px;
+	text-align: center;
+}
+
+.work-content {
+	max-width: 791px;
+	margin: 0 auto;
+}
+
+// Footer
+footer {
+	background-color: $dark;
+	color: #fff;
 }

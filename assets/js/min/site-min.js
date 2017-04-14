@@ -1,0 +1,1 @@
+!function(){function o(){var o=document.querySelector(".main"),s=o.offsetTop;window.scrollY>=s?(document.body.classList.add("sticky-nav"),console.log("add class")):(document.body.classList.remove("sticky-nav"),console.log("remove class"))}window.addEventListener("scroll",o)}();
