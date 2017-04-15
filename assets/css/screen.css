@@ -36,13 +36,15 @@ a { color: #1F15F0; text-decoration: none; }
 .home-hero { position: relative; }
 .home-hero .home-hero-media { height: 100vh; max-height: 100%; overflow: hidden; }
 .home-hero .home-hero-media img { height: 100%; left: 0; object-fit: cover; top: 0; width: 100%; }
-.home-hero .home-hero-message { color: #fff; left: 0; text-align: center; top: 50%; width: 100%; position: absolute; }
+.home-hero .home-hero-message { color: #fff; left: 0; text-align: center; top: 50%; width: 100%; position: absolute; transform: translateY(-50%); }
 .home-hero .home-hero-message h1 { font: 60px/55px 'Fortescue-Regular'; margin: 0 0 2px; letter-spacing: 1.6px; }
-@media only screen and (min-width: 768px) { .home-hero .home-hero-message h1 { font-size: 76px; margin-bottom: 12px; } }
-@media only screen and (min-width: 1200px) { .home-hero .home-hero-message h1 { font-size: 95px; line-height: 1; letter-spacing: 2px; margin-bottom: 1px; } }
+@media only screen and (min-width: 768px) { .home-hero .home-hero-message h1 { font-size: 76px; line-height: 76px; margin-bottom: 5px; } }
+@media only screen and (min-width: 1200px) { .home-hero .home-hero-message h1 { font-size: 95px; line-height: 1; letter-spacing: 2px; margin-bottom: 0; } }
 .home-hero .home-hero-message .tagline { font-size: 9px; line-height: 11px; letter-spacing: 1.38px; }
 @media only screen and (min-width: 768px) { .home-hero .home-hero-message .tagline { font-size: 12px; line-height: 15px; letter-spacing: 1.85px; } }
 @media only screen and (min-width: 768px) and (min-width: 1200px) { .home-hero .home-hero-message .tagline { font-size: 13px; line-height: 17px; letter-spacing: 2px; } }
+
+.home-hero .down { border: solid #fff; border-width: 0 3px 3px 0; display: inline-block; width: 35px; height: 35px; transform: rotate(45deg); position: absolute; bottom: 53px; left: 50%; cursor: pointer; }
 
 .work { background-color: #fdf8f2; min-height: 100vh; }
 

@@ -19,8 +19,9 @@
 				<h1><?php bloginfo( 'name' ); ?></h1>
 				<span class="tagline">Human Centered Brand Development</span>
 			</div>
+			<a href="#main"><div class="down"></div></a>
 		</div>
-		<div role="main" class="main">
+		<div role="main" class="main" id="main">
 			<!-- <div class="subheader"></div> -->
 			<div class="work">
 				<div class="work-top">

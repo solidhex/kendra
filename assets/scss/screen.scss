@@ -87,19 +87,21 @@ a { color: $link; text-decoration: none;}
 		top: 50%;
 		width: 100%;
 		position: absolute;
+		transform: translateY(-50%);
 		h1 {
 			font: 60px/55px 'Fortescue-Regular';
 			margin: 0 0 2px;
 			letter-spacing: 1.6px;
 			@include respond-to('tablet') {
 				font-size: 76px;
-				margin-bottom: 12px;
+				line-height: 76px;
+				margin-bottom: 5px;
 			}
 			@include respond-to('desktop') {
 				font-size: 95px;
 				line-height: 1;
 				letter-spacing: 2px;
-				margin-bottom: 1px;
+				margin-bottom: 0;
 			}
 		}
 		.tagline {
@@ -117,6 +119,18 @@ a { color: $link; text-decoration: none;}
 				}
 			}
 		}
+	}
+	.down {
+		border: solid #fff;
+		border-width: 0 3px 3px 0;
+		display: inline-block;
+		width: 35px;
+		height: 35px;
+		transform: rotate(45deg);
+		position: absolute;
+		bottom: 53px;
+		left: 50%;
+		cursor: pointer;
 	}
 }
 
