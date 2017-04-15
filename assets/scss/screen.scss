@@ -38,11 +38,24 @@ a { color: $link; text-decoration: none;}
 .burger-container {
 	height: 22px;
 	left: 82px;
-	position: fixed; 
+	position: absolute; 
 	top: 91px;
 	width: 32px;
 	z-index: 100;
-	display: none;
+}
+
+.sticky-nav {
+	.burger-container {
+		position: fixed;
+		top: 60px;
+		left: 88px;
+		.burgle-the-ham {
+			border-color: $dark;
+			&:before {
+				background: $dark;
+			}
+		}
+	}
 }
 
 .burgle-the-ham { 

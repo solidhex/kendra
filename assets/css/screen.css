@@ -28,7 +28,11 @@ a { color: #1F15F0; text-decoration: none; }
 
 .page { position: relative; }
 
-.burger-container { height: 22px; left: 82px; position: fixed; top: 91px; width: 32px; z-index: 100; display: none; }
+.burger-container { height: 22px; left: 82px; position: absolute; top: 91px; width: 32px; z-index: 100; }
+
+.sticky-nav .burger-container { position: fixed; top: 60px; left: 88px; }
+.sticky-nav .burger-container .burgle-the-ham { border-color: #2d2d2c; }
+.sticky-nav .burger-container .burgle-the-ham:before { background: #2d2d2c; }
 
 .burgle-the-ham { cursor: pointer; height: 22px; width: 32px; z-index: 100; border: 2px solid #fff; border-style: solid none; }
 .burgle-the-ham:before { background: #fff; content: ''; display: block; height: 2px; left: 0; position: absolute; top: 10px; width: 32px; }

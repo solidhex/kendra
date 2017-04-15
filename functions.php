@@ -23,7 +23,7 @@ function kendra_scripts()
 	wp_enqueue_style( 'screen', get_template_directory_uri() . '/assets/css/screen.css' );
 	
 	// Theme JS
-	wp_enqueue_script('site', get_template_directory_uri() . '/assets/js/site.js', array(), false, true);
+	wp_enqueue_script('site', get_template_directory_uri() . '/assets/js/site.js', array('jquery'), false, true);
 }
 
 add_action( 'wp_enqueue_scripts', 'kendra_scripts' );
