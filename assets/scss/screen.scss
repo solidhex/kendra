@@ -35,28 +35,65 @@ a { color: $link; text-decoration: none;}
 
 .page { position: relative; }
 
-.burger-container {
-	height: 22px;
-	left: 82px;
-	position: absolute; 
-	top: 91px;
-	width: 32px;
-	z-index: 100;
+header {
+	display: none;
+	@include respond-to('desktop') {
+		display: block;
+		position: absolute;
+		min-height: 142px;
+		top: 0;
+		left: 0;
+		right: 0;
+		z-index: 100;
+		.title, nav { display: none; }
+		
+	}
 }
 
 .sticky-nav {
-	.burger-container {
-		position: fixed;
-		top: 60px;
-		left: 88px;
-		.burgle-the-ham {
-			border-color: $dark;
-			&:before {
-				background: $dark;
+	header {
+		@include respond-to('desktop') {
+			background-color: rgba(255, 255, 255, 0.25);
+			position: fixed;
+			.burger-container {
+				top: 60px;
+				left: 88px;
+				.burgle-the-ham {
+					border-color: $dark;
+					&:before {
+						background: $dark;
+					}
+				}
+			}
+			.title {
+				display: inline-block;
+				position: absolute;
+				font: 14px 'Fortescue-Regular';
+				top: 62px;
+				right: 90px;
+			}
+			nav {
+				font-size: 36px;
+				text-align: center;
+				padding: 52px 0 0 0;
+				li { display: inline-block; }
+				a { color: $dark; }
 			}
 		}
 	}
 }
+
+.burger-container {
+	@include respond-to('desktop') {
+		height: 22px;
+		left: 82px;
+		position: absolute; 
+		top: 90px;
+		width: 32px;
+		z-index: 100;
+	}
+}
+
 
 .burgle-the-ham { 
 	cursor: pointer;
@@ -151,12 +188,32 @@ a { color: $link; text-decoration: none;}
 .work {
 	background-color: #fdf8f2;
 	min-height: 100vh;
+	@include respond-to('desktop') {
+		padding-top: 142px;
+	}
 }
 
-.work-top {
-	min-height: 142px;
-	text-align: center;
-}
+//.work-top {
+//	min-height: 142px;
+//	text-align: center;
+//	position: relative;
+//	h2 {
+//		font-size: 28px;
+//		@include respond-to('tablet') {
+//			font-size: 30px;
+//		}
+//		@include respond-to('desktop') {
+//			line-height: 142px;
+//			font-size: 36px;
+//		}
+//	}
+//	.title {
+//		position: absolute;
+//		font: 18px 'Fortescue-Regular';
+//		top: 0;
+//		right: 0;
+//	}
+//}
 
 .work-content {
 	.work-heading {

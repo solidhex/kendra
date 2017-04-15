@@ -28,11 +28,20 @@ a { color: #1F15F0; text-decoration: none; }
 
 .page { position: relative; }
 
-.burger-container { height: 22px; left: 82px; position: absolute; top: 91px; width: 32px; z-index: 100; }
+header { display: none; }
+@media only screen and (min-width: 1200px) { header { display: block; position: absolute; min-height: 142px; top: 0; left: 0; right: 0; z-index: 100; }
+  header .title, header nav { display: none; } }
 
-.sticky-nav .burger-container { position: fixed; top: 60px; left: 88px; }
-.sticky-nav .burger-container .burgle-the-ham { border-color: #2d2d2c; }
-.sticky-nav .burger-container .burgle-the-ham:before { background: #2d2d2c; }
+@media only screen and (min-width: 1200px) { .sticky-nav header { background-color: rgba(255, 255, 255, 0.25); position: fixed; }
+  .sticky-nav header .burger-container { top: 60px; left: 88px; }
+  .sticky-nav header .burger-container .burgle-the-ham { border-color: #2d2d2c; }
+  .sticky-nav header .burger-container .burgle-the-ham:before { background: #2d2d2c; }
+  .sticky-nav header .title { display: inline-block; position: absolute; font: 14px 'Fortescue-Regular'; top: 62px; right: 90px; }
+  .sticky-nav header nav { font-size: 36px; text-align: center; padding: 52px 0 0 0; }
+  .sticky-nav header nav li { display: inline-block; }
+  .sticky-nav header nav a { color: #2d2d2c; } }
+
+@media only screen and (min-width: 1200px) { .burger-container { height: 22px; left: 82px; position: absolute; top: 90px; width: 32px; z-index: 100; } }
 
 .burgle-the-ham { cursor: pointer; height: 22px; width: 32px; z-index: 100; border: 2px solid #fff; border-style: solid none; }
 .burgle-the-ham:before { background: #fff; content: ''; display: block; height: 2px; left: 0; position: absolute; top: 10px; width: 32px; }
@@ -51,8 +60,7 @@ a { color: #1F15F0; text-decoration: none; }
 .home-hero .down { border: solid #fff; border-width: 0 3px 3px 0; display: inline-block; width: 35px; height: 35px; transform: rotate(45deg); position: absolute; bottom: 53px; left: 50%; cursor: pointer; }
 
 .work { background-color: #fdf8f2; min-height: 100vh; }
-
-.work-top { min-height: 142px; text-align: center; }
+@media only screen and (min-width: 1200px) { .work { padding-top: 142px; } }
 
 .work-content .work-heading { padding: 64px 0 0 0; }
 .work-content .work-heading h2 { font: 80px/82px 'Fortescue-Regular', sans-serif; margin: 0 0 60px; padding: 0 72px; position: relative; }

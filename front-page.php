@@ -8,9 +8,21 @@
 </head>
 <body <?php body_class(); ?>>
 	<div class="page">
-		<div class="burger-container">
-			<div class="burgle-the-ham"></div>
-		</div>
+		<header>
+			<div class="burger-container">
+				<div class="burgle-the-ham"></div>
+			</div>
+			<nav>
+				<ul>
+					<!-- <li><a href="http://example.com/">Home</a></li> -->
+					<li><a href="http://example.com/">Work</a></li>
+					<!-- <li><a href="http://example.com/">About</a></li> -->
+					<!-- <li><a href="http://example.com/">Contact</a></li> -->
+				</ul>
+			</nav>
+			<span class="title"><?php bloginfo( 'name' ); ?></span>
+		</header>
+		
 		<div class="home-hero">
 			<div class="home-hero-media">
 				<img src="<?php bloginfo( 'template_directory' ); ?>/assets/img/home-hero.jpg" alt="">
@@ -22,12 +34,7 @@
 			<a href="#main"><div class="down"></div></a>
 		</div>
 		<div role="main" class="main" id="main">
-			<!-- <div class="subheader"></div> -->
 			<div class="work">
-				<div class="work-top">
-					<h2>Work</h2>
-					<span class="title"><?php bloginfo( 'name' ); ?></span>
-				</div>
 				<div class="work-content">
 					<div class="work-image-wrap">
 						<figure><img src="<?php bloginfo( 'template_directory' ); ?>/assets/img/slide-fpo.jpg" alt=""></figure>
