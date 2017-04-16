@@ -6,8 +6,14 @@
 		}
 	}
 	
-	@else if ($device == "desktop") {
+	@else if ($device == "laptop") {
 		@media only screen and (min-width: 1200px) {
+			@content;
+		}
+	}
+	
+	@else if ($device == "desktop") {
+		@media only screen and (min-width: 1440px) {
 			@content;
 		}
 	}

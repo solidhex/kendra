@@ -34,7 +34,7 @@ img { width: 100%; height: auto; }
 a { color: $link; text-decoration: none; }
 
 h2 { 
-	@include respond-to('desktop') {
+	@include respond-to('laptop') {
 		font-size: 36px; 
 	}
 }
@@ -67,7 +67,7 @@ h2 {
 
 header {
 	display: none;
-	@include respond-to('desktop') {
+	@include respond-to('laptop') {
 		left: 0;
 		min-height: 142px;
 		position: absolute;
@@ -82,7 +82,7 @@ header {
 
 .sticky-nav {
 	header {
-		@include respond-to('desktop') {
+		@include respond-to('laptop') {
 			background-color: rgba(255, 255, 255, 0.5);
 			position: fixed;
 			.burger-container {
@@ -115,7 +115,7 @@ header {
 }
 
 .burger-container {
-	@include respond-to('desktop') {
+	@include respond-to('laptop') {
 		height: 22px;
 		left: 82px;
 		position: absolute; 
@@ -178,7 +178,7 @@ header {
 				line-height: 76px;
 				margin-bottom: 5px;
 			}
-			@include respond-to('desktop') {
+			@include respond-to('laptop') {
 				font-size: 95px;
 				line-height: 1;
 				letter-spacing: 2px;
@@ -193,7 +193,7 @@ header {
 				font-size: 12px;
 				line-height: 15px;
 				letter-spacing: 1.85px;
-				@include respond-to('desktop') {
+				@include respond-to('laptop') {
 					font-size: 13px;
 					line-height: 17px;
 					letter-spacing: 2px;
@@ -219,7 +219,7 @@ header {
 .work {
 	background-color: #fdf8f2;
 	min-height: 100vh;
-	@include respond-to('desktop') {
+	@include respond-to('laptop') {
 		padding-top: 142px;
 	}
 }
@@ -269,7 +269,8 @@ header {
 .home footer {
 	background-color: $dark;
 	color: #fff;
-	@include respond-to('desktop') {
+	padding: 0 0 32px 0;
+	@include respond-to('laptop') {
 		.footer-link-msg-wrap {
 			display: flex;
 			align-items: center;
@@ -280,21 +281,49 @@ header {
 				text-indent: 86px
 			}
 		}
+		.sosumi {
+			display: flex;
+			padding: 105px 0 0 0;
+			.copyright, .title-wrap { flex: 1; }
+			.title-wrap { text-align: right; }
+			.social { flex: 2; }
+			.social {
+				text-align: center;
+				li {
+					display: inline-block;
+					font-size: 20px;
+					a:link, a:visited {
+						color: #fff;
+						@include link-border;
+					}
+				}
+				ul li:nth-child(2) {
+					margin: 0 28px;
+				}
+			}
+			.title {
+				margin-right: 90px;
+				display: inline-block;
+				font: 14px 'Fortescue-Regular';
+			}
+			.copyright { font-size: 9px; text-indent: 86px; }
+		}
+		.footer-client-links {
+			font: 14px/32px 'MaisonNeue-Mono';
+			letter-spacing: 2px;
+			text-transform: uppercase;
+			padding: 62px 0 0 0;
+			span, ul {
+				float: left;
+			}
+			span { margin: 0 42px 0 1em; }
+			a:link, a:visited {
+				color: #fff;
+				@include link-border;
+			}
+		}
 	}
-	.footer-client-links {
-		font: 14px/32px 'MaisonNeue-Mono';
-		letter-spacing: 2px;
-		text-transform: uppercase;
-		padding: 62px 0 0 0;
-		span, ul {
-			float: left;
-		}
-		ul {
-			margin: 0 0 0 42px;
-		}
-		a:link, a:visited {
-			color: #fff;
-			@include link-border;
-		}
+	@include respond-to('desktop') {
+		.footer-client-links span { margin-left: 0; }
 	}
 }

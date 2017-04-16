@@ -41,7 +41,9 @@
 							<li><a href="http://example.com/">Linked In</a></li>
 						</ul>
 					</div>
-					<span class="title"><?php bloginfo( 'name' ); ?></span>
+					<div class="title-wrap">
+						<span class="title"><?php bloginfo( 'name' ); ?></span>
+					</div>
 				</div>
 				
 			<?php else: ?>	
