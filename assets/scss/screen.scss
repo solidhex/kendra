@@ -3,8 +3,9 @@
 @import "compass/css3";
 
 // vars
-$dark: #2d2d2c;
+$dark: #2D2D2C;
 $link: #1F15F0;
+$fullnavBg: #FAEADA;
 
 // Import typography
 
@@ -23,28 +24,57 @@ $link: #1F15F0;
 
 body, html {
 	color: $dark;
-	height: 100%;
 	font: 14px/19px 'Futura-Book', sans-serif;
+	height: 100%;
+}
+
+
+img { width: 100%; height: auto; }
+
+a { color: $link; text-decoration: none; }
+
+h2 { 
+	@include respond-to('desktop') {
+		font-size: 36px; 
+	}
 }
 
 // Global
 
-img { width: 100%; height: auto; }
-
-a { color: $link; text-decoration: none;}
-
-.page { position: relative; }
+.page { 
+	position: relative; 
+	.nav-overlay {
+		bottom: 0;
+		left: 0;
+		opacity: 0;
+		position: fixed;
+		right: 0;
+		top: 0;
+		transition: all 250ms cubic-bezier(0.420, 0.000, 0.580, 1.000); /* ease-in-out */
+		z-index: -1;
+		background-color: $fullnavBg;
+		a:link, a:visited {
+			color: $dark;
+			@include link-border;
+		}
+		&.active {
+			opacity: 1;
+			overflow: hidden;
+			z-index: 1000;
+		}
+	}
+}
 
 header {
 	display: none;
 	@include respond-to('desktop') {
-		display: block;
-		position: absolute;
-		min-height: 142px;
-		top: 0;
 		left: 0;
+		min-height: 142px;
+		position: absolute;
 		right: 0;
+		top: 0;
 		z-index: 100;
+		display: block;
 		.title, nav { display: none; }
 		
 	}
@@ -53,11 +83,11 @@ header {
 .sticky-nav {
 	header {
 		@include respond-to('desktop') {
-			background-color: rgba(255, 255, 255, 0.25);
+			background-color: rgba(255, 255, 255, 0.5);
 			position: fixed;
 			.burger-container {
-				top: 60px;
 				left: 88px;
+				top: 60px;
 				.burgle-the-ham {
 					border-color: $dark;
 					&:before {
@@ -67,12 +97,13 @@ header {
 			}
 			.title {
 				display: inline-block;
-				position: absolute;
 				font: 14px 'Fortescue-Regular';
-				top: 62px;
+				position: absolute;
 				right: 90px;
+				top: 62px;
 			}
 			nav {
+				display: block;
 				font-size: 36px;
 				text-align: center;
 				padding: 52px 0 0 0;
@@ -193,28 +224,6 @@ header {
 	}
 }
 
-//.work-top {
-//	min-height: 142px;
-//	text-align: center;
-//	position: relative;
-//	h2 {
-//		font-size: 28px;
-//		@include respond-to('tablet') {
-//			font-size: 30px;
-//		}
-//		@include respond-to('desktop') {
-//			line-height: 142px;
-//			font-size: 36px;
-//		}
-//	}
-//	.title {
-//		position: absolute;
-//		font: 18px 'Fortescue-Regular';
-//		top: 0;
-//		right: 0;
-//	}
-//}
-
 .work-content {
 	.work-heading {
 		padding: 64px 0 0 0;
@@ -250,9 +259,6 @@ header {
 	margin: 0 auto;
 	max-width: 1092px;
 	padding-bottom: 0;
-	@include respond-to('desktop') {
-//		padding-bottom: 96px;
-	}
 	&.showing {
 		max-height: 1000px;
 		padding-bottom: 96px;
@@ -263,4 +269,32 @@ header {
 .home footer {
 	background-color: $dark;
 	color: #fff;
+	@include respond-to('desktop') {
+		.footer-link-msg-wrap {
+			display: flex;
+			align-items: center;
+			> * {
+				flex: 1;
+			}
+			.footer-msg {
+				text-indent: 86px
+			}
+		}
+	}
+	.footer-client-links {
+		font: 14px/32px 'MaisonNeue-Mono';
+		letter-spacing: 2px;
+		text-transform: uppercase;
+		padding: 62px 0 0 0;
+		span, ul {
+			float: left;
+		}
+		ul {
+			margin: 0 0 0 42px;
+		}
+		a:link, a:visited {
+			color: #fff;
+			@include link-border;
+		}
+	}
 }

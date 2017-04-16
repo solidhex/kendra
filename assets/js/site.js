@@ -45,6 +45,16 @@
 			scrollTop: offset
 		}, 500);
 	});
+	
+	$('.burger-container').on('click', function (e) {
+		e.preventDefault();
+		$('.nav-overlay').toggleClass('active');
+	});
+	
+	$('.close').on('click', function (e) {
+		e.preventDefault();
+		$('.nav-overlay').toggleClass('active');
+	});
 
 })(jQuery);
 
