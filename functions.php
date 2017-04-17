@@ -1,6 +1,15 @@
 <?php
 
 /**
+ * General Theme Features
+ */
+
+
+add_theme_support( 'custom-logo' );
+add_theme_support( 'title-tag' );
+add_theme_support( 'custom-header' );
+
+/**
  * Remove Admin bar when Logged In
  */
 

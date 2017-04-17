@@ -3,7 +3,6 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Kendra Inman</title>
 	<?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
@@ -29,7 +28,7 @@
 				</div>
 				<div class="home-hero-message">
 					<h1><?php bloginfo( 'name' ); ?></h1>
-					<span class="tagline">Human Centered Brand Development</span>
+					<span class="tagline"><?php bloginfo( 'description' ); ?></span>
 				</div>
 				<a href="#main"><div class="down"></div></a>
 			</div>
