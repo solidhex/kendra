@@ -1,4 +1,4 @@
-				</div>
+				</div><!--eof #main -->
 		<footer>
 			<?php if ( is_front_page() ): ?>
 				<div class="footer-link-msg-wrap">
@@ -50,18 +50,19 @@
 				other footer
 			<?php endif; ?>
 			
-			</div>
 		</footer>
 		<div class="nav-overlay">
 			<span class="close">X</span>
-			<nav>
-				<ul>
-					<li><a href="<?php bloginfo( 'url' ); ?>">Home</a></li>
-					<li><a href="#">Work</a></li>
-					<li>About</li>
-					<li>Contact</li>
-				</ul>
-			</nav>
+			<div class="nav-overlay-content">
+				<nav>
+					<ul>
+						<li><a href="<?php bloginfo( 'url' ); ?>">Home</a></li>
+						<li><a href="#">Work</a></li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Contact</a></li>
+					</ul>
+				</nav>
+			</div>
 		</div>
 	</div>
 	<?php wp_footer(); ?>

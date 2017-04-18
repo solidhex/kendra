@@ -7,7 +7,22 @@
 
 add_theme_support( 'custom-logo' );
 add_theme_support( 'title-tag' );
-add_theme_support( 'custom-header' );
+
+/**
+ * Custom home page header
+ */
+
+$header_defaults = array(
+	'height' 		=>	800,
+	'flex-height' 	=> true,
+	'width' 		=> 1200,
+	'flex-width' 	=> true,
+	'default-image' => get_template_directory_uri() . '/assets/img/home-hero.jpg'
+);
+
+
+add_theme_support( 'custom-header', $header_defaults );
+
 
 /**
  * Remove Admin bar when Logged In

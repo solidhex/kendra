@@ -24,7 +24,7 @@
 		<?php if ( is_front_page() ): ?>
 			<div class="home-hero">
 				<div class="home-hero-media">
-					<img src="<?php bloginfo( 'template_directory' ); ?>/assets/img/home-hero.jpg" alt="">
+					<img src="<?php header_image(); ?>" width="<?php echo get_custom_header()->width ?>" height="<?php echo get_custom_header()->height; ?>">
 				</div>
 				<div class="home-hero-message">
 					<h1><?php bloginfo( 'name' ); ?></h1>

@@ -53,11 +53,14 @@
 	$('.burger-container').on('click', function (e) {
 		e.preventDefault();
 		$('.nav-overlay').toggleClass('active');
+		$('body').addClass('why-scroll');
 	});
 	
 	$('.close').on('click', function (e) {
 		e.preventDefault();
 		$('.nav-overlay').toggleClass('active');
+		$('body').removeClass('why-scroll');
+		
 	});
 
 })(jQuery);
