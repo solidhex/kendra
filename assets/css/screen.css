@@ -126,11 +126,11 @@ header .title, header nav { display: none; }
 .home footer .sosumi .copyright { font-size: 9px; text-align: center; }
 @media only screen and (min-width: 768px) { .home footer { padding: 0 0 34px; }
   .home footer .footer-link-msg-wrap { display: flex; align-items: center; }
-  .home footer .footer-link-msg-wrap .footer-client-links { flex: 1; order: 2; position: relative; padding: 66px 0 0 0; }
-  .home footer .footer-link-msg-wrap .footer-client-links span { position: absolute; top: 70px; left: -178px; }
-  .home footer .footer-link-msg-wrap .footer-client-links li { padding: 0 18px; }
-  .home footer .footer-link-msg-wrap .footer-msg { flex: 1; order: 1; }
-  .home footer .footer-link-msg-wrap .footer-msg h2 { padding: 0 0 0 50px; font-size: 30px; line-height: 36px; }
+  .home footer .footer-client-links { flex: 1; order: 2; position: relative; padding: 66px 0 0 0; }
+  .home footer .footer-client-links span { position: absolute; top: 70px; left: -178px; }
+  .home footer .footer-client-links li { padding: 0 18px; }
+  .home footer .footer-msg { flex: 1; order: 1; }
+  .home footer .footer-msg h2 { padding: 0 0 0 50px; font-size: 30px; line-height: 36px; }
   .home footer .sosumi { display: flex; padding: 68px 0 0 0; }
   .home footer .sosumi .copyright, .home footer .sosumi .title-wrap, .home footer .sosumi .social { display: block; flex: 1; }
   .home footer .sosumi .copyright { order: 1; text-indent: 50px; position: relative; top: 3px; }
@@ -159,7 +159,7 @@ header .title, header nav { display: none; }
   .home footer .footer-client-links { font-size: 14px; line-height: 32px; letter-spacing: 2px; padding: 62px 0 0 0; order: 2; }
   .home footer .footer-client-links span, .home footer .footer-client-links ul { float: left; }
   .home footer .footer-client-links li { line-height: 32px; padding: 0; }
-  .home footer .footer-client-links span { margin: 0 42px 0 1em; }
+  .home footer .footer-client-links span { margin: 0 42px 0 1em; position: static; }
   .home footer .footer-client-links a:link, .home footer .footer-client-links a:visited { display: inline-block; position: relative; }
   .home footer .footer-client-links a:link:before, .home footer .footer-client-links a:visited:before { content: ''; display: inline-block; width: 0; background-color: #FFFF00; position: absolute; height: 6px; top: 50%; left: 0; z-index: 10; transform: translateY(-50%); transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1); }
   .home footer .footer-client-links a:link:hover:before, .home footer .footer-client-links a:visited:hover:before { width: 100%; } }

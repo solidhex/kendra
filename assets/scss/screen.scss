@@ -491,22 +491,22 @@ header {
 		.footer-link-msg-wrap {
 			display: flex;
 			align-items: center;
-			.footer-client-links {
-				flex: 1;
-				order: 2;
-				position: relative;
-				padding: 66px 0 0 0;
-				span { position: absolute; top: 70px; left: -178px; }
-				li { padding: 0 18px; }
-			}
-			.footer-msg {
-				flex: 1;
-				order: 1;
-				h2 {
-					padding: 0 0 0 50px;
-					font-size: 30px;
-					line-height: 36px;
-				}
+		}
+		.footer-client-links {
+			flex: 1;
+			order: 2;
+			position: relative;
+			padding: 66px 0 0 0;
+			span { position: absolute; top: 70px; left: -178px; }
+			li { padding: 0 18px; }
+		}
+		.footer-msg {
+			flex: 1;
+			order: 1;
+			h2 {
+				padding: 0 0 0 50px;
+				font-size: 30px;
+				line-height: 36px;
 			}
 		}
 		.sosumi {
@@ -515,7 +515,7 @@ header {
 			.copyright, .title-wrap, .social { display: block; flex: 1; }
 			.copyright { order: 1; text-indent: 50px; position: relative; top: 3px; }
 			.title-wrap { text-align: right; order: 3; }
-			.social { 
+			.social {
 				order: 2;
 				margin-bottom: 0;
 				text-align: center;
@@ -590,7 +590,7 @@ header {
 				line-height: 32px;
 				padding: 0;
 			}
-			span { margin: 0 42px 0 1em; }
+			span { margin: 0 42px 0 1em; position: static;}
 			a:link, a:visited {
 				@include link-border;
 			}
