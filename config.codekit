@@ -47,6 +47,28 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/assets\/img\/Allie_Mae_Burroughs_print.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2.2469e+06,
+		"inputAbbreviatedPath": "\/assets\/img\/Allie_Mae_Burroughs_print.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/Allie_Mae_Burroughs_print.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/close.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1289,
+		"inputAbbreviatedPath": "\/assets\/img\/close.png",
+		"outputAbbreviatedPath": "\/assets\/img\/close.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/img\/home-fpo.jpeg": {
 		"fileType": 16384,
 		"ignore": 0,

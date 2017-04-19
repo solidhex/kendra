@@ -397,8 +397,56 @@ header {
 .home footer {
 	background-color: $dark;
 	color: #fff;
-	padding: 0 0 32px 0;
+	padding-top: 40px;
+	.footer-client-links {
+		// going mobile
+		font-size: 12px;
+		font-family: 'MaisonNeue-Mono', monospace;
+		text-transform: uppercase;
+		letter-spacing: 1.71px;
+		span { 
+			display: block;
+			text-align: center; 
+			margin-bottom: 22px;
+		}	
+		a:link, a:visited {
+			color: #fff;
+		}
+		li {
+			line-height: 28px;
+			padding: 0 28px 0 28px;
+		}
+	}
+	
+	.footer-link-msg-wrap {
+		h2 {
+			font-size: 28px;
+			line-height: 30px;
+			padding: 68px 0 72px 28px;
+		}
+	}
+	
+	.sosumi {
+		.title-wrap {
+			display: none;
+		}
+		.social {
+			text-align: center;
+			li { display: inline-block; }
+			a:link, a:visited {
+				color: #fff;
+				font-size: 16px;
+			}
+		}
+		.copyright {
+			font-size: 9px;
+			text-align: center;
+		}
+	}
+	
+	
 	@include respond-to('laptop') {
+		padding: 0 0 32px 0;
 		.footer-link-msg-wrap {
 			display: flex;
 			align-items: center;
@@ -406,21 +454,29 @@ header {
 				flex: 1;
 			}
 			.footer-msg {
-				text-indent: 86px
+				text-indent: 86px;
+				order: 1;
+				h2 {
+					padding: 0;
+					font-size: 36px;
+				}
 			}
 		}
 		.sosumi {
 			display: flex;
 			padding: 105px 0 0 0;
-			.copyright, .title-wrap { flex: 1; }
-			.title-wrap { text-align: right; }
-			.social { flex: 2; }
+			.copyright, .title-wrap { display: block; flex: 1; }
+			.copyright {
+				order: 1;
+			}
+			.title-wrap { text-align: right; order: 3; }
+			.social { flex: 2; order: 2; }
 			.social {
 				text-align: center;
 				li {
 					display: inline-block;
-					font-size: 20px;
 					a:link, a:visited {
+						font-size: 20px;
 						color: #fff;
 						@include link-border;
 					}
@@ -437,16 +493,20 @@ header {
 			.copyright { font-size: 9px; text-indent: 86px; }
 		}
 		.footer-client-links {
-			font: 14px/32px 'MaisonNeue-Mono';
+			font-size: 14px;
+			line-height: 32px;
 			letter-spacing: 2px;
-			text-transform: uppercase;
 			padding: 62px 0 0 0;
+			order: 2;
 			span, ul {
 				float: left;
 			}
+			li {
+				line-height: 32px;
+				padding: 0;
+			}
 			span { margin: 0 42px 0 1em; }
 			a:link, a:visited {
-				color: #fff;
 				@include link-border;
 			}
 		}

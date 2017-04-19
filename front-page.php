@@ -9,7 +9,12 @@
 						</div>
 					</div>
 					
-					<div class="more"><p>Fpo for overview of approach, thinking, artist’s statement. Spring is here! And with it we welcome a glamorous new edition of The Gentlewoman with, on the cover, superstar filmmaker Sofia Coppola photographed by Inez & Vinoodh and profiled by Holly Brubach. Inside, a rapturous exposition of female politics, worldly wit and good looks: Nicola Sturgeon, Scotland’s First Minister; the rollicking writer. The Gentlewoman with, on the cover, superstar filmmaker Sofia Coppola photographed by Inez & Vinoodh blah blah bhalll lorem ipsum dolor s</p></div>
+					<?php while ( have_posts() ) : the_post(); ?>
+						
+						<div class="more"><?php the_content(); ?></div>
+					
+					<?php endwhile; ?>
+					
 					
 				</div>
 			</div>

@@ -2,9 +2,6 @@
 		<footer>
 			<?php if ( is_front_page() ): ?>
 				<div class="footer-link-msg-wrap">
-					<div class="footer-msg">
-						<h2>Brands with a unique point of view</h2>
-					</div>
 					<div class="footer-client-links">
 						<span>Select a Project &raquo;</span>
 						<ul>
@@ -29,17 +26,20 @@
 							<li><a href="http://example.com/">Senahill</a></li>
 						</ul>
 					</div>
+					<div class="footer-msg">
+						<h2>Brands with a unique point of view</h2>
+					</div>
 				</div>
 				<div class="sosumi">
-					<div class="copyright">
-						&copy; 2002 - <?php echo date( 'Y' ); ?> <?php bloginfo( 'name' ); ?>. All Rights Reserved.
-					</div>
 					<div class="social">
 						<ul>
 							<li><a href="http://example.com/">Instagram</a></li>
 							<li><a href="http://example.com/">Pinterest</a></li>
 							<li><a href="http://example.com/">Linked In</a></li>
 						</ul>
+					</div>
+					<div class="copyright">
+						&copy; 2002 - <?php echo date( 'Y' ); ?> <?php bloginfo( 'name' ); ?>. All Rights Reserved.
 					</div>
 					<div class="title-wrap">
 						<span class="title"><?php bloginfo( 'name' ); ?></span>

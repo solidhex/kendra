@@ -97,26 +97,40 @@ header .title, header nav { display: none; }
 @media only screen and (min-width: 1200px) { .more { font-size: 24px; line-height: 36px; max-width: 1058px; padding-left: 0; padding-right: 0; }
   .more.showing { padding-bottom: 96px; } }
 
-.home footer { background-color: #2D2D2C; color: #fff; padding: 0 0 32px 0; }
-@media only screen and (min-width: 1200px) { .home footer .footer-link-msg-wrap { display: flex; align-items: center; }
+.home footer { background-color: #2D2D2C; color: #fff; padding-top: 40px; }
+.home footer .footer-client-links { font-size: 12px; font-family: 'MaisonNeue-Mono', monospace; text-transform: uppercase; letter-spacing: 1.71px; }
+.home footer .footer-client-links span { display: block; text-align: center; margin-bottom: 22px; }
+.home footer .footer-client-links a:link, .home footer .footer-client-links a:visited { color: #fff; }
+.home footer .footer-client-links li { line-height: 28px; padding: 0 28px 0 28px; }
+.home footer .footer-link-msg-wrap h2 { font-size: 28px; line-height: 30px; padding: 68px 0 72px 28px; }
+.home footer .sosumi .title-wrap { display: none; }
+.home footer .sosumi .social { text-align: center; }
+.home footer .sosumi .social li { display: inline-block; }
+.home footer .sosumi .social a:link, .home footer .sosumi .social a:visited { color: #fff; font-size: 16px; }
+.home footer .sosumi .copyright { font-size: 9px; text-align: center; }
+@media only screen and (min-width: 1200px) { .home footer { padding: 0 0 32px 0; }
+  .home footer .footer-link-msg-wrap { display: flex; align-items: center; }
   .home footer .footer-link-msg-wrap > * { flex: 1; }
-  .home footer .footer-link-msg-wrap .footer-msg { text-indent: 86px; }
+  .home footer .footer-link-msg-wrap .footer-msg { text-indent: 86px; order: 1; }
+  .home footer .footer-link-msg-wrap .footer-msg h2 { padding: 0; font-size: 36px; }
   .home footer .sosumi { display: flex; padding: 105px 0 0 0; }
-  .home footer .sosumi .copyright, .home footer .sosumi .title-wrap { flex: 1; }
-  .home footer .sosumi .title-wrap { text-align: right; }
-  .home footer .sosumi .social { flex: 2; }
+  .home footer .sosumi .copyright, .home footer .sosumi .title-wrap { display: block; flex: 1; }
+  .home footer .sosumi .copyright { order: 1; }
+  .home footer .sosumi .title-wrap { text-align: right; order: 3; }
+  .home footer .sosumi .social { flex: 2; order: 2; }
   .home footer .sosumi .social { text-align: center; }
-  .home footer .sosumi .social li { display: inline-block; font-size: 20px; }
-  .home footer .sosumi .social li a:link, .home footer .sosumi .social li a:visited { color: #fff; display: inline-block; position: relative; }
+  .home footer .sosumi .social li { display: inline-block; }
+  .home footer .sosumi .social li a:link, .home footer .sosumi .social li a:visited { font-size: 20px; color: #fff; display: inline-block; position: relative; }
   .home footer .sosumi .social li a:link:before, .home footer .sosumi .social li a:visited:before { content: ''; display: inline-block; width: 0; background-color: #FFFF00; position: absolute; height: 6px; top: 50%; left: 0; z-index: 10; transform: translateY(-50%); transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1); }
   .home footer .sosumi .social li a:link:hover:before, .home footer .sosumi .social li a:visited:hover:before { width: 100%; }
   .home footer .sosumi .social ul li:nth-child(2) { margin: 0 28px; }
   .home footer .sosumi .title { margin-right: 90px; display: inline-block; font: 14px 'Fortescue-Regular'; }
   .home footer .sosumi .copyright { font-size: 9px; text-indent: 86px; }
-  .home footer .footer-client-links { font: 14px/32px 'MaisonNeue-Mono'; letter-spacing: 2px; text-transform: uppercase; padding: 62px 0 0 0; }
+  .home footer .footer-client-links { font-size: 14px; line-height: 32px; letter-spacing: 2px; padding: 62px 0 0 0; order: 2; }
   .home footer .footer-client-links span, .home footer .footer-client-links ul { float: left; }
+  .home footer .footer-client-links li { line-height: 32px; padding: 0; }
   .home footer .footer-client-links span { margin: 0 42px 0 1em; }
-  .home footer .footer-client-links a:link, .home footer .footer-client-links a:visited { color: #fff; display: inline-block; position: relative; }
+  .home footer .footer-client-links a:link, .home footer .footer-client-links a:visited { display: inline-block; position: relative; }
   .home footer .footer-client-links a:link:before, .home footer .footer-client-links a:visited:before { content: ''; display: inline-block; width: 0; background-color: #FFFF00; position: absolute; height: 6px; top: 50%; left: 0; z-index: 10; transform: translateY(-50%); transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1); }
   .home footer .footer-client-links a:link:hover:before, .home footer .footer-client-links a:visited:hover:before { width: 100%; } }
 @media only screen and (min-width: 1440px) { .home footer .footer-client-links span { margin-left: 0; } }
