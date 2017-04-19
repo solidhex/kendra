@@ -22,18 +22,13 @@
 	
 	function handleNav() {
 		var mainDiv = $('.main'),
-			mainOffset = mainDiv.offset(),
-			footerOffset = $('.page > footer').offset();
+		mainOffset = mainDiv.offset();
 		
 		if (window.scrollY >= mainOffset.top) {
 			$('body').addClass('sticky-nav');
 		} else {
 			$('body').removeClass('sticky-nav');
 		}
-		
-		if (window.scrollY >= footerOffset.top && $('body').hasClass('sticky-nav')) {
-			$('body').removeClass('sticky-nav');
-		}	
 	}
 	
 	window.addEventListener('scroll', handleNav);

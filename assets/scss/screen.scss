@@ -117,6 +117,9 @@ header {
 	display: block;
 	min-height: 66px;
 	.title, nav { display: none; }
+	@include respond-to ('tablet') {
+		min-height: 122px;
+	}
 	@include respond-to('laptop') {
 		min-height: 142px;
 	}
@@ -140,6 +143,17 @@ header {
 			top: 22px;
 			right: 28px;
 			letter-spacing: 2px;
+		}
+		@include respond-to('tablet') {
+			.title { right: 48px; top: 50px; }
+			nav { 
+				display: block; 
+				font-size: 28px;
+				text-align: center;
+				padding-top: 44px;
+				li { display: inline-block; }
+				a { color: $dark; }
+			}
 		}
 		@include respond-to('laptop') {
 			.burger-container {
@@ -170,6 +184,12 @@ header {
 	left: 26px;
 	top: 26px;
 	position: absolute;
+	@include respond-to('tablet') {
+		height: 18px;
+		left: 50px;
+		top: 52px;
+		width: 26px;
+	}
 	@include respond-to('laptop') {
 		height: 22px;
 		left: 82px;
@@ -177,26 +197,6 @@ header {
 		width: 32px;
 	}
 }
-
-
-//.burgle-the-ham {
-//	cursor: pointer;
-//	height: 22px;
-//	width: 32px;
-//	z-index: 100;
-//	border: 2px solid #fff;
-//	border-style: solid none;
-//	&:before {
-//		background: #fff;
-//		content: '';
-//		display: block;
-//		height: 2px;
-//		left: 0;
-//		position: absolute;
-//		top: 10px;
-//		width: 32px;
-//	}
-//}
 
 .burgle-the-ham {
 	border: 2px solid #fff;
@@ -214,6 +214,14 @@ header {
 		position: absolute;
 		top: 6px;
 		width: 20px;
+	}
+	@include respond-to('tablet') {
+		width: 26px;
+		height: 18px;
+		&:before {
+			width: 26px;
+			top: 8px;
+		}
 	}
 	@include respond-to('laptop') {
 		height: 22px;
@@ -292,12 +300,16 @@ header {
 		height: 24px;
 		bottom: 66px;
 		left: 50%;
+		@include respond-to('tablet') {
+			border-width: 0 2px 2px 0;
+			width: 30px;
+			height: 30px;
+		}
 		@include respond-to('laptop') {
 			border-width: 0 3px 3px 0;
 			width: 35px;
 			height: 35px;
 			bottom: 53px;
-			left: 50%;
 		}
 	}
 }
@@ -307,6 +319,9 @@ header {
 	background-color: #fdf8f2;
 	min-height: 100vh;
 	padding-top: 108px;
+	@include respond-to('tablet') {
+		padding-top: 136px;
+	}
 	@include respond-to('laptop') {
 		padding-top: 142px;
 	}
@@ -315,6 +330,9 @@ header {
 .work-content {
 	.work-heading {
 		padding-top: 32px;
+		@include respond-to('tablet') {
+			padding: 16px 0 0 0;
+		}
 		@include respond-to('laptop') {
 			padding: 64px 0 0 0;
 		}
@@ -325,6 +343,12 @@ header {
 			line-height: 33px;
 			margin-bottom: 26px;
 			padding: 0 18px;
+			@include respond-to('tablet') {
+				font-size: 48px;
+				line-height: 51px;
+				padding: 0 28px 0 55px;
+				margin-bottom: 28px;
+			}
 			@include respond-to('laptop') {
 				font-size: 80px;
 				line-height: 82px;
@@ -332,18 +356,15 @@ header {
 				padding: 0 72px;
 			}
 		}
-		//h2 {
-//			font: 80px/82px 'Fortescue-Regular', sans-serif;
-//			margin: 0 0 60px;
-//			padding: 0 72px;
-//			position: relative;
-//		}
 	}
 }
 
 .work-image-wrap {
 	margin: 0 auto;
 	padding: 0 27px;
+	@include respond-to('tablet') {
+		padding: 0 126px;
+	}
 	@include respond-to ('laptop') {
 		max-width: 791px;
 		padding: 0;
@@ -359,6 +380,12 @@ header {
 	line-height: 11px;
 	margin: 0 0 0 9px;
 	top: 1px;
+	@include respond-to('tablet') {
+		font-size: 10px;
+		line-height: 12px;
+		top: -1px;
+		margin: 0 0 0 9px;
+	}
 	@include respond-to('laptop') {
 		margin: 0 0 0 26px;
 		top: -6px;
@@ -381,6 +408,13 @@ header {
 		max-height: 1000px;
 		padding-bottom: 56px;
 	}
+	@include respond-to('tablet') {
+		font-size: 18px;
+		line-height: 28px;
+		padding-right: 0;
+		padding-left: 0;
+		max-width: 612px;
+	}
 	@include respond-to('laptop') {
 		font-size: 24px;
 		line-height: 36px;
@@ -398,6 +432,7 @@ header {
 	background-color: $dark;
 	color: #fff;
 	padding-top: 40px;
+	padding-bottom: 16px;
 	.footer-client-links {
 		// going mobile
 		font-size: 12px;
@@ -432,7 +467,14 @@ header {
 		}
 		.social {
 			text-align: center;
-			li { display: inline-block; }
+			margin-bottom: 20px;
+			li { 
+				display: inline-block; 
+				&:nth-child(2) {
+					margin-left: 16px;
+					margin-right: 16px;
+				}
+			}
 			a:link, a:visited {
 				color: #fff;
 				font-size: 16px;
@@ -441,6 +483,49 @@ header {
 		.copyright {
 			font-size: 9px;
 			text-align: center;
+		}
+	}
+	
+	@include respond-to('tablet') {
+		padding: 0 0 34px;
+		.footer-link-msg-wrap {
+			display: flex;
+			align-items: center;
+			.footer-client-links {
+				flex: 1;
+				order: 2;
+				position: relative;
+				padding: 66px 0 0 0;
+				span { position: absolute; top: 70px; left: -178px; }
+				li { padding: 0 18px; }
+			}
+			.footer-msg {
+				flex: 1;
+				order: 1;
+				h2 {
+					padding: 0 0 0 50px;
+					font-size: 30px;
+					line-height: 36px;
+				}
+			}
+		}
+		.sosumi {
+			display: flex;
+			padding: 68px 0 0 0;
+			.copyright, .title-wrap, .social { display: block; flex: 1; }
+			.copyright { order: 1; text-indent: 50px; position: relative; top: 3px; }
+			.title-wrap { text-align: right; order: 3; }
+			.social { 
+				order: 2;
+				margin-bottom: 0;
+				text-align: center;
+				ul { margin-left: 24px; }
+			}
+			.title {
+				font: 12px 'Fortescue-Regular';
+				letter-spacing: 2px;
+				padding-right: 50px;
+			}
 		}
 	}
 	

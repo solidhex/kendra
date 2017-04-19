@@ -44,12 +44,17 @@ a { color: #1F15F0; text-decoration: none; }
 
 header { left: 0; position: absolute; right: 0; top: 0; z-index: 100; display: block; min-height: 66px; }
 header .title, header nav { display: none; }
+@media only screen and (min-width: 768px) { header { min-height: 122px; } }
 @media only screen and (min-width: 1200px) { header { min-height: 142px; } }
 
 .sticky-nav header { background-color: rgba(255, 255, 255, 0.5); position: fixed; }
 .sticky-nav header .burgle-the-ham { border-color: #2D2D2C; }
 .sticky-nav header .burgle-the-ham:before { background: #2D2D2C; }
 .sticky-nav header .title { display: inline-block; font-family: 'Fortescue-Regular'; font-size: 12px; position: absolute; top: 22px; right: 28px; letter-spacing: 2px; }
+@media only screen and (min-width: 768px) { .sticky-nav header .title { right: 48px; top: 50px; }
+  .sticky-nav header nav { display: block; font-size: 28px; text-align: center; padding-top: 44px; }
+  .sticky-nav header nav li { display: inline-block; }
+  .sticky-nav header nav a { color: #2D2D2C; } }
 @media only screen and (min-width: 1200px) { .sticky-nav header .burger-container { left: 88px; top: 60px; }
   .sticky-nav header .title { font-size: 14px; right: 90px; top: 62px; }
   .sticky-nav header nav { display: block; font-size: 36px; text-align: center; padding: 52px 0 0 0; }
@@ -57,10 +62,13 @@ header .title, header nav { display: none; }
   .sticky-nav header nav a { color: #2D2D2C; } }
 
 .burger-container { z-index: 100; width: 20px; height: 14px; left: 26px; top: 26px; position: absolute; }
+@media only screen and (min-width: 768px) { .burger-container { height: 18px; left: 50px; top: 52px; width: 26px; } }
 @media only screen and (min-width: 1200px) { .burger-container { height: 22px; left: 82px; top: 90px; width: 32px; } }
 
 .burgle-the-ham { border: 2px solid #fff; border-style: solid none; cursor: pointer; height: 14px; width: 20px; z-index: 100; }
 .burgle-the-ham:before { background: #fff; content: ''; display: block; height: 2px; left: 0; position: absolute; top: 6px; width: 20px; }
+@media only screen and (min-width: 768px) { .burgle-the-ham { width: 26px; height: 18px; }
+  .burgle-the-ham:before { width: 26px; top: 8px; } }
 @media only screen and (min-width: 1200px) { .burgle-the-ham { height: 22px; width: 32px; }
   .burgle-the-ham:before { top: 10px; width: 32px; } }
 
@@ -76,38 +84,60 @@ header .title, header nav { display: none; }
 @media only screen and (min-width: 768px) and (min-width: 1200px) { .home-hero .home-hero-message .tagline { font-size: 13px; line-height: 17px; letter-spacing: 2px; } }
 
 .home-hero .down { border: solid #fff; display: inline-block; transform: rotate(45deg); position: absolute; cursor: pointer; border-width: 0 1px 1px 0; width: 24px; height: 24px; bottom: 66px; left: 50%; }
-@media only screen and (min-width: 1200px) { .home-hero .down { border-width: 0 3px 3px 0; width: 35px; height: 35px; bottom: 53px; left: 50%; } }
+@media only screen and (min-width: 768px) { .home-hero .down { border-width: 0 2px 2px 0; width: 30px; height: 30px; } }
+@media only screen and (min-width: 1200px) { .home-hero .down { border-width: 0 3px 3px 0; width: 35px; height: 35px; bottom: 53px; } }
 
 .work { background-color: #fdf8f2; min-height: 100vh; padding-top: 108px; }
+@media only screen and (min-width: 768px) { .work { padding-top: 136px; } }
 @media only screen and (min-width: 1200px) { .work { padding-top: 142px; } }
 
 .work-content .work-heading { padding-top: 32px; }
+@media only screen and (min-width: 768px) { .work-content .work-heading { padding: 16px 0 0 0; } }
 @media only screen and (min-width: 1200px) { .work-content .work-heading { padding: 64px 0 0 0; } }
 .work-content .work-heading h2 { font-family: 'Fortescue-Regular', sans-serif; position: relative; font-size: 28px; line-height: 33px; margin-bottom: 26px; padding: 0 18px; }
+@media only screen and (min-width: 768px) { .work-content .work-heading h2 { font-size: 48px; line-height: 51px; padding: 0 28px 0 55px; margin-bottom: 28px; } }
 @media only screen and (min-width: 1200px) { .work-content .work-heading h2 { font-size: 80px; line-height: 82px; margin: 0 0 60px; padding: 0 72px; } }
 
 .work-image-wrap { margin: 0 auto; padding: 0 27px; }
+@media only screen and (min-width: 768px) { .work-image-wrap { padding: 0 126px; } }
 @media only screen and (min-width: 1200px) { .work-image-wrap { max-width: 791px; padding: 0; } }
 
 .read-more { display: inline-block; font-family: 'MaisonNeue-Mono', monospace; position: relative; text-transform: uppercase; font-size: 9px; line-height: 11px; margin: 0 0 0 9px; top: 1px; }
+@media only screen and (min-width: 768px) { .read-more { font-size: 10px; line-height: 12px; top: -1px; margin: 0 0 0 9px; } }
 @media only screen and (min-width: 1200px) { .read-more { margin: 0 0 0 26px; top: -6px; font-size: 14px; line-height: 17px; } }
 
 .more { max-height: 0; overflow: hidden; transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1); /* ease-in-out */ margin: 0 auto; padding-bottom: 0; font-size: 16px; line-height: 24px; padding-left: 27px; padding-right: 27px; }
 .more.showing { max-height: 1000px; padding-bottom: 56px; }
+@media only screen and (min-width: 768px) { .more { font-size: 18px; line-height: 28px; padding-right: 0; padding-left: 0; max-width: 612px; } }
 @media only screen and (min-width: 1200px) { .more { font-size: 24px; line-height: 36px; max-width: 1058px; padding-left: 0; padding-right: 0; }
   .more.showing { padding-bottom: 96px; } }
 
-.home footer { background-color: #2D2D2C; color: #fff; padding-top: 40px; }
+.home footer { background-color: #2D2D2C; color: #fff; padding-top: 40px; padding-bottom: 16px; }
 .home footer .footer-client-links { font-size: 12px; font-family: 'MaisonNeue-Mono', monospace; text-transform: uppercase; letter-spacing: 1.71px; }
 .home footer .footer-client-links span { display: block; text-align: center; margin-bottom: 22px; }
 .home footer .footer-client-links a:link, .home footer .footer-client-links a:visited { color: #fff; }
 .home footer .footer-client-links li { line-height: 28px; padding: 0 28px 0 28px; }
 .home footer .footer-link-msg-wrap h2 { font-size: 28px; line-height: 30px; padding: 68px 0 72px 28px; }
 .home footer .sosumi .title-wrap { display: none; }
-.home footer .sosumi .social { text-align: center; }
+.home footer .sosumi .social { text-align: center; margin-bottom: 20px; }
 .home footer .sosumi .social li { display: inline-block; }
+.home footer .sosumi .social li:nth-child(2) { margin-left: 16px; margin-right: 16px; }
 .home footer .sosumi .social a:link, .home footer .sosumi .social a:visited { color: #fff; font-size: 16px; }
 .home footer .sosumi .copyright { font-size: 9px; text-align: center; }
+@media only screen and (min-width: 768px) { .home footer { padding: 0 0 34px; }
+  .home footer .footer-link-msg-wrap { display: flex; align-items: center; }
+  .home footer .footer-link-msg-wrap .footer-client-links { flex: 1; order: 2; position: relative; padding: 66px 0 0 0; }
+  .home footer .footer-link-msg-wrap .footer-client-links span { position: absolute; top: 70px; left: -178px; }
+  .home footer .footer-link-msg-wrap .footer-client-links li { padding: 0 18px; }
+  .home footer .footer-link-msg-wrap .footer-msg { flex: 1; order: 1; }
+  .home footer .footer-link-msg-wrap .footer-msg h2 { padding: 0 0 0 50px; font-size: 30px; line-height: 36px; }
+  .home footer .sosumi { display: flex; padding: 68px 0 0 0; }
+  .home footer .sosumi .copyright, .home footer .sosumi .title-wrap, .home footer .sosumi .social { display: block; flex: 1; }
+  .home footer .sosumi .copyright { order: 1; text-indent: 50px; position: relative; top: 3px; }
+  .home footer .sosumi .title-wrap { text-align: right; order: 3; }
+  .home footer .sosumi .social { order: 2; margin-bottom: 0; text-align: center; }
+  .home footer .sosumi .social ul { margin-left: 24px; }
+  .home footer .sosumi .title { font: 12px 'Fortescue-Regular'; letter-spacing: 2px; padding-right: 50px; } }
 @media only screen and (min-width: 1200px) { .home footer { padding: 0 0 32px 0; }
   .home footer .footer-link-msg-wrap { display: flex; align-items: center; }
   .home footer .footer-link-msg-wrap > * { flex: 1; }
