@@ -112,7 +112,7 @@ header .title, header nav { display: none; }
 @media only screen and (min-width: 1200px) { .more { font-size: 24px; line-height: 36px; max-width: 1058px; padding-left: 0; padding-right: 0; }
   .more.showing { padding-bottom: 96px; } }
 
-.home footer { background-color: #2D2D2C; color: #fff; padding-top: 40px; padding-bottom: 16px; }
+.home footer { background-color: #2D2D2C; color: #fff; padding-top: 40px; padding-bottom: 16px; text-align: left; }
 .home footer .footer-client-links { font-size: 12px; font-family: 'MaisonNeue-Mono', monospace; text-transform: uppercase; letter-spacing: 1.71px; }
 .home footer .footer-client-links span { display: block; text-align: center; margin-bottom: 22px; }
 .home footer .footer-client-links a:link, .home footer .footer-client-links a:visited { color: #fff; }
@@ -174,10 +174,12 @@ header .title, header nav { display: none; }
 .page-template-about .past-clients p, .page-template-about .accolades p { font-family: 'Fortescue-Regular'; font-size: 28px; line-height: 33px; letter-spacing: 0.2px; }
 @media only screen and (min-width: 768px) { .page-template-about header { display: none; }
   .page-template-about h2 { font-size: 30px; line-height: 35px; }
-  .page-template-about .about-content { padding: 0 50px 0 50px; }
+  .page-template-about .about-content { padding: 150px 50px 0; }
   .page-template-about .preamble { font-size: 24px; line-height: 30px; }
-  .page-template-about .skills { font-size: 10px; line-height: 22px; letter-spacing: 1.43px; }
+  .page-template-about .skills { font-size: 10px; line-height: 22px; letter-spacing: 1.43px; padding-right: 100px; }
   .page-template-about .past-clients p, .page-template-about .accolades p { font-size: 48px; line-height: 56px; letter-spacing: 0.2px; } }
+@media only screen and (min-width: 1200px) { .page-template-about header { display: none; }
+  .page-template-about h2 { font-size: 36px; line-height: 43px; } }
 
 footer { padding-bottom: 18px; text-align: center; }
 footer nav { margin-bottom: 22px; }
@@ -186,3 +188,11 @@ footer nav a:nth-child(2) { margin-right: 18px; margin-left: 18px; }
 footer nav a:link, footer nav a:visited { color: #fff; font-size: 16px; line-height: 18px; }
 footer .copyright { font-size: 9px; line-height: 14px; }
 footer .title-wrap { display: none; }
+@media only screen and (min-width: 768px) { footer { padding-bottom: 22px; }
+  footer .footer-row { display: flex; padding-top: 70px; }
+  footer .footer-row nav, footer .footer-row .copyright, footer .footer-row .title-wrap { flex: 1; padding: 0; margin: 0; }
+  footer .footer-row nav { order: 2; }
+  footer .footer-row nav a:first-child { margin-left: 20px; }
+  footer .footer-row .copyright { order: 1; text-align: left; text-indent: 50px; padding-top: 4px; }
+  footer .footer-row .title-wrap { display: block; order: 3; text-align: right; }
+  footer .footer-row .title-wrap .title { font-family: 'Fortescue-Regular'; font-size: 12px; line-height: 16px; letter-spacing: 2px; padding-right: 50px; } }

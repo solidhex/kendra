@@ -433,6 +433,7 @@ header {
 	color: #fff;
 	padding-top: 40px;
 	padding-bottom: 16px;
+	text-align: left;
 	.footer-client-links {
 		// going mobile
 		font-size: 12px;
@@ -645,7 +646,7 @@ header {
 			line-height: 35px;
 		}
 		.about-content {
-			padding: 0 50px 0 50px;
+			padding: 150px 50px 0;
 		}
 		.preamble {
 			font-size: 24px;
@@ -655,12 +656,21 @@ header {
 			font-size: 10px;
 			line-height: 22px;
 			letter-spacing: 1.43px;
+			padding-right: 100px;
 		}
 		.past-clients p,
 		.accolades p {
 			font-size: 48px;
 			line-height: 56px;
 			letter-spacing: 0.2px;
+		}
+	}
+	
+	@include respond-to('laptop') {
+		header { display: none; } // temp hide
+		h2 {
+			font-size: 36px;
+			line-height: 43px;
 		}
 	}
 }
@@ -691,30 +701,42 @@ footer {
 	}
 	.title-wrap { display: none; }
 	
-	//.footer-row {
-//		display: flex;
-//		nav,
-//		.copyright,
-//		.title-wrap {
-//			flex: 1;
-//			padding: 0;
-//			margin: 0;
-//		}
-//		nav {
-//			background-color: teal;
-//		}
-//		.copyright {
-//			background-color: wheat;
-//		}
-//		.title-wrap {
-//			background-color: #fff;
-//		}
-//	}
-//
-//	.title {
-//		font-family: 'Fortescue-Regular';
-//		font-size: 12px;
-//		line-height: 16px;
-//		letter-spacing: 2px;
-//	}
+	@include respond-to('tablet') {
+		padding-bottom: 22px;
+		.footer-row {
+			display: flex;
+			padding-top: 70px;
+			nav,
+			.copyright,
+			.title-wrap {
+				flex: 1;
+				padding: 0;
+				margin: 0;
+			}
+			nav {
+				order: 2;
+				a:first-child {
+					margin-left: 20px;
+				}
+			}
+			.copyright {
+				order: 1;
+				text-align: left;
+				text-indent: 50px;
+				padding-top: 4px;
+			}
+			.title-wrap {
+				display: block;
+				order: 3;
+				text-align: right;
+				.title {
+					font-family: 'Fortescue-Regular';
+					font-size: 12px;
+					line-height: 16px;
+					letter-spacing: 2px;
+					padding-right: 50px;
+				}
+			}
+		}
+	}
 }
