@@ -46,8 +46,20 @@
 					</div>
 				</div>
 				
-			<?php else: ?>	
-				other footer
+			<?php else: ?>
+				<div class="footer-row">
+					<nav>
+						<a href="https://www.instagram.com/kendrainman/" rel="external">Instagram</a>
+						<a href="https://www.pinterest.com/kendrai/" rel="external">Pinterest</a>
+						<a href="https://www.linkedin.com/in/kendrainman/" rel="external">Linked In</a>
+					</nav>
+					<div class="copyright">
+						&copy; 2002 - <?php echo date( 'Y' ); ?> <?php bloginfo( 'name' ); ?>. All Rights Reserved.
+					</div>
+					<div class="title-wrap">
+						<span class="title"><?php bloginfo( 'name' ); ?></span>
+					</div>
+				</div>
 			<?php endif; ?>
 			
 		</footer>
@@ -58,7 +70,7 @@
 					<ul>
 						<li><a href="<?php bloginfo( 'url' ); ?>">Home</a></li>
 						<li><a href="#">Work</a></li>
-						<li><a href="#">About</a></li>
+						<li><a href="<?php echo get_page_link( 43 );  ?>">About</a></li>
 						<li><a href="#">Contact</a></li>
 					</ul>
 				</nav>

@@ -57,6 +57,11 @@
 		$('body').removeClass('why-scroll');
 		
 	});
+	
+	$('a[rel=external]').on('click', function (e) {
+		e.preventDefault();
+		window.open($(this).attr('href'));
+	});
 
 })(jQuery);
 

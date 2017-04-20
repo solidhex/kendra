@@ -52,4 +52,20 @@ function kendra_scripts()
 
 add_action( 'wp_enqueue_scripts', 'kendra_scripts' );
 
+/**
+ * Add social media to user profile
+ */
+
+function add_user_social_media_options($profile_fields)
+{
+	$profile_fields['instagram'] = 'Instagram';
+
+	return $profile_fields;
+
+}
+
+add_filter( 'user_contactmethods', 'add_user_social_media_options' );
+
+
+
 ?>
