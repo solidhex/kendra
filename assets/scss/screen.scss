@@ -658,6 +658,11 @@ header {
 			letter-spacing: 1.43px;
 			padding-right: 100px;
 		}
+		
+		.past-clients, .accolades {
+			margin-bottom: (92px + 36px);
+		}
+		
 		.past-clients p,
 		.accolades p {
 			font-size: 48px;
@@ -671,8 +676,37 @@ header {
 		h2 {
 			font-size: 36px;
 			line-height: 43px;
+			margin-bottom: 45px;
+		}
+		
+		.about-content {
+			padding: 206px 90px 0;
+		}
+		
+		.skills {
+			padding-right: 400px;
+			margin-bottom: 132px;
+		}
+		
+		.preamble {
+			font-size: 36px;
+			line-height: 44px;
+			margin-bottom: 33px;
+		}
+		
+		.skills {
+			font-size: 14px;
+			letter-spacing: 2px;
+			line-height: 31px;
+		}
+		.past-clients p,
+		.accolades p {
+			font-size: 60px;
+			letter-spacing: 0.2px;
+			line-height: 70px;
 		}
 	}
+	
 }
 
 // Main footer
@@ -735,6 +769,44 @@ footer {
 					line-height: 16px;
 					letter-spacing: 2px;
 					padding-right: 50px;
+				}
+			}
+		}
+	}
+	
+	@include respond-to('laptop') {
+		padding-bottom: 38px;
+		.footer-row {
+			padding-top: 134px;
+			nav {
+				flex: 2;
+				a {
+					font-size: 20px;
+					line-height: 23px;
+					&:first-child {
+						margin-left: 0;
+					}
+					&:nth-child(2) {
+						margin-right: 26px;
+						margin-left: 26px;
+					}
+				}
+				a:link, a:visited {
+					@include link-border;
+				}
+			}
+			.copyright {
+				position: relative;
+				top: 5px;
+				text-indent: 90px;
+			}
+			.title-wrap {
+				position: relative;
+				top: 2px;
+				.title {
+					font-size: 14px;
+					line-height: 18px;
+					padding-right: 90px;
 				}
 			}
 		}
