@@ -20,18 +20,23 @@
 	readMoreLink.on('click', handleLink);
 	
 	
-	function handleNav() {
-		var mainDiv = $('.main'),
-		mainOffset = mainDiv.offset();
+	function handleNavContainer() {
 		
-		if (window.scrollY >= mainOffset.top) {
-			$('body').addClass('sticky-nav');
-		} else {
-			$('body').removeClass('sticky-nav');
+		if ($('body').hasClass('home')) {
+			var mainDiv = $('.main'),
+				mainOffset = mainDiv.offset(),
+				header = $('.page > header');
+				
+				if (window.scrollY >=  mainOffset.top - header.height()) {
+					header.addClass('alt');
+				} else {
+					header.removeClass('alt');
+				}
 		}
+		
 	}
 	
-	window.addEventListener('scroll', handleNav);
+	window.addEventListener('scroll', handleNavContainer);
 	
 	$('.down').on('click', function (e) {
 
@@ -62,6 +67,8 @@
 		e.preventDefault();
 		window.open($(this).attr('href'));
 	});
+	
+	$(window).on('load', handleNavContainer);
 
 })(jQuery);
 
