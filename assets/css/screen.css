@@ -183,7 +183,8 @@ a { color: #1F15F0; text-decoration: none; }
 .page-template-contact .page > header .burgle-the-ham { border-color: #2D2D2C; }
 .page-template-contact .page > header .burgle-the-ham:before { background: #2D2D2C; }
 .page-template-contact .footer-row nav, .page-template-contact .footer-row .title-wrap { display: none; }
-.page-template-contact .contact-content { text-align: center; padding: 146px 0 0 0; }
+.page-template-contact .footer-row .copyright { text-align: center; text-indent: 0; }
+.page-template-contact .contact-content { text-align: center; padding: 146px 0 0 0; min-height: 95vh; }
 .page-template-contact .contact-content h2 { font-size: 9px; letter-spacing: 1.29px; font-family: 'MaisonNeue-Mono'; text-transform: uppercase; margin-bottom: 18px; }
 .page-template-contact .contact-content a[href^=mailto] { font-size: 20px; }
 .page-template-contact .contact-content nav { line-height: 30px; margin-bottom: 98px; }
