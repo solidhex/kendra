@@ -156,7 +156,9 @@ h2 {
 }
 
 // in case header is different in upcoming layout changes
-.page-template-about {
+.page-template-about,
+.page-template-contact
+{
 	.page > header {
 		.title {
 			display: inline-block;
@@ -727,10 +729,46 @@ h2 {
 // Contact 
 
 .page-template-contact {
+	.page > header {
+		.burgle-the-ham {
+			border-color: $dark;
+			&:before {
+				background: $dark;
+			}
+		}
+	}
 	background-color: $fullnavBg;
 	.footer-row {
 		nav, .title-wrap {
 			display: none;
+		}
+	}
+	.contact-content {
+		text-align: center;
+		padding: 146px 0 0 0;
+		h2 {
+			font-size: 9px;
+			letter-spacing: 1.29px;
+			font-family: 'MaisonNeue-Mono';
+			text-transform: uppercase;
+			margin-bottom: 18px;
+		}
+		a[href^=mailto] {
+			font-size: 20px;
+		}
+		
+		nav {
+			line-height: 30px;
+			margin-bottom: 98px;
+			a:link, a:visited {
+				display: block;
+				font-size: 28px;
+				color: $dark;
+				margin-bottom: 24px;
+			}
+		}
+		.connect {
+			padding: 70px 0 0 0;
 		}
 	}
 }
