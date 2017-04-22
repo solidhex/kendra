@@ -71,7 +71,7 @@
 						<li><a href="<?php bloginfo( 'url' ); ?>">Home</a></li>
 						<li><a href="#">Work</a></li>
 						<li><a href="<?php echo get_page_link( 43 );  ?>">About</a></li>
-						<li><a href="#">Contact</a></li>
+						<li><a href="<?php echo get_page_link( 18 ); ?>">Contact</a></li>
 					</ul>
 				</nav>
 			</div>

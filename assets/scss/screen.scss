@@ -724,6 +724,17 @@ h2 {
 	
 }
 
+// Contact 
+
+.page-template-contact {
+	background-color: $fullnavBg;
+	.footer-row {
+		nav, .title-wrap {
+			display: none;
+		}
+	}
+}
+
 // Main footer
 footer {
 	padding-bottom: 18px;

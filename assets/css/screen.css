@@ -179,6 +179,9 @@ a { color: #1F15F0; text-decoration: none; }
   .page-template-about .skills { font-size: 14px; letter-spacing: 2px; line-height: 31px; }
   .page-template-about .past-clients p, .page-template-about .accolades p { font-size: 60px; letter-spacing: 0.2px; line-height: 70px; } }
 
+.page-template-contact { background-color: #FAEADA; }
+.page-template-contact .footer-row nav, .page-template-contact .footer-row .title-wrap { display: none; }
+
 footer { padding-bottom: 18px; text-align: center; }
 footer nav { margin-bottom: 22px; }
 footer nav a { display: inline-block; }
