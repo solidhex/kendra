@@ -116,7 +116,7 @@ h2 {
 	
 	// alt header
 	&.alt {
-		background-color: rgba(255, 255, 255, 0.5); // only for testing 
+		//background-color: rgba(255, 255, 255, 0.5); // only for testing 
 		.burgle-the-ham {
 			border-color: $dark;
 			&:before {
@@ -920,12 +920,10 @@ h2 {
 	text-align: center;
 	padding: 22px 0 0 0;
 	@include respond-to('tablet') {
-		padding: 34px 0 0 52px;
+		padding: 34px 52px 0 52px;
 	}
 	@include respond-to('laptop') {
-		padding: 52px 0 0 0;
-		width: 1263px;
-		margin: 0 auto;
+		padding: 52px 88px 0 88px;
 	}
 	h2 {
 		font-size: 28px;
@@ -960,20 +958,24 @@ h2 {
 		padding: 0 27px;
 		margin-bottom: 25px;
 		@include respond-to('tablet') {
-			float: left;
+			display: inline-block;
 			margin-bottom: 34px;
 			padding: 0;
-			width: 319px;
-			&:nth-child(odd) {
-				margin-right: 33px;
+			width: 48.04216867469879%;
+			vertical-align: top;
+			//width: 319px;
+			
+			&:nth-child(2n+2) {
+				margin-left: 3.91566265060241%;
+				//margin-right: 3.91566265060241%;
 			}
 		}
 		@include respond-to('laptop') {
-			width: 393px;
-			margin: 0 42px 42px 0;
-			&:nth-child(odd) {
-				margin-right: 42px;
+			&:nth-child(2n+2) {
+				margin-left: 0;
 			}
+			width: 31.116389548693586%;
+			margin-right: 3.32541567695962%;
 			&:nth-child(3n+3) {
 				margin-right: 0;
 			}
