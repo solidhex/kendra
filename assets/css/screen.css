@@ -33,7 +33,7 @@ a { color: #1F15F0; text-decoration: none; }
 .page > header { position: fixed; top: 0; right: 0; left: 0; min-height: 62px; z-index: 100; }
 .page > header .burger-container { z-index: 100; width: 20px; height: 14px; position: absolute; left: 26px; top: 26px; }
 @media only screen and (min-width: 768px) { .page > header .burger-container { height: 18px; left: 50px; top: 52px; width: 26px; } }
-@media only screen and (min-width: 1200px) { .page > header .burger-container { height: 22px; left: 82px; top: 90px; width: 32px; } }
+@media only screen and (min-width: 1200px) { .page > header .burger-container { height: 22px; left: 82px; top: 60px; width: 32px; } }
 .page > header .burgle-the-ham { border: 2px solid #fff; border-style: solid none; cursor: pointer; height: 14px; width: 20px; z-index: 100; }
 .page > header .burgle-the-ham:before { background: #fff; content: ''; display: block; height: 2px; left: 0; position: absolute; top: 6px; width: 20px; }
 @media only screen and (min-width: 768px) { .page > header .burgle-the-ham { width: 26px; height: 18px; }
@@ -41,12 +41,17 @@ a { color: #1F15F0; text-decoration: none; }
 @media only screen and (min-width: 1200px) { .page > header .burgle-the-ham { width: 32px; height: 22px; }
   .page > header .burgle-the-ham:before { top: 10px; width: 32px; } }
 .page > header nav, .page > header .title { display: none; }
+.page > header.alt { background-color: rgba(255, 255, 255, 0.5); }
 .page > header.alt .burgle-the-ham { border-color: #2D2D2C; }
 .page > header.alt .burgle-the-ham:before { background: #2D2D2C; }
 .page > header.alt .title { display: inline-block; font-family: 'Fortescue-Regular'; font-size: 12px; position: absolute; top: 22px; right: 28px; letter-spacing: 2px; }
-@media only screen and (min-width: 768px) { .page > header.alt .title { top: 50px; right: 38px; } }
+@media only screen and (min-width: 768px) { .page > header.alt .title { top: 52px; right: 38px; } }
 @media only screen and (min-width: 1200px) { .page > header.alt .title { font-size: 14px; right: 90px; top: 62px; } }
-@media only screen and (min-width: 1200px) { .page > header.alt .burger-container { top: 60px; left: 90px; } }
+@media only screen and (min-width: 768px) { .page > header.alt nav { display: block; font-size: 28px; text-align: center; padding-top: 49px; }
+  .page > header.alt nav li { display: inline-block; }
+  .page > header.alt nav a { color: #2D2D2C; margin-right: 4px; margin-left: 4px; } }
+@media only screen and (min-width: 1200px) { .page > header.alt nav { padding-top: 59px; }
+  .page > header.alt nav li a { margin-right: 12px; margin-left: 12px; } }
 @media only screen and (min-width: 768px) { .page > header { min-height: 124px; } }
 @media only screen and (min-width: 1200px) { .page > header { min-height: 140px; } }
 
@@ -62,7 +67,7 @@ a { color: #1F15F0; text-decoration: none; }
 .page .nav-overlay a:link:before, .page .nav-overlay a:visited:before { content: ''; display: inline-block; width: 0; background-color: #FFFF00; position: absolute; height: 6px; top: 50%; left: 0; z-index: 10; transform: translateY(-50%); transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1); }
 .page .nav-overlay a:link:hover:before, .page .nav-overlay a:visited:hover:before { width: 100%; }
 .page .nav-overlay.active { opacity: 1; overflow: hidden; z-index: 1000; }
-.page .nav-overlay .nav-overlay-content { display: -webkit-flex; display: -moz-flex; display: -ms-flex; display: -o-flex; display: flex; align-items: center; justify-content: center; height: 100%; }
+.page .nav-overlay .nav-overlay-content { display: flex; align-items: center; justify-content: center; height: 100%; }
 .page .nav-overlay nav li { font-size: 28px; line-height: 54px; text-align: center; }
 @media only screen and (min-width: 1200px) { .page .nav-overlay nav li { font-size: 36px; display: inline-block; margin-right: 40px; }
   .page .nav-overlay nav li:last-child { margin-right: 0; } }

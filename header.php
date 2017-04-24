@@ -13,10 +13,10 @@
 			</div>
 			<nav>
 				<ul>
-					<!-- <li><a href="http://example.com/">Home</a></li> -->
-					<li><a href="http://example.com/">Work</a></li>
-					<!-- <li><a href="http://example.com/">About</a></li> -->
-					<!-- <li><a href="http://example.com/">Contact</a></li> -->
+					<li><a href="<?php bloginfo( 'url' ); ?>">Home</a></li>
+					<li><a href="#">Work</a></li>
+					<li><a href="<?php echo get_page_link( 43 );  ?>">About</a></li>
+					<li><a href="<?php echo get_page_link( 18 ); ?>">Contact</a></li>
 				</ul>
 			</nav>
 			<span class="title"><?php bloginfo( 'name' ); ?></span>
