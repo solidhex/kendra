@@ -888,20 +888,6 @@ h2 {
 	}
 	
 	.work-feature {
-		h2 {
-			font-family: 'Fortescue-Regular', sans-serif;
-			position: relative;
-			font-size: 28px;
-			line-height: 33px;
-			margin-bottom: 26px;
-			padding: 0 18px;
-			@include respond-to('tablet') {
-				font-size: 48px;
-				line-height: 51px;
-				padding: 0 28px 0 55px;
-				margin-bottom: 28px;
-			}
-		}
 		.work-feature-copy {
 			padding-top: 22px;
 		}
@@ -922,6 +908,9 @@ h2 {
 		@include respond-to('tablet') {
 			padding: 18px 0 20px;
 		}
+		@include respond-to('laptop') {
+			padding: 24px 0 44px;
+		}
 	}
 }
 
@@ -933,12 +922,21 @@ h2 {
 	@include respond-to('tablet') {
 		padding: 34px 0 0 52px;
 	}
+	@include respond-to('laptop') {
+		padding: 52px 0 0 0;
+		width: 1263px;
+		margin: 0 auto;
+	}
 	h2 {
 		font-size: 28px;
 		line-height: 58px;
 		margin-bottom: -3px;
 		@include respond-to('tablet') {
 			margin-bottom: 0;
+		}
+		@include respond-to('laptop') {
+			font-size: 36px;
+			margin-bottom: 18px;
 		}
 	}
 }
@@ -948,6 +946,10 @@ h2 {
 	font-size: 10px;
 	letter-spacing: 1.43px;
 	text-transform: uppercase;
+	@include respond-to('laptop') {
+		font-size: 14px;
+		letter-spacing: 2px;
+	}
 }
 
 .project-list  {
@@ -966,10 +968,23 @@ h2 {
 				margin-right: 33px;
 			}
 		}
+		@include respond-to('laptop') {
+			width: 393px;
+			margin: 0 42px 42px 0;
+			&:nth-child(odd) {
+				margin-right: 42px;
+			}
+			&:nth-child(3n+3) {
+				margin-right: 0;
+			}
+		}
 		img { display: block; }
 	}
 	@include respond-to('tablet') {
 		margin-top: 21px;
+	}
+	@include respond-to('laptop') {
+		margin-top: 36px;
 	}
 }
 
