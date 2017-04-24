@@ -182,7 +182,8 @@ h2 {
 
 // in case header is different in upcoming layout changes
 .page-template-about,
-.page-template-contact
+.page-template-contact,
+.page-template-work-parent
 {
 	.page > header {
 		.title {
@@ -353,7 +354,7 @@ h2 {
 	}
 }
 
-// Work
+// Home page work section
 .work {
 	background-color: #fdf8f2;
 	min-height: 100vh;
@@ -843,6 +844,80 @@ h2 {
 				padding-top: 104px;
 			}
 		}
+	}
+}
+
+// Work page
+.page-template-work-parent {
+	.page > header {
+		.burgle-the-ham {
+			border-color: $dark;
+			&:before {
+				background: $dark;
+			}
+		}
+	}
+	.work-parent {
+		background-color: $fullnavBg;
+	}
+	.work-parent-content {
+		padding: 94px 27px 0;
+	}
+	
+	.more {
+		padding-right: 0;
+		padding-left: 0;
+	}
+	
+	.work-feature {
+		h2 {
+			font-family: 'Fortescue-Regular', sans-serif;
+			position: relative;
+			font-size: 28px;
+			line-height: 33px;
+			margin-bottom: 26px;
+			padding: 0 18px;
+		}
+		.work-feature-copy {
+			padding-top: 22px;
+		}
+	}
+	
+	.footer-row {
+		nav {
+			a:link, a:visited {
+				color: $dark;
+			}
+		}
+	}
+}
+
+// Sort
+
+.projects-sort-container {
+	text-align: center;
+	padding: 22px 0 0 0;
+	h2 {
+		font-size: 28px;
+		line-height: 58px;
+		margin-bottom: -3px;
+	}
+}
+
+.view-by-category {
+	font-family: 'MaisonNeue-Mono';
+	font-size: 10px;
+	letter-spacing: 1.43px;
+	text-transform: uppercase;
+}
+
+.project-list  {
+	margin: 16px 0 0 0;
+	padding-bottom: 12px;
+	li {
+		padding: 0 27px;
+		margin-bottom: 25px;
+		img { display: block; }
 	}
 }
 

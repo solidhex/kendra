@@ -78,6 +78,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/assets\/img\/fpo-work-large.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 388098,
+		"inputAbbreviatedPath": "\/assets\/img\/fpo-work-large.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/fpo-work-large.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/img\/home-fpo.jpeg": {
 		"fileType": 16384,
 		"ignore": 0,
