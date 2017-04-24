@@ -28,20 +28,15 @@
 	<ul class="project-list">
 		<li>
 			<img src="<?php bloginfo( 'template_directory' ); ?>/assets/img/fpo-work-large.jpg">
-		</li>
-		<li>
+		</li><li>
 			<img src="<?php bloginfo( 'template_directory' ); ?>/assets/img/fpo-work-large.jpg">
-		</li>
-		<li>
+		</li><li>
 			<img src="<?php bloginfo( 'template_directory' ); ?>/assets/img/fpo-work-large.jpg">
-		</li>
-		<li>
+		</li><li>
 			<img src="<?php bloginfo( 'template_directory' ); ?>/assets/img/fpo-work-large.jpg">
-		</li>
-		<li>
+		</li><li>
 			<img src="<?php bloginfo( 'template_directory' ); ?>/assets/img/fpo-work-large.jpg">
-		</li>
-		<li>
+		</li><li>
 			<img src="<?php bloginfo( 'template_directory' ); ?>/assets/img/fpo-work-large.jpg">
 		</li>
 	</ul>
