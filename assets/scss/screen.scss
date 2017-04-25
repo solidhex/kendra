@@ -343,15 +343,31 @@ h2 {
 		}
 		.cats {
 			text-align: center;
-			span { display: block; }
+			span { 
+				display: block; 
+			}
+			font-size: 30px;
+			line-height: 52px;
+			letter-spacing: 0.45px;
 			a {
 				color: $dark;
-				font-size: 30px;
-				line-height: 52px;
-				letter-spacing: 0.45px;
 				display: inline-block;
 				&:hover {
 					text-decoration: underline;
+				}
+			}
+			@include respond-to('tablet') {
+				font-size: 72px;
+				line-height: 105px;
+				letter-spacing: 0.45px;
+			}
+			@include respond-to('laptop') {
+				font-size: 80px;
+				letter-spacing: 1px;
+				line-height: 110px;
+				padding: 0 80px;
+				span {
+					display: inline-block;
 				}
 			}
 		}

@@ -80,10 +80,13 @@ a { color: #1F15F0; text-decoration: none; }
 .page .category-overlay.active { opacity: 1; z-index: 1001; }
 .page .category-overlay .close { text-indent: -119988px; overflow: hidden; text-align: left; text-transform: capitalize; background-size: 20px 20px; background: transparent url("../img/cat-close.png") 0 0 no-repeat; cursor: pointer; display: inline-block; height: 20px; position: absolute; right: 26px; top: 32px; width: 20px; }
 .page .category-overlay .category-overlay-content { display: flex; align-items: center; justify-content: center; height: 100%; }
-.page .category-overlay .cats { text-align: center; }
+.page .category-overlay .cats { text-align: center; font-size: 30px; line-height: 52px; letter-spacing: 0.45px; }
 .page .category-overlay .cats span { display: block; }
-.page .category-overlay .cats a { color: #2D2D2C; font-size: 30px; line-height: 52px; letter-spacing: 0.45px; display: inline-block; }
+.page .category-overlay .cats a { color: #2D2D2C; display: inline-block; }
 .page .category-overlay .cats a:hover { text-decoration: underline; }
+@media only screen and (min-width: 768px) { .page .category-overlay .cats { font-size: 72px; line-height: 105px; letter-spacing: 0.45px; } }
+@media only screen and (min-width: 1200px) { .page .category-overlay .cats { font-size: 80px; letter-spacing: 1px; line-height: 110px; padding: 0 80px; }
+  .page .category-overlay .cats span { display: inline-block; } }
 
 .home-hero { position: relative; }
 .home-hero .home-hero-media { height: 100vh; max-height: 100%; overflow: hidden; }
