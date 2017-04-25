@@ -12,12 +12,10 @@
 				<div class="burgle-the-ham"></div>
 			</div>
 			<nav>
-				<ul>
-					<li><a href="<?php bloginfo( 'url' ); ?>">Home</a></li>
-					<li><a href="<?php echo get_page_link( 22 ); ?>">Work</a></li>
-					<li><a href="<?php echo get_page_link( 43 );  ?>">About</a></li>
-					<li><a href="<?php echo get_page_link( 18 ); ?>">Contact</a></li>
-				</ul>
+				<a href="<?php bloginfo( 'url' ); ?>" class="header-link-home">Home</a>
+				<a href="<?php echo get_page_link( 22 ); ?>" class="header-link-work">Work</a>
+				<a href="<?php echo get_page_link( 43 );  ?>" class="header-link-about">About</a>
+				<a href="<?php echo get_page_link( 18 ); ?>" class="header-link-contact">Contact</a>
 			</nav>
 			<span class="title"><?php bloginfo( 'name' ); ?></span>
 		</header>

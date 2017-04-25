@@ -61,6 +61,7 @@ a { color: #1F15F0; text-decoration: none; }
 @media only screen and (min-width: 768px) { .page-template-about .page > header nav, .page-template-contact .page > header nav, .page-template-work-parent .page > header nav { display: block; font-size: 28px; text-align: center; padding-top: 49px; }
   .page-template-about .page > header nav li, .page-template-contact .page > header nav li, .page-template-work-parent .page > header nav li { display: inline-block; }
   .page-template-about .page > header nav a, .page-template-contact .page > header nav a, .page-template-work-parent .page > header nav a { color: #2D2D2C; margin-right: 4px; margin-left: 4px; } }
+@media only screen and (min-width: 1200px) { .page-template-about .page > header nav a, .page-template-contact .page > header nav a, .page-template-work-parent .page > header nav a { margin-right: 12px; margin-left: 12px; } }
 
 .page-template-about nav li a:link, .page-template-about nav li a:visited { color: #fff; }
 
@@ -233,8 +234,9 @@ a { color: #1F15F0; text-decoration: none; }
 @media only screen and (min-width: 768px) { .projects-sort-container h2 { margin-bottom: 0; } }
 @media only screen and (min-width: 1200px) { .projects-sort-container h2 { font-size: 36px; margin-bottom: 18px; } }
 
-.view-by-category { font-family: 'MaisonNeue-Mono'; font-size: 10px; letter-spacing: 1.43px; text-transform: uppercase; }
+.view-by-category { font-family: 'MaisonNeue-Mono'; font-size: 10px; letter-spacing: 1.43px; text-transform: uppercase; transition: color 200ms cubic-bezier(0.42, 0, 0.58, 1); }
 @media only screen and (min-width: 1200px) { .view-by-category { font-size: 14px; letter-spacing: 2px; } }
+.view-by-category:hover { color: #2D2D2C; }
 
 .project-list { margin: 16px 0 0 0; padding-bottom: 12px; *zoom: 1; }
 .project-list:after { content: ""; display: table; clear: both; }
