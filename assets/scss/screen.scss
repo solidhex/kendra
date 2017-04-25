@@ -543,6 +543,9 @@ h2 {
 			color: $dark;
 			border-bottom: 1px solid $dark;
 		}
+		@include respond-to('tablet') {
+			margin-top: 32px;
+		}
 	}
 }
 
@@ -1083,6 +1086,15 @@ h2 {
 	@include respond-to('laptop') {
 		margin-top: 36px;
 	}
+	+ .view-by-category {
+		margin-top: 5px;
+		margin-bottom: 64px;
+		display: inline-block;
+		@include respond-to('tablet') {
+			margin-top: -1px;
+			margin-bottom: 46px;
+		}
+	}
 }
 
 // Work Detail
@@ -1099,6 +1111,9 @@ h2 {
 	.work-detail {
 		background-color: $lightRose;
 		padding: 74px 0 44px;
+		@include respond-to('tablet') {
+			padding: 100px 0 38px;
+		}
 	}
 	
 	.slider {
@@ -1108,12 +1123,21 @@ h2 {
 			line-height: 32px;
 			text-align: center;
 			padding: 26px 64px 0;
+			@include respond-to('tablet') {
+				font-size: 48px;
+				line-height: 1;
+			}
 		}
 		.intro {
 			font-size: 20px;
 			line-height: 28px;
 			text-align: center;
 			padding: 16px 62px 0;
+			@include respond-to('tablet') {
+				font-size: 24px;
+				line-height: 34px;
+				padding-top: 22px;
+			}
 		}
 	}
 	

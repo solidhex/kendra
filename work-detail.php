@@ -26,8 +26,7 @@ graphics for the surf brand Roxy.</div>
 </div>
 
 <div class="projects-sort-container">
-	<h2>All Projects</h2>
-	<a href="#" class="view-by-category">view projects by category</a>
+	<h2>Related Projects</h2>
 	<ul class="project-list">
 		<li>
 			<img src="<?php bloginfo( 'template_directory' ); ?>/assets/img/fpo-work-large.jpg">
@@ -43,6 +42,7 @@ graphics for the surf brand Roxy.</div>
 			<img src="<?php bloginfo( 'template_directory' ); ?>/assets/img/fpo-work-large.jpg">
 		</li>
 	</ul>
+	<a href="#" class="view-by-category">view projects by category</a>
 </div>
 
 <?php get_footer(); ?>
