@@ -61,7 +61,6 @@
 					</div>
 				</div>
 			<?php endif; ?>
-			
 		</footer>
 		<div class="nav-overlay">
 			<span class="close">X</span>

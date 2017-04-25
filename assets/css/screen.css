@@ -54,14 +54,14 @@ a { color: #1F15F0; text-decoration: none; }
 @media only screen and (min-width: 768px) { .page > header { min-height: 124px; } }
 @media only screen and (min-width: 1200px) { .page > header { min-height: 140px; } }
 
-.page-template-about .page > header .title, .page-template-contact .page > header .title, .page-template-work-parent .page > header .title { display: inline-block; font-family: 'Fortescue-Regular'; font-size: 12px; position: absolute; top: 22px; right: 28px; letter-spacing: 2px; }
-@media only screen and (min-width: 768px) { .page-template-about .page > header .title, .page-template-contact .page > header .title, .page-template-work-parent .page > header .title { right: 46px; top: 52px; } }
-@media only screen and (min-width: 1200px) { .page-template-about .page > header .title, .page-template-contact .page > header .title, .page-template-work-parent .page > header .title { font-size: 14px; line-height: 18px; top: 64px; right: 90px; } }
-@media only screen and (min-width: 1200px) { .page-template-about .page > header .burger-container, .page-template-contact .page > header .burger-container, .page-template-work-parent .page > header .burger-container { left: 90px; top: 60px; } }
-@media only screen and (min-width: 768px) { .page-template-about .page > header nav, .page-template-contact .page > header nav, .page-template-work-parent .page > header nav { display: block; font-size: 28px; text-align: center; padding-top: 49px; }
-  .page-template-about .page > header nav li, .page-template-contact .page > header nav li, .page-template-work-parent .page > header nav li { display: inline-block; }
-  .page-template-about .page > header nav a, .page-template-contact .page > header nav a, .page-template-work-parent .page > header nav a { color: #2D2D2C; margin-right: 4px; margin-left: 4px; } }
-@media only screen and (min-width: 1200px) { .page-template-about .page > header nav a, .page-template-contact .page > header nav a, .page-template-work-parent .page > header nav a { margin-right: 12px; margin-left: 12px; } }
+.page-template-about .page > header .title, .page-template-contact .page > header .title, .page-template-work-parent .page > header .title, .page-template-work-detail .page > header .title { display: inline-block; font-family: 'Fortescue-Regular'; font-size: 12px; position: absolute; top: 22px; right: 28px; letter-spacing: 2px; }
+@media only screen and (min-width: 768px) { .page-template-about .page > header .title, .page-template-contact .page > header .title, .page-template-work-parent .page > header .title, .page-template-work-detail .page > header .title { right: 46px; top: 52px; } }
+@media only screen and (min-width: 1200px) { .page-template-about .page > header .title, .page-template-contact .page > header .title, .page-template-work-parent .page > header .title, .page-template-work-detail .page > header .title { font-size: 14px; line-height: 18px; top: 64px; right: 90px; } }
+@media only screen and (min-width: 1200px) { .page-template-about .page > header .burger-container, .page-template-contact .page > header .burger-container, .page-template-work-parent .page > header .burger-container, .page-template-work-detail .page > header .burger-container { left: 90px; top: 60px; } }
+@media only screen and (min-width: 768px) { .page-template-about .page > header nav, .page-template-contact .page > header nav, .page-template-work-parent .page > header nav, .page-template-work-detail .page > header nav { display: block; font-size: 28px; text-align: center; padding-top: 49px; }
+  .page-template-about .page > header nav li, .page-template-contact .page > header nav li, .page-template-work-parent .page > header nav li, .page-template-work-detail .page > header nav li { display: inline-block; }
+  .page-template-about .page > header nav a, .page-template-contact .page > header nav a, .page-template-work-parent .page > header nav a, .page-template-work-detail .page > header nav a { color: #2D2D2C; margin-right: 4px; margin-left: 4px; } }
+@media only screen and (min-width: 1200px) { .page-template-about .page > header nav a, .page-template-contact .page > header nav a, .page-template-work-parent .page > header nav a, .page-template-work-detail .page > header nav a { margin-right: 12px; margin-left: 12px; } }
 
 .page-template-about nav li a:link, .page-template-about nav li a:visited { color: #fff; }
 

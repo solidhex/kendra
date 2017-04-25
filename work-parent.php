@@ -17,7 +17,11 @@
 					<h2>Strategic Branding that Resonates<a href="" class="read-more">Read <br>More</a></h2>
 				</div>
 			</div>
-			<div class="more">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut viverra consectetur turpis hendrerit dictum. Ut euismod urna in massa dapibus, vel finibus lorem tristique. Sed venenatis ligula ut nunc feugiat laoreet. Donec condimentum tempor neque, vitae luctus sem vestibulum semper. Ut varius, ligula vel feugiat faucibus, quam felis congue tellus, in placerat erat nisi laoreet orci. Fusce auctor enim nec sollicitudin cursus. Praesent suscipit scelerisque facilisis. Vestibulum porttitor elit vitae nulla semper, ut hendrerit urna posuere. Edit this content in the admin under Pages > Hom</div>
+			<?php while ( have_posts() ) : the_post(); ?>
+				
+				<div class="more"><?php the_content(); ?></div>
+			
+			<?php endwhile; ?>
 		</div>
 	</div>
 </div>
