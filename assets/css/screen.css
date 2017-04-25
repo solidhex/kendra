@@ -270,10 +270,13 @@ a { color: #1F15F0; text-decoration: none; }
 .page-template-work-detail .page > header .burgle-the-ham:before { background: #2D2D2C; }
 .page-template-work-detail .work-detail { background-color: #fff8f2; padding: 74px 0 44px; }
 @media only screen and (min-width: 768px) { .page-template-work-detail .work-detail { padding: 100px 0 38px; } }
+@media only screen and (min-width: 1200px) { .page-template-work-detail .work-detail { padding: 123px 0 70px; } }
 .page-template-work-detail .slider h2 { font-family: 'Fortescue-Regular'; font-size: 28px; line-height: 32px; text-align: center; padding: 26px 64px 0; }
 @media only screen and (min-width: 768px) { .page-template-work-detail .slider h2 { font-size: 48px; line-height: 1; } }
+@media only screen and (min-width: 1200px) { .page-template-work-detail .slider h2 { font-size: 80px; line-height: 1; padding-top: 38px; } }
 .page-template-work-detail .slider .intro { font-size: 20px; line-height: 28px; text-align: center; padding: 16px 62px 0; }
 @media only screen and (min-width: 768px) { .page-template-work-detail .slider .intro { font-size: 24px; line-height: 34px; padding-top: 22px; } }
+@media only screen and (min-width: 1200px) { .page-template-work-detail .slider .intro { font-size: 32px; line-height: 40px; padding-top: 34px; padding-bottom: 10px; } }
 .page-template-work-detail .footer-row nav a:link, .page-template-work-detail .footer-row nav a:visited { color: #2D2D2C; }
 @media only screen and (min-width: 768px) { .page-template-work-detail .footer-row { padding: 0; } }
 @media only screen and (min-width: 768px) { .page-template-work-detail footer { padding: 18px 0 20px; } }

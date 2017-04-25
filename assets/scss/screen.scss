@@ -1114,6 +1114,9 @@ h2 {
 		@include respond-to('tablet') {
 			padding: 100px 0 38px;
 		}
+		@include respond-to('laptop') {
+			padding: 123px 0 70px;
+		}
 	}
 	
 	.slider {
@@ -1127,6 +1130,11 @@ h2 {
 				font-size: 48px;
 				line-height: 1;
 			}
+			@include respond-to('laptop') {
+				font-size: 80px;
+				line-height: 1;
+				padding-top: 38px;
+			}
 		}
 		.intro {
 			font-size: 20px;
@@ -1137,6 +1145,12 @@ h2 {
 				font-size: 24px;
 				line-height: 34px;
 				padding-top: 22px;
+			}
+			@include respond-to('laptop') {
+				font-size: 32px;
+				line-height: 40px;
+				padding-top: 34px;
+				padding-bottom: 10px;
 			}
 		}
 	}
