@@ -14,7 +14,7 @@
 		</figure>
 	</div>
 	<div class="slider">
-		<h2>New York Stock Exchange</h2>
+		<h2>One Love Organics</h2>
 		<div class="intro">Authenticity, vibrancy and joie de vivre drive the brand strategy and 
 graphics for the surf brand Roxy.</div>
 		<a href="" class="read-more alt">Read More</a>
