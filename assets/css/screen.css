@@ -50,7 +50,7 @@ a { color: #1F15F0; text-decoration: none; }
   .page > header.alt nav li { display: inline-block; }
   .page > header.alt nav a { color: #2D2D2C; margin-right: 4px; margin-left: 4px; } }
 @media only screen and (min-width: 1200px) { .page > header.alt nav { padding-top: 59px; }
-  .page > header.alt nav li a { margin-right: 12px; margin-left: 12px; } }
+  .page > header.alt nav a { margin-right: 12px; margin-left: 12px; } }
 @media only screen and (min-width: 768px) { .page > header { min-height: 124px; } }
 @media only screen and (min-width: 1200px) { .page > header { min-height: 140px; } }
 
@@ -76,6 +76,14 @@ a { color: #1F15F0; text-decoration: none; }
 .page .nav-overlay nav li { font-size: 28px; line-height: 54px; text-align: center; }
 @media only screen and (min-width: 1200px) { .page .nav-overlay nav li { font-size: 36px; display: inline-block; margin-right: 40px; }
   .page .nav-overlay nav li:last-child { margin-right: 0; } }
+.page .category-overlay { background-color: #FFFF00; bottom: 0; left: 0; position: fixed; right: 0; top: 0; opacity: 0; transition: all 250ms cubic-bezier(0.42, 0, 0.58, 1); /* ease-in-out */ z-index: -1; }
+.page .category-overlay.active { opacity: 1; z-index: 1001; }
+.page .category-overlay .close { text-indent: -119988px; overflow: hidden; text-align: left; text-transform: capitalize; background-size: 20px 20px; background: transparent url("../img/cat-close.png") 0 0 no-repeat; cursor: pointer; display: inline-block; height: 20px; position: absolute; right: 26px; top: 32px; width: 20px; }
+.page .category-overlay .category-overlay-content { display: flex; align-items: center; justify-content: center; height: 100%; }
+.page .category-overlay .cats { text-align: center; }
+.page .category-overlay .cats span { display: block; }
+.page .category-overlay .cats a { color: #2D2D2C; font-size: 30px; line-height: 52px; letter-spacing: 0.45px; display: inline-block; }
+.page .category-overlay .cats a:hover { text-decoration: underline; }
 
 .home-hero { position: relative; }
 .home-hero .home-hero-media { height: 100vh; max-height: 100%; overflow: hidden; }

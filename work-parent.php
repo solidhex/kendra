@@ -6,7 +6,6 @@
 	get_header();
 
 ?>
-
 <div class="work-parent">
 	<div class="work-parent-content">
 		<div class="work-feature">

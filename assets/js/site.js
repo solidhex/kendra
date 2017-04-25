@@ -56,9 +56,17 @@
 		$('body').addClass('why-scroll');
 	});
 	
+	$('.view-by-category').on('click', function (e) {
+		e.preventDefault();
+		$('.category-overlay').toggleClass('active');
+		$('body').addClass('why-scroll');
+	});
+	
 	$('.close').on('click', function (e) {
 		e.preventDefault();
-		$('.nav-overlay').toggleClass('active');
+		
+		$(this).parent().toggleClass('active');
+		
 		$('body').removeClass('why-scroll');
 		
 	});
