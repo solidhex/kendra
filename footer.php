@@ -3,6 +3,14 @@
 			<?php if ( is_front_page() ): ?>
 				<div class="footer-link-msg-wrap">
 					<div class="footer-client-links">
+						<?php
+							// $projects = get_pages( array( 'child_of' => 22) );
+// 							foreach ($projects as $project) {
+// 								if ( $project->post_parent !== 22 ) {
+// 									echo $project->post_title;
+// 								}
+// 							}
+						?>
 						<span>Select a Project &raquo;</span>
 						<ul>
 							<li><a href="#">Roxy</a></li>

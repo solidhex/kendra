@@ -24,7 +24,14 @@ graphics for the surf brand Roxy.</div>
 	</div>
 	
 </div>
-
+<pre>
+	<?php
+	// $balce = get_post_meta( $post->ID );
+	// echo count( $balce['related'] );
+	// var_dump( $balce['related'] );
+	
+	?>
+</pre>
 <div class="projects-sort-container">
 	<h2>Related Projects</h2>
 	<ul class="project-list">
