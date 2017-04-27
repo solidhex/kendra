@@ -208,30 +208,8 @@ body.home {
 	}
 }
 
+
 body.page-template {
-	.page > header {
-		nav { 
-//			display: block;
-//			font-size: 28px;
-//			text-align: center;
-//			padding-top: 48px;
-			@include respond-to('tablet') {
-				position: relative;
-				a { 
-					transition: opacity 0.2s ease-in-out, transform 0.5s ease-in-out;
-				}
-			}
-		}
-	}
-}
-
-
-// in case header is different in upcoming layout changes
-.page-template-about,
-.page-template-contact,
-.page-template-work-parent,
-.page-template-work-detail
-{
 	.page > header {
 		.title {
 			display: inline-block;
@@ -264,8 +242,10 @@ body.page-template {
 				font-size: 28px;
 				text-align: center;
 				padding-top: 49px;
-				li { display: inline-block; }
+				position: relative;
 				a { 
+					display: inline-block;
+					transition: opacity 0.2s ease-in-out, transform 0.5s ease-in-out;
 					color: $dark; 
 					margin-right: 4px;
 					margin-left: 4px;
@@ -274,6 +254,8 @@ body.page-template {
 		}
 		@include respond-to('laptop') {
 			nav {
+				padding-top: 55px;
+				font-size: 36px;
 				a {
 					margin-right: 12px;
 					margin-left: 12px;
@@ -282,6 +264,8 @@ body.page-template {
 		}
 	}
 }
+
+
 
 body.page-template-about {
 	.page > header {
@@ -294,9 +278,35 @@ body.page-template-about {
 	}
 	.header-link-home,
 	.header-link-work,
-	.header-link-contact
-	{
+	.header-link-contact {
 		opacity: 0;
+	}
+	
+	.header-link-about {
+		@include respond-to('tablet') {
+			transform: translateX(-30px);
+		}
+		@include respond-to('laptop') {
+			transform: translateX(-82px);
+		}
+	}
+}
+
+body.page-template-contact {
+	
+	.header-link-home,
+	.header-link-work,
+	.header-link-about {
+		opacity: 0;
+	}
+	
+	.header-link-contact {
+		@include respond-to('tablet') {
+			transform: translateX(-130px);
+		}
+		@include respond-to('laptop') {
+			transform: translateX(-211px);
+		}
 	}
 }
 
