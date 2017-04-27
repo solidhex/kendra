@@ -580,6 +580,7 @@ body.page-template-contact {
 	line-height: 11px;
 	margin: 0 0 0 9px;
 	top: 1px;
+	span { display: block; }
 	@include respond-to('tablet') {
 		font-size: 10px;
 		line-height: 12px;
@@ -598,6 +599,7 @@ body.page-template-contact {
 		left: 50%;
 		transform: translateX(-50%);
 		transition: all 200ms cubic-bezier(0.420, 0.000, 0.580, 1.000);
+		span { display: inline-block; }
 		&:hover {
 			color: $dark;
 			border-bottom: 1px solid $dark;
@@ -638,6 +640,14 @@ body.page-template-contact {
 		&.showing {
 			padding-bottom: 96px;
 		}
+	}
+}
+
+.work-detail {
+	.more {}
+	.showing {
+		padding-bottom: 8px;
+		padding-top: 30px;
 	}
 }
 

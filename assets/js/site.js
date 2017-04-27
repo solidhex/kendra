@@ -9,10 +9,10 @@
 		
 		if (!target.hasClass('showing')) {
 			target.addClass('showing');
-			readMoreLink.html('Read<br>Less');
+			readMoreLink.html('<span>Read</span> <span>Less</span>');
 		} else {
 			target.removeClass('showing');
-			readMoreLink.html('Read<br>More');
+			readMoreLink.html('<span>Read</span> <span>More</span>');
 		}
 		
 	}

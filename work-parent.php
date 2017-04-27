@@ -14,7 +14,7 @@
 					<img src="<?php bloginfo( 'template_directory' ); ?>/assets/img/fpo-work-large.jpg">
 				</figure>
 				<div class="work-heading">
-					<h2>Strategic Branding that Resonates<a href="" class="read-more">Read <br>More</a></h2>
+					<h2>Strategic Branding that Resonates<a href="" class="read-more"><span>Read</span> <span>More</span></a></h2>
 				</div>
 			</div>
 			<?php while ( have_posts() ) : the_post(); ?>
