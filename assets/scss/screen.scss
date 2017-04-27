@@ -117,7 +117,7 @@ h2 {
 	
 	// alt header
 	&.alt {
-		//background-color: rgba(255, 255, 255, 0.5); // only for testing 
+		//background-color: rgba(255, 255, 255, 0.25); // only for testing 
 		.burgle-the-ham {
 			border-color: $dark;
 			&:before {
@@ -142,28 +142,26 @@ h2 {
 				top: 62px;
 			}
 		}
-		@include respond-to('laptop') {
-			.burger-container {
-				//top: 60px;
-			}
-		}
 		@include respond-to('tablet') {
 			nav { 
 				display: block; 
 				font-size: 28px;
 				text-align: center;
-				padding-top: 49px;
-				li { display: inline-block; }
+				padding-top: 48px;
+				position: relative;
 				a { 
 					color: $dark; 
-					margin-right: 4px;
+					display: inline-block; 
 					margin-left: 4px;
+					margin-right: 4px;
+					transition: opacity 0.2s ease-in-out, transform 0.5s ease-in-out;
 				}
 			}
 		}
 		@include respond-to('laptop') {
 			nav {
-				padding-top: 59px;
+				padding-top: 55px;
+				font-size: 36px;
 				a {
 					margin-right: 12px;
 					margin-left: 12px;
@@ -182,9 +180,48 @@ h2 {
 
 // Nav States
 
-.home {
+
+.page > header {
+	&:hover {
+		a {
+			opacity: 1;
+			transform: translateX(0);
+		}
+	}
+}
+
+body.home {
+	
+	.header-link-home,
+	.header-link-about,
+	.header-link-contact {
+		opacity: 0;
+	}
+	
+	.header-link-work {
+		@include respond-to('tablet') {
+			transform: translateX(55px);
+		}
+		@include respond-to('laptop') {
+			transform: translateX(78px);
+		}
+	}
+}
+
+body.page-template {
 	.page > header {
-		
+		nav { 
+//			display: block;
+//			font-size: 28px;
+//			text-align: center;
+//			padding-top: 48px;
+			@include respond-to('tablet') {
+				position: relative;
+				a { 
+					transition: opacity 0.2s ease-in-out, transform 0.5s ease-in-out;
+				}
+			}
+		}
 	}
 }
 
@@ -246,10 +283,20 @@ h2 {
 	}
 }
 
-.page-template-about {
-	nav li a:link,
-	nav li a:visited {
-		color: #fff;
+body.page-template-about {
+	.page > header {
+		nav {
+			a:link,
+			a:visited {
+				color: #fff;
+			}
+		}
+	}
+	.header-link-home,
+	.header-link-work,
+	.header-link-contact
+	{
+		opacity: 0;
 	}
 }
 

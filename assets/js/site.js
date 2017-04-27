@@ -78,14 +78,6 @@
 	
 	$(window).on('load', handleNavContainer);
 	
-	$(document).ready(function () {
-		$('.work-image-wrap > .banner').bxSlider({
-			pager: false,
-			controls: false,
-			mode: "horizontal",
-			auto: true
-		});
-	});
 
 })(jQuery);
 
