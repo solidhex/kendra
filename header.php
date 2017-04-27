@@ -11,12 +11,14 @@
 			<div class="burger-container">
 				<div class="burgle-the-ham"></div>
 			</div>
-			<nav>
-				<a href="<?php bloginfo( 'url' ); ?>" class="header-link-home">Home</a>
-				<a href="<?php echo get_page_link( 22 ); ?>" class="header-link-work">Work</a>
-				<a href="<?php echo get_page_link( 43 );  ?>" class="header-link-about">About</a>
-				<a href="<?php echo get_page_link( 18 ); ?>" class="header-link-contact">Contact</a>
-			</nav>
+			<?php if ( !is_page_template( 'projects.php' ) ): ?>
+				<nav>
+					<a href="<?php bloginfo( 'url' ); ?>" class="header-link-home">Home</a>
+					<a href="<?php echo get_page_link( 22 ); ?>" class="header-link-work">Work</a>
+					<a href="<?php echo get_page_link( 43 );  ?>" class="header-link-about">About</a>
+					<a href="<?php echo get_page_link( 18 ); ?>" class="header-link-contact">Contact</a>
+				</nav>
+			<?php endif ?>
 			<span class="title"><?php bloginfo( 'name' ); ?></span>
 		</header>
 		<?php if ( is_front_page() ): ?>
