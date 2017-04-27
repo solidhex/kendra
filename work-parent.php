@@ -30,7 +30,7 @@
 	<a href="#" class="view-by-category">view projects by category</a>
 	<ul class="project-list">
 		<li>
-			<img src="<?php bloginfo( 'template_directory' ); ?>/assets/img/fpo-work-large.jpg">
+			<a href="<?php echo get_page_link( 52 ); ?>"><img src="<?php bloginfo( 'template_directory' ); ?>/assets/img/fpo-work-large.jpg"></a>
 		</li><li>
 			<img src="<?php bloginfo( 'template_directory' ); ?>/assets/img/fpo-work-large.jpg">
 		</li><li>

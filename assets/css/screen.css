@@ -55,9 +55,9 @@ a { color: #1F15F0; text-decoration: none; }
 
 .page > header:hover a { opacity: 1; transform: translateX(0); }
 
-body.home .header-link-home, body.home .header-link-about, body.home .header-link-contact { opacity: 0; }
-@media only screen and (min-width: 768px) { body.home .header-link-work { transform: translateX(55px); } }
-@media only screen and (min-width: 1200px) { body.home .header-link-work { transform: translateX(78px); } }
+body.home .header-link-home, body.home .header-link-about, body.home .header-link-contact, body.page-template-work-parent .header-link-home, body.page-template-work-parent .header-link-about, body.page-template-work-parent .header-link-contact, body.page-template-work-detail .header-link-home, body.page-template-work-detail .header-link-about, body.page-template-work-detail .header-link-contact { opacity: 0; }
+@media only screen and (min-width: 768px) { body.home .header-link-work, body.page-template-work-parent .header-link-work, body.page-template-work-detail .header-link-work { transform: translateX(55px); } }
+@media only screen and (min-width: 1200px) { body.home .header-link-work, body.page-template-work-parent .header-link-work, body.page-template-work-detail .header-link-work { transform: translateX(78px); } }
 
 body.page-template .page > header .title { display: inline-block; font-family: 'Fortescue-Regular'; font-size: 12px; position: absolute; top: 22px; right: 28px; letter-spacing: 2px; }
 @media only screen and (min-width: 768px) { body.page-template .page > header .title { right: 46px; top: 52px; } }
