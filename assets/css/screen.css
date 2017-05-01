@@ -298,6 +298,16 @@ body.page-template-contact .header-link-home, body.page-template-contact .header
 @media only screen and (min-width: 768px) { .page-template-work-detail footer { padding: 18px 0 20px; } }
 @media only screen and (min-width: 1200px) { .page-template-work-detail footer { padding: 24px 0 44px; } }
 
+.page-template-projects .page > header .burgle-the-ham { border-color: #2D2D2C; }
+.page-template-projects .page > header .burgle-the-ham:before { background: #2D2D2C; }
+.page-template-projects .projects-sort-container { padding-top: 57px; }
+@media only screen and (min-width: 768px) { .page-template-projects .projects-sort-container { padding-top: 29px; } }
+@media only screen and (min-width: 1200px) { .page-template-projects .projects-sort-container { padding-top: 43px; } }
+.page-template-projects .footer-row nav a:link, .page-template-projects .footer-row nav a:visited { color: #2D2D2C; }
+@media only screen and (min-width: 768px) { .page-template-projects .footer-row { padding: 0; } }
+@media only screen and (min-width: 768px) { .page-template-projects .footer-row footer { padding: 18px 0 20px; } }
+@media only screen and (min-width: 1200px) { .page-template-projects .footer-row footer { padding: 24px 0 44px; } }
+
 footer { padding-bottom: 18px; text-align: center; }
 footer nav { margin-bottom: 22px; }
 footer nav a { display: inline-block; }

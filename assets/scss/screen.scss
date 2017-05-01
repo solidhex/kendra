@@ -1244,7 +1244,46 @@ body.page-template-contact {
 	}
 }
 
+// Projects page
 
+.page-template-projects {
+	.page > header {
+		.burgle-the-ham {
+			border-color: $dark;
+			&:before {
+				background: $dark;
+			}
+		}
+	}
+	.projects-sort-container {
+		padding-top: 57px;
+		@include respond-to('tablet') {
+			padding-top: 29px;
+		}
+		@include respond-to('laptop') {
+			padding-top: 43px;
+		}
+	}
+	
+	.footer-row {
+		nav {
+			a:link, a:visited {
+				color: $dark;
+			}
+		}
+		@include respond-to('tablet') {
+			padding: 0;
+		}
+		footer {
+			@include respond-to('tablet') {
+				padding: 18px 0 20px;
+			}
+			@include respond-to('laptop') {
+				padding: 24px 0 44px;
+			}
+		}
+	}
+}
 
 // Main footer
 footer {
