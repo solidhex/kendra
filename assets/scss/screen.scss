@@ -47,6 +47,57 @@ h2 {
 	overflow-y: hidden;
 }
 
+.arrows {
+	position: relative;
+	.arrow {
+		position: absolute;
+		display: inline-block;
+		width: 14px;
+		height: 24px;
+		top: 32px;
+		background: transparent url('../img/arrow-mobile.png') 0 0 no-repeat;
+		&.arrow-prev {
+			left: 28px;
+			transform: rotate(180deg);
+		}
+		&.arrow-next {
+			right: 28px;
+		}
+		&:hover {
+			background-position: 0 -24px;
+		}
+		@include respond-to('tablet') {
+			background-image: url('../img/arrow-tablet.png');
+			height: 30px;
+			width: 17px;
+			&.arrow-prev {
+				left: 50px;
+			}
+			&.arrow-next {
+				right: 50px;
+			}
+			&:hover {
+				background-position: 0 -30px;
+			}
+		}
+		@include respond-to('laptop') {
+			width: 25px;
+			height: 46px;
+			background-image: url('../img/arrow-lap.png');
+			top: 58px;
+			&.arrow-prev {
+				left: 90px;
+			}
+			&.arrow-right {
+				right: 90px;
+			}
+			&:hover {
+				background-position: 0 -46px;
+			}
+		}
+	}
+}
+
 .page > header {
 	position: fixed;
 	top: 0;

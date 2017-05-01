@@ -14,6 +14,10 @@
 		</figure>
 	</div>
 	<div class="slider">
+		<div class="arrows">
+			<a href="#" class="arrow arrow-prev"></a>
+			<a href="#" class="arrow arrow-next"></a>
+		</div>
 		<h2>New York Stock Exchange</h2>
 		<div class="intro">Authenticity, vibrancy and joie de vivre drive the brand strategy and 
 graphics for the surf brand Roxy.</div>

@@ -78,6 +78,22 @@
 	
 	$(window).on('load', handleNavContainer);
 	
+	$(document).ready(function () {
+		var $slider = $('.work-image-wrap > .slides').bxSlider({
+			pager: false,
+			controls: false,
+			auto: true,
+			mode: "fade"
+		});
+		
+		$('.slider-wrap').on('click', function (e) {
+			window.console.log(e.type, 'next slide');
+			e.preventDefault();
+			$slider.goToNextSlide();
+		});
+		
+	});
+	
 
 })(jQuery);
 

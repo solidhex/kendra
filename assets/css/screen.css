@@ -30,6 +30,20 @@ a { color: #1F15F0; text-decoration: none; }
 
 .why-scroll { overflow-y: hidden; }
 
+.arrows { position: relative; }
+.arrows .arrow { position: absolute; display: inline-block; width: 14px; height: 24px; top: 32px; background: transparent url("../img/arrow-mobile.png") 0 0 no-repeat; }
+.arrows .arrow.arrow-prev { left: 28px; transform: rotate(180deg); }
+.arrows .arrow.arrow-next { right: 28px; }
+.arrows .arrow:hover { background-position: 0 -24px; }
+@media only screen and (min-width: 768px) { .arrows .arrow { background-image: url("../img/arrow-tablet.png"); height: 30px; width: 17px; }
+  .arrows .arrow.arrow-prev { left: 50px; }
+  .arrows .arrow.arrow-next { right: 50px; }
+  .arrows .arrow:hover { background-position: 0 -30px; } }
+@media only screen and (min-width: 1200px) { .arrows .arrow { width: 25px; height: 46px; background-image: url("../img/arrow-lap.png"); top: 58px; }
+  .arrows .arrow.arrow-prev { left: 90px; }
+  .arrows .arrow.arrow-right { right: 90px; }
+  .arrows .arrow:hover { background-position: 0 -46px; } }
+
 .page > header { position: fixed; top: 0; right: 0; left: 0; min-height: 62px; z-index: 100; }
 .page > header .burger-container { z-index: 100; width: 20px; height: 14px; position: absolute; left: 26px; top: 26px; }
 @media only screen and (min-width: 768px) { .page > header .burger-container { height: 18px; left: 50px; top: 52px; width: 26px; } }
