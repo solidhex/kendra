@@ -30,7 +30,7 @@ a { color: #1F15F0; text-decoration: none; }
 
 .why-scroll { overflow-y: hidden; }
 
-.arrows { position: relative; }
+.arrows { position: relative; z-index: 2; }
 .arrows .arrow { position: absolute; display: inline-block; width: 14px; height: 24px; top: 32px; background: transparent url("../img/arrow-mobile.png") 0 0 no-repeat; }
 .arrows .arrow.arrow-prev { left: 28px; transform: rotate(180deg); }
 .arrows .arrow.arrow-next { right: 28px; }
@@ -301,7 +301,7 @@ body.page-template-contact .header-link-home, body.page-template-contact .header
 .page-template-work-detail .work-detail { background-color: #fff8f2; padding: 74px 0 44px; }
 @media only screen and (min-width: 768px) { .page-template-work-detail .work-detail { padding: 100px 0 38px; } }
 @media only screen and (min-width: 1200px) { .page-template-work-detail .work-detail { padding: 123px 0 70px; } }
-.page-template-work-detail .slider h2 { font-family: 'Fortescue-Regular'; font-size: 28px; line-height: 32px; text-align: center; padding: 26px 64px 0; }
+.page-template-work-detail .slider h2 { font-family: 'Fortescue-Regular'; font-size: 28px; line-height: 32px; text-align: center; padding: 26px 64px 0; position: relative; }
 @media only screen and (min-width: 768px) { .page-template-work-detail .slider h2 { font-size: 48px; line-height: 1; } }
 @media only screen and (min-width: 1200px) { .page-template-work-detail .slider h2 { font-size: 80px; line-height: 1; padding-top: 38px; } }
 .page-template-work-detail .slider .intro { font-size: 20px; line-height: 28px; text-align: center; padding: 16px 62px 0; }

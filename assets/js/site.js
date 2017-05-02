@@ -79,7 +79,7 @@
 	$(window).on('load', handleNavContainer);
 	
 	$(document).ready(function () {
-		var $slider = $('.work-image-wrap > .slides').bxSlider({
+		var $slider = $('.slider-wrap > .slides').bxSlider({
 			pager: false,
 			controls: false,
 			auto: true,
@@ -92,9 +92,31 @@
 			$slider.goToNextSlide();
 		});
 		
+		$('.arrows a').on('click', function (e) {
+			e.preventDefault();
+			if ($(this).hasClass('arrow-prev')) {
+				$slider.goToPrevSlide();
+			} else if ($(this).hasClass('arrow-next')) {
+				$slider.goToNextSlide();
+			}
+		});
+		
 	});
 	
-
+	function workDetailScroll() {
+		var $heading = $('.slider > h2'),
+			offset = $heading.offset();
+		
+			if (window.scrollY >= offset.top) {
+				$heading.animate({
+					top: '-300px'
+				}, 500);
+			}
+		
+	}
+	
+	window.addEventListener('scroll', workDetailScroll);
+	
 })(jQuery);
 
 
