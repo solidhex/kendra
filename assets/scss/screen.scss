@@ -212,6 +212,9 @@ h2 {
 					margin-left: 4px;
 					margin-right: 4px;
 					transition: opacity 0.2s ease-in-out, transform 0.5s ease-in-out;
+					&:hover {
+						@include link-border;
+					}
 				}
 			}
 		}
@@ -243,6 +246,7 @@ h2 {
 		a {
 			opacity: 1;
 			transform: translateX(0);
+			@include link-border;
 		}
 	}
 }
