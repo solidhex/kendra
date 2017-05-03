@@ -8,10 +8,10 @@
 
 
 <div class="work-detail">
-	<div class="work-detail-hero">
-		<figure>
-			<img src="<?php bloginfo( 'template_directory' ); ?>/assets/img/fpo-work-large.jpg">
-		</figure>
+	<div class="work-detail-hero slider-wrap">
+		<div class="slides">
+			<img src="<?php bloginfo( 'template_directory' ); ?>/assets/img/fpo-work-large.jpg"><img src="https://placekitten.com/1440/723" alt="">
+		</div>
 	</div>
 	<div class="slider">
 		<div class="arrows">

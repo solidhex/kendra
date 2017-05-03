@@ -31,15 +31,15 @@ a { color: #1F15F0; text-decoration: none; }
 .why-scroll { overflow-y: hidden; }
 
 .arrows { position: relative; z-index: 2; }
-.arrows .arrow { position: absolute; display: inline-block; width: 14px; height: 24px; top: 32px; background: transparent url("../img/arrow-mobile.png") 0 0 no-repeat; }
+.arrows .arrow { position: absolute; display: inline-block; width: 14px; height: 24px; top: 5px; background: transparent url("../img/arrow-mobile.png") 0 0 no-repeat; }
 .arrows .arrow.arrow-prev { left: 28px; transform: rotate(180deg); }
 .arrows .arrow.arrow-next { right: 28px; }
 .arrows .arrow:hover { background-position: 0 -24px; }
-@media only screen and (min-width: 768px) { .arrows .arrow { background-image: url("../img/arrow-tablet.png"); height: 30px; width: 17px; }
+@media only screen and (min-width: 768px) { .arrows .arrow { background-image: url("../img/arrow-tablet.png"); height: 30px; width: 17px; top: 8px; }
   .arrows .arrow.arrow-prev { left: 50px; }
   .arrows .arrow.arrow-next { right: 50px; }
   .arrows .arrow:hover { background-position: 0 -30px; } }
-@media only screen and (min-width: 1200px) { .arrows .arrow { width: 25px; height: 46px; background-image: url("../img/arrow-lap.png"); top: 58px; }
+@media only screen and (min-width: 1200px) { .arrows .arrow { width: 25px; height: 46px; background-image: url("../img/arrow-lap.png"); top: 20px; }
   .arrows .arrow.arrow-prev { left: 90px; }
   .arrows .arrow.arrow-right { right: 90px; }
   .arrows .arrow:hover { background-position: 0 -46px; } }
@@ -301,12 +301,15 @@ body.page-template-contact .header-link-home, body.page-template-contact .header
 .page-template-work-detail .work-detail { background-color: #fff8f2; padding: 74px 0 44px; }
 @media only screen and (min-width: 768px) { .page-template-work-detail .work-detail { padding: 100px 0 38px; } }
 @media only screen and (min-width: 1200px) { .page-template-work-detail .work-detail { padding: 123px 0 70px; } }
-.page-template-work-detail .slider h2 { font-family: 'Fortescue-Regular'; font-size: 28px; line-height: 32px; text-align: center; padding: 26px 64px 0; position: relative; }
+.page-template-work-detail .slider { padding-top: 31px; }
+@media only screen and (min-width: 768px) { .page-template-work-detail .slider { padding-top: 29px; } }
+@media only screen and (min-width: 1200px) { .page-template-work-detail .slider { padding-top: 42px; } }
+.page-template-work-detail .slider h2 { font-family: 'Fortescue-Regular'; font-size: 28px; line-height: 32px; text-align: center; padding: 0 64px 16px; position: relative; }
 @media only screen and (min-width: 768px) { .page-template-work-detail .slider h2 { font-size: 48px; line-height: 1; } }
-@media only screen and (min-width: 1200px) { .page-template-work-detail .slider h2 { font-size: 80px; line-height: 1; padding-top: 38px; } }
-.page-template-work-detail .slider .intro { font-size: 20px; line-height: 28px; text-align: center; padding: 16px 62px 0; }
-@media only screen and (min-width: 768px) { .page-template-work-detail .slider .intro { font-size: 24px; line-height: 34px; padding-top: 22px; } }
-@media only screen and (min-width: 1200px) { .page-template-work-detail .slider .intro { font-size: 32px; line-height: 40px; padding: 34px 200px 10px; } }
+@media only screen and (min-width: 1200px) { .page-template-work-detail .slider h2 { font-size: 80px; line-height: 1; } }
+.page-template-work-detail .slider .intro { font-size: 20px; line-height: 28px; text-align: center; padding: 0 62px 0; }
+@media only screen and (min-width: 768px) { .page-template-work-detail .slider .intro { font-size: 24px; line-height: 34px; padding-top: 6px; } }
+@media only screen and (min-width: 1200px) { .page-template-work-detail .slider .intro { font-size: 32px; line-height: 40px; padding: 18px 200px 10px; } }
 .page-template-work-detail .footer-row nav a:link, .page-template-work-detail .footer-row nav a:visited { color: #2D2D2C; }
 @media only screen and (min-width: 768px) { .page-template-work-detail .footer-row { padding: 0; } }
 @media only screen and (min-width: 768px) { .page-template-work-detail footer { padding: 18px 0 20px; } }

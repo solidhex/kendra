@@ -55,7 +55,7 @@ h2 {
 		display: inline-block;
 		width: 14px;
 		height: 24px;
-		top: 32px;
+		top: 5px;
 		background: transparent url('../img/arrow-mobile.png') 0 0 no-repeat;
 		&.arrow-prev {
 			left: 28px;
@@ -71,6 +71,7 @@ h2 {
 			background-image: url('../img/arrow-tablet.png');
 			height: 30px;
 			width: 17px;
+			top: 8px;
 			&.arrow-prev {
 				left: 50px;
 			}
@@ -85,7 +86,7 @@ h2 {
 			width: 25px;
 			height: 46px;
 			background-image: url('../img/arrow-lap.png');
-			top: 58px;
+			top: 20px;
 			&.arrow-prev {
 				left: 90px;
 			}
@@ -1240,13 +1241,23 @@ body.page-template-contact {
 		}
 	}
 	
+	
 	.slider {
+		padding-top: 31px;
+		@include respond-to('tablet') {
+			padding-top: 29px;
+		}
+		@include respond-to('laptop') {
+			padding-top: 42px;
+		}
 		h2 {
+//			display: none;
 			font-family: 'Fortescue-Regular';
 			font-size: 28px;
 			line-height: 32px;
 			text-align: center;
-			padding: 26px 64px 0;
+//			padding: 26px 64px 0;
+			padding: 0 64px 16px;
 			position: relative;
 			@include respond-to('tablet') {
 				font-size: 48px;
@@ -1255,23 +1266,23 @@ body.page-template-contact {
 			@include respond-to('laptop') {
 				font-size: 80px;
 				line-height: 1;
-				padding-top: 38px;
 			}
 		}
 		.intro {
 			font-size: 20px;
 			line-height: 28px;
 			text-align: center;
-			padding: 16px 62px 0;
+//			padding: 16px 62px 0;
+			padding: 0 62px 0;
 			@include respond-to('tablet') {
 				font-size: 24px;
 				line-height: 34px;
-				padding-top: 22px;
+				padding-top: 6px;
 			}
 			@include respond-to('laptop') {
 				font-size: 32px;
 				line-height: 40px;
-				padding: 34px 200px 10px;
+				padding: 18px 200px 10px;
 			}
 		}
 	}
