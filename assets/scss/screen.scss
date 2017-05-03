@@ -271,6 +271,29 @@ body.page-template-work-detail {
 	}
 }
 
+body.page-template-work-parent,
+body.page-template-work-detail {
+	.page > header:hover {
+		a.header-link-work {
+			@include link-border;
+			&:before {
+				width: 100%;
+			}
+		}
+	}
+}
+
+// this may get removed...
+body.home {
+	.page > header:hover {
+		a.header-link-home {
+			@include link-border;
+			&:before {
+				width: 100%;
+			}
+		}
+	}
+}
 
 body.page-template {
 	.page > header {
@@ -338,6 +361,14 @@ body.page-template-about {
 				color: #fff;
 			}
 		}
+		&:hover {
+			.header-link-about {
+				@include link-border;
+				&:before {
+					width: 100%;
+				}
+			}
+		}
 	}
 	.header-link-home,
 	.header-link-work,
@@ -356,6 +387,15 @@ body.page-template-about {
 }
 
 body.page-template-contact {
+	
+	.page > header:hover {
+		a.header-link-contact {
+			@include link-border;
+			&:before {
+				width: 100%;
+			}
+		}
+	}
 	
 	.header-link-home,
 	.header-link-work,
