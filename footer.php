@@ -41,9 +41,9 @@
 				<div class="sosumi">
 					<div class="social">
 						<ul>
-							<li><a href="#">Instagram</a></li>
-							<li><a href="#">Pinterest</a></li>
-							<li><a href="#">Linked In</a></li>
+							<li><a href="https://www.instagram.com/kendrainman/" rel="external">Instagram</a></li>
+							<li><a href="https://www.pinterest.com/kendrai/" rel="external">Pinterest</a></li>
+							<li><a href="https://www.linkedin.com/in/kendrainman/" rel="external">Linked In</a></li>
 						</ul>
 					</div>
 					<div class="copyright">
@@ -87,7 +87,22 @@
 			<span class="close">X</span>
 			<div class="category-overlay-content">
 				<div class="cats">
-					<span><a href="#">All</a>,</span> <span><a href="#">Creative Direction</a>,</span> <span><a href="#">Strategy</a>,</span> <span><a href="#">Brand and Identity</a>,</span><span><a href="#">Digital Product</a>,</span> <span><a href="#">Packaging</a>,</span> <span><a href="#">Print</a>,</span> <span><a href="#">Art Direction</a></span>
+					<span><a href="/projects?sort">All</a>, </span>
+					<?php
+						$categories = get_pages( array( 'parent' => 22, 'sort_column' => 'menu_order' ) );
+						$counter = 1;
+						foreach ( $categories as $category ) :
+							//var_dump( $category );
+						$spacer = (count($categories) == $counter) ? '' : ', ' ;
+					?>
+					
+					<span><a href="<?php bloginfo( 'url' ); ?>/projects?sort=<?php echo $category->post_name; ?>"><?php echo $category->post_title; ?></a><?php echo $spacer; ?></span>
+						
+					<?php 
+						$counter++;
+						endforeach; 
+					?>
+				
 				</div>
 			</div>
 		</div>
