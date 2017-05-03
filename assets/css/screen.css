@@ -30,6 +30,8 @@ a { color: #1F15F0; text-decoration: none; }
 
 .why-scroll { overflow-y: hidden; }
 
+.slider-wrap { visibility: hidden; }
+
 .arrows { position: relative; z-index: 2; }
 .arrows .arrow { position: absolute; display: inline-block; width: 14px; height: 24px; top: 5px; background: transparent url("../img/arrow-mobile.png") 0 0 no-repeat; }
 .arrows .arrow.arrow-prev { left: 28px; transform: rotate(180deg); }

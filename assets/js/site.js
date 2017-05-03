@@ -79,14 +79,20 @@
 	$(window).on('load', handleNavContainer);
 	
 	$(document).ready(function () {
+		
+		var $container = $('.slider-wrap');
+		
 		var $slider = $('.slider-wrap > .slides').bxSlider({
 			pager: false,
 			controls: false,
 			auto: true,
-			mode: "fade"
+			mode: "fade",
+			onSliderLoad: function () {
+				$container.css('visibility', 'visible');
+			}
 		});
 		
-		$('.slider-wrap').on('click', function (e) {
+		$($container).on('click', function (e) {
 			window.console.log(e.type, 'next slide');
 			e.preventDefault();
 			$slider.goToNextSlide();
