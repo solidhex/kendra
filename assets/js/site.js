@@ -100,7 +100,6 @@
 		
 		$('.arrows a').on('click', function (e) {
 			e.preventDefault();
-			animateHeading();
 			if ($(this).hasClass('arrow-prev')) {
 				$slider.goToPrevSlide();
 			} else if ($(this).hasClass('arrow-next')) {
@@ -109,33 +108,7 @@
 		});
 		
 	});
-	
-	function animateHeading() {
-		window.console.log('%crun animateHeading', 'background-color: teal');
-	}
-	
-	function workDetailScroll() {
-		var $heading = $('.slider > h2'),
-			offset = $heading.offset();
-		
-			// if (window.scrollY >= offset.top) {
-// 				// console.log(offset.top + 'px');
-// 				//$heading.addClass('animate-top');
-// 				var coords = -(offset.top) + 'px';
-// 				window.console.log(coords);
-// 				$heading.animate({
-// 					top: coords
-// 				}, 350, function () {
-// 					$(this).fadeOut('fast');
-// 				});
-// 			} else {
-// 				$heading.removeClass('animate-top');
-// 			}
-		
-	}
-	
-	window.addEventListener('scroll', workDetailScroll);
-	
+	  
 })(jQuery);
 
 

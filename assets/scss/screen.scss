@@ -63,13 +63,14 @@ h2 {
 		background: transparent url('../img/arrow-mobile.png') 0 0 no-repeat;
 		&.arrow-prev {
 			left: 28px;
-			transform: rotate(180deg);
+			@include transform(rotate(180deg));
 		}
 		&.arrow-next {
 			right: 28px;
 		}
-		&:hover {
-			background-position: 0 -24px;
+		&:hover,
+		&:focus {
+			//background-position: 0 -24px;
 		}
 		@include respond-to('tablet') {
 			background-image: url('../img/arrow-tablet.png');
@@ -448,6 +449,9 @@ body.page-template-contact {
 		}
 		
 		.nav-overlay-content {
+			display: -webkit-flex;
+			-webkit-align-items: center;
+			-webkit-justify-content: center;
 			display: flex;
 			align-items: center;
 			justify-content: center;
@@ -497,7 +501,10 @@ body.page-template-contact {
 			width: 20px;
 		}
 		.category-overlay-content {
+			display: -webkit-flex;
 			display: flex;
+			-webkit-align-items: center;
+			-webkit-justify-content: center;
 			align-items: center;
 			justify-content: center;
 			height: 100%;
@@ -558,7 +565,8 @@ body.page-template-contact {
 		top: 50%;
 		width: 100%;
 		position: absolute;
-		transform: translateY(-50%);
+//		transform: translateY(-50%);
+		@include transform(translateY(-50%));
 		h1 {
 			font: 60px/55px 'Fortescue-Regular';
 			margin: 0 0 2px;
@@ -594,7 +602,7 @@ body.page-template-contact {
 	.down {
 		border: solid #fff;
 		display: inline-block;
-		transform: rotate(45deg);
+		@include transform(rotate(45deg));
 		position: absolute;
 		cursor: pointer;
 		border-width: 0 1px 1px 0;
@@ -698,7 +706,7 @@ body.page-template-contact {
 		margin: 26px 0 0;
 		top: 0;
 		left: 50%;
-		transform: translateX(-50%);
+		@include transform(translateX(-50%));
 		transition: all 200ms cubic-bezier(0.420, 0.000, 0.580, 1.000);
 		span { display: inline-block; }
 		&:hover {

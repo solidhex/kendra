@@ -34,9 +34,8 @@ a { color: #1F15F0; text-decoration: none; }
 
 .arrows { position: relative; z-index: 2; }
 .arrows .arrow { position: absolute; display: inline-block; width: 14px; height: 24px; top: 5px; background: transparent url("../img/arrow-mobile.png") 0 0 no-repeat; }
-.arrows .arrow.arrow-prev { left: 28px; transform: rotate(180deg); }
+.arrows .arrow.arrow-prev { left: 28px; -moz-transform: rotate(180deg); -ms-transform: rotate(180deg); -webkit-transform: rotate(180deg); transform: rotate(180deg); }
 .arrows .arrow.arrow-next { right: 28px; }
-.arrows .arrow:hover { background-position: 0 -24px; }
 @media only screen and (min-width: 768px) { .arrows .arrow { background-image: url("../img/arrow-tablet.png"); height: 30px; width: 17px; top: 8px; }
   .arrows .arrow.arrow-prev { left: 50px; }
   .arrows .arrow.arrow-next { right: 50px; }
@@ -123,14 +122,14 @@ body.page-template-contact .header-link-home, body.page-template-contact .header
 .page .nav-overlay a:link:before, .page .nav-overlay a:visited:before { content: ''; display: inline-block; width: 0; background-color: #FFFF00; position: absolute; height: 6px; top: 50%; left: 0; z-index: 10; transform: translateY(-50%); transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1); }
 .page .nav-overlay a:link:hover:before, .page .nav-overlay a:visited:hover:before { width: 100%; }
 .page .nav-overlay.active { opacity: 1; overflow: hidden; z-index: 1000; }
-.page .nav-overlay .nav-overlay-content { display: flex; align-items: center; justify-content: center; height: 100%; }
+.page .nav-overlay .nav-overlay-content { display: -webkit-flex; -webkit-align-items: center; -webkit-justify-content: center; display: flex; align-items: center; justify-content: center; height: 100%; }
 .page .nav-overlay nav li { font-size: 28px; line-height: 54px; text-align: center; }
 @media only screen and (min-width: 1200px) { .page .nav-overlay nav li { font-size: 36px; display: inline-block; margin-right: 40px; }
   .page .nav-overlay nav li:last-child { margin-right: 0; } }
 .page .category-overlay { background-color: #FFFF00; bottom: 0; left: 0; position: fixed; right: 0; top: 0; opacity: 0; transition: all 250ms cubic-bezier(0.42, 0, 0.58, 1); /* ease-in-out */ z-index: -1; }
 .page .category-overlay.active { opacity: 1; z-index: 1001; }
 .page .category-overlay .close { text-indent: -119988px; overflow: hidden; text-align: left; text-transform: capitalize; background-size: 20px 20px; background: transparent url("../img/cat-close.png") 0 0 no-repeat; cursor: pointer; display: inline-block; height: 20px; position: absolute; right: 26px; top: 32px; width: 20px; }
-.page .category-overlay .category-overlay-content { display: flex; align-items: center; justify-content: center; height: 100%; }
+.page .category-overlay .category-overlay-content { display: -webkit-flex; display: flex; -webkit-align-items: center; -webkit-justify-content: center; align-items: center; justify-content: center; height: 100%; }
 .page .category-overlay .cats { text-align: center; font-size: 30px; line-height: 52px; letter-spacing: 0.45px; }
 .page .category-overlay .cats span { display: block; }
 .page .category-overlay .cats a { color: #2D2D2C; display: inline-block; }
@@ -142,14 +141,14 @@ body.page-template-contact .header-link-home, body.page-template-contact .header
 .home-hero { position: relative; }
 .home-hero .home-hero-media { height: 100vh; max-height: 100%; overflow: hidden; }
 .home-hero .home-hero-media img { height: 100%; left: 0; object-fit: cover; top: 0; width: 100%; }
-.home-hero .home-hero-message { color: #fff; left: 0; text-align: center; top: 50%; width: 100%; position: absolute; transform: translateY(-50%); }
+.home-hero .home-hero-message { color: #fff; left: 0; text-align: center; top: 50%; width: 100%; position: absolute; -moz-transform: translateY(-50%); -ms-transform: translateY(-50%); -webkit-transform: translateY(-50%); transform: translateY(-50%); }
 .home-hero .home-hero-message h1 { font: 60px/55px 'Fortescue-Regular'; margin: 0 0 2px; letter-spacing: 1.6px; }
 @media only screen and (min-width: 768px) { .home-hero .home-hero-message h1 { font-size: 76px; line-height: 76px; margin-bottom: 5px; } }
 @media only screen and (min-width: 1200px) { .home-hero .home-hero-message h1 { font-size: 95px; line-height: 1; letter-spacing: 2px; margin-bottom: 0; } }
 .home-hero .home-hero-message .tagline { font-size: 9px; line-height: 11px; letter-spacing: 1.38px; }
 @media only screen and (min-width: 768px) { .home-hero .home-hero-message .tagline { font-size: 12px; line-height: 15px; letter-spacing: 1.85px; } }
 @media only screen and (min-width: 1200px) { .home-hero .home-hero-message .tagline { font-size: 13px; line-height: 17px; letter-spacing: 2px; } }
-.home-hero .down { border: solid #fff; display: inline-block; transform: rotate(45deg); position: absolute; cursor: pointer; border-width: 0 1px 1px 0; width: 24px; height: 24px; bottom: 66px; left: 50%; }
+.home-hero .down { border: solid #fff; display: inline-block; -moz-transform: rotate(45deg); -ms-transform: rotate(45deg); -webkit-transform: rotate(45deg); transform: rotate(45deg); position: absolute; cursor: pointer; border-width: 0 1px 1px 0; width: 24px; height: 24px; bottom: 66px; left: 50%; }
 @media only screen and (min-width: 768px) { .home-hero .down { border-width: 0 2px 2px 0; width: 30px; height: 30px; } }
 @media only screen and (min-width: 1200px) { .home-hero .down { border-width: 0 3px 3px 0; width: 35px; height: 35px; bottom: 53px; } }
 
@@ -172,7 +171,7 @@ body.page-template-contact .header-link-home, body.page-template-contact .header
 .read-more span { display: block; }
 @media only screen and (min-width: 768px) { .read-more { font-size: 10px; line-height: 12px; top: -1px; margin: 0 0 0 9px; } }
 @media only screen and (min-width: 1200px) { .read-more { margin: 0 0 0 26px; top: -6px; font-size: 14px; line-height: 17px; } }
-.read-more.alt { margin: 26px 0 0; top: 0; left: 50%; transform: translateX(-50%); transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1); }
+.read-more.alt { margin: 26px 0 0; top: 0; left: 50%; -moz-transform: translateX(-50%); -ms-transform: translateX(-50%); -webkit-transform: translateX(-50%); transform: translateX(-50%); transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1); }
 .read-more.alt span { display: inline-block; }
 .read-more.alt:hover { color: #2D2D2C; border-bottom: 1px solid #2D2D2C; }
 @media only screen and (min-width: 768px) { .read-more.alt { margin-top: 32px; } }
