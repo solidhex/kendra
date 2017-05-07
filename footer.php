@@ -12,26 +12,16 @@
 // 							}
 						?>
 						<span>Select a Project &raquo;</span>
+						<?php
+							 $projects = get_pages( array( 'child_of' => 22) );
+						?>
 						<ul>
-							<li><a href="#">Roxy</a></li>
-							<li><a href="#">Dollar Shave Club</a></li>
-							<li><a href="#">New York Stock Exchange</a></li>
-							<li><a href="#">Ebay</a></li>
-							<li><a href="#">Original Juan's</a></li>
-							<li><a href="#">Finalandia Vodka</a></li>
-							<li><a href="#">One Love Organics</a></li>
-							<li><a href="#">Senahill</a></li>
-							<li><a href="#">Senahill</a></li>
-							<li><a href="#">Senahill</a></li>
-							<li><a href="#">Senahill</a></li>
-							<li><a href="#">Senahill</a></li>
-							<li><a href="#">Senahill</a></li>
-							<li><a href="#">Senahill</a></li>
-							<li><a href="#">Senahill</a></li>
-							<li><a href="#">Senahill</a></li>
-							<li><a href="#">Senahill</a></li>
-							<li><a href="#">Senahill</a></li>
-							<li><a href="#">Senahill</a></li>
+							<?php 
+								foreach ($projects as $project): 
+									if ( $project->post_parent == 22 ) continue;
+							?>
+								<li><a href="<?php echo get_page_link( $project->ID ); ?>"><?php echo $project->post_title; ?></a></li>
+							<?php endforeach ?>
 						</ul>
 					</div>
 					<div class="footer-msg">
