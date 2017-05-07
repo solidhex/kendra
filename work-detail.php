@@ -18,7 +18,7 @@
 			<a href="#" class="arrow arrow-prev"></a>
 			<a href="#" class="arrow arrow-next"></a>
 		</div>
-		<h2>New York Stock Exchange</h2>
+		<h2><?php the_title(); ?></h2>
 		<div class="intro"><?php the_block( 'Intro' ); ?></div>
 			<?php while ( have_posts() ) : the_post(); ?>
 				
