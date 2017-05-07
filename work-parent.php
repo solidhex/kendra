@@ -29,19 +29,17 @@
 	<h2>All Projects</h2>
 	<a href="#" class="view-by-category">view projects by category</a>
 	<ul class="project-list">
-		<li>
-			<a href="<?php echo get_page_link( 52 ); ?>"><img src="<?php bloginfo( 'template_directory' ); ?>/assets/img/fpo-work-large.jpg"></a>
-		</li><li>
-			<img src="<?php bloginfo( 'template_directory' ); ?>/assets/img/fpo-work-large.jpg">
-		</li><li>
-			<img src="<?php bloginfo( 'template_directory' ); ?>/assets/img/fpo-work-large.jpg">
-		</li><li>
-			<img src="<?php bloginfo( 'template_directory' ); ?>/assets/img/fpo-work-large.jpg">
-		</li><li>
-			<img src="<?php bloginfo( 'template_directory' ); ?>/assets/img/fpo-work-large.jpg">
-		</li><li>
-			<img src="<?php bloginfo( 'template_directory' ); ?>/assets/img/fpo-work-large.jpg">
-		</li>
+		<?php 
+			$all_projects = get_pages( array( 'child_of' => 22) );
+			foreach ($all_projects as $project) {
+				if ($project->post_parent !== 22) {
+		?>
+			<li><a href="<?php echo get_page_link( $project->ID ); ?>"><?php echo get_the_post_thumbnail($project->ID, 'small'); ?></a></li>
+		<?php 
+				}
+			} 
+		?>
+		
 	</ul>
 </div>
 

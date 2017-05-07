@@ -10,7 +10,7 @@
 <div class="work-detail">
 	<div class="work-detail-hero slider-wrap">
 		<div class="slides">
-			<img src="<?php bloginfo( 'template_directory' ); ?>/assets/img/fpo-work-large.jpg"><img src="https://placekitten.com/1440/723" alt="">
+			<?php echo get_attached_images( array( 'size' => 'large' ) ); ?>
 		</div>
 	</div>
 	<div class="slider">
@@ -19,9 +19,13 @@
 			<a href="#" class="arrow arrow-next"></a>
 		</div>
 		<h2>New York Stock Exchange</h2>
-		<div class="intro">Authenticity, vibrancy and joie de vivre drive the brand strategy and 
-graphics for the surf brand Roxy.</div>
-		<div class="more">Launched in the early 90’s, ROXY is one of the leading surf wear brands. In 2008, my team was challenged to extend the brand from its core surf and snowboarding history into new efforts including lounge wear, athletic wear and a green line; while also keeping the core line vibrant and relevant to the ever changing teen market. Working with artists around the world, we created an archive of imagery that referenced the free spirit and creativity of the ROXY girl. We created relevant campaigns and innovative packaging solutions (like the footwear box which is reversible and meant to be customized and kept as a keepsake box) that increased sales even as the overall economy slowed.</div>
+		<div class="intro"><?php the_block( 'Intro' ); ?></div>
+			<?php while ( have_posts() ) : the_post(); ?>
+				
+				<div class="more"><?php the_content(); ?></div>
+			
+			<?php endwhile; ?>
+		
 		<a href="" class="read-more alt"><span>Read</span> <span>More</span></a>
 	</div>
 	

@@ -1227,9 +1227,11 @@ body.page-template-contact {
 }
 
 .project-list  {
+	@include pie-clearfix;
+	font-size: 0;
 	margin: 16px 0 0 0;
 	padding-bottom: 12px;
-	@include pie-clearfix;
+	text-align: left;
 	li {
 		padding: 0 27px;
 		margin-bottom: 25px;

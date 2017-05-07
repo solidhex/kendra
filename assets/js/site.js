@@ -87,6 +87,8 @@
 			controls: false,
 			auto: true,
 			mode: "fade",
+			speed: 600,
+			hideControlOnEnd: true, 
 			onSliderLoad: function () {
 				$container.css('visibility', 'visible');
 			}

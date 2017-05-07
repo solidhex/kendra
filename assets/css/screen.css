@@ -306,7 +306,7 @@ body.page-template-contact .header-link-home, body.page-template-contact .header
 @media only screen and (min-width: 1200px) { .view-by-category { font-size: 14px; letter-spacing: 2px; } }
 .view-by-category:hover { color: #2D2D2C; }
 
-.project-list { margin: 16px 0 0 0; padding-bottom: 12px; *zoom: 1; }
+.project-list { margin: 16px 0 0 0; padding-bottom: 12px; *zoom: 1; font-size: 0; text-align: left; }
 .project-list:after { content: ""; display: table; clear: both; }
 .project-list li { padding: 0 27px; margin-bottom: 25px; }
 @media only screen and (min-width: 768px) { .project-list li { display: inline-block; margin-bottom: 34px; padding: 0; width: 48.04216867469879%; vertical-align: top; }
