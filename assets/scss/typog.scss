@@ -23,6 +23,19 @@
 }
 
 @font-face {
+	font-family: 'FuturaLight';
+	src: url('../fonts/futura-light/FuturaLight.eot');
+	src: url('../fonts/futura-light/FuturaLight.woff2') format('woff2'),
+		url('../fonts/futura-light/FuturaLight.woff') format('woff'),
+		url('../fonts/futura-light/FuturaLight.ttf') format('truetype'),
+		url('../fonts/futura-light/FuturaLight.svg#FuturaLight') format('svg'),
+		url('../fonts/futura-light/FuturaLight.eot?#iefix') format('embedded-opentype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+@font-face {
 	font-family: 'MaisonNeue-Mono';
 	src: url('../fonts/maison-neue/MaisonNeueTRIAL-Mono.eot');
 	src: url('../fonts/maison-neue/MaisonNeueTRIAL-Mono.woff2') format('woff2'),

@@ -17,6 +17,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 @font-face { font-family: 'Fortescue-Regular'; src: url("../fonts/fortescue-regular/Fortescue-Regular.eot"); src: url("../fonts/fortescue-regular/Fortescue-Regular.woff2") format("woff2"), url("../fonts/fortescue-regular/Fortescue-Regular.woff") format("woff"), url("../fonts/fortescue-regular/Fortescue-Regular.ttf") format("truetype"), url("../fonts/fortescue-regular/Fortescue-Regular.svg#Fortescue-Regular") format("svg"), url("../fonts/fortescue-regular/Fortescue-Regular.eot?#iefix") format("embedded-opentype"); font-weight: normal; font-style: normal; }
 @font-face { font-family: 'Futura-Book'; src: url("../fonts/futura-book/FuturaBT-Book.eot"); src: url("../fonts/futura-book/FuturaBT-Book.woff2") format("woff2"), url("../fonts/futura-book/FuturaBT-Book.woff") format("woff"), url("../fonts/futura-book/FuturaBT-Book.ttf") format("truetype"), url("../fonts/futura-book/FuturaBT-Book.svg#FuturaBT-Book") format("svg"), url("../fonts/futura-book/FuturaBT-Book.eot?#iefix") format("embedded-opentype"); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'FuturaLight'; src: url("../fonts/futura-light/FuturaLight.eot"); src: url("../fonts/futura-light/FuturaLight.woff2") format("woff2"), url("../fonts/futura-light/FuturaLight.woff") format("woff"), url("../fonts/futura-light/FuturaLight.ttf") format("truetype"), url("../fonts/futura-light/FuturaLight.svg#FuturaLight") format("svg"), url("../fonts/futura-light/FuturaLight.eot?#iefix") format("embedded-opentype"); font-weight: normal; font-style: normal; }
 @font-face { font-family: 'MaisonNeue-Mono'; src: url("../fonts/maison-neue/MaisonNeueTRIAL-Mono.eot"); src: url("../fonts/maison-neue/MaisonNeueTRIAL-Mono.woff2") format("woff2"), url("../fonts/maison-neue/MaisonNeueTRIAL-Mono.woff") format("woff"), url("../fonts/maison-neue/MaisonNeueTRIAL-Mono.ttf") format("truetype"), url("../fonts/maison-neue/MaisonNeueTRIAL-Mono.svg#MaisonNeueTRIAL-Mono") format("svg"), url("../fonts/maison-neue/MaisonNeueTRIAL-Mono.eot?#iefix") format("embedded-opentype"); font-weight: normal; font-style: normal; }
 *, *:after, *:before { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
@@ -241,7 +242,7 @@ body.page-template-contact .header-link-home, body.page-template-contact .header
 .page-template-about h2 { font-size: 24px; text-align: center; margin-bottom: 35px; }
 .page-template-about .about-content { padding: 82px 26px 0; }
 .page-template-about .preamble { font-size: 18px; line-height: 26px; margin-bottom: 28px; }
-.page-template-about .skills { font-family: 'MaisonNeue-Mono' monospace; font-size: 9px; text-transform: uppercase; letter-spacing: 1.29px; padding-right: 36px; margin-bottom: 88px; }
+.page-template-about .skills { font-family: 'MaisonNeue-Mono', monospace; font-size: 9px; text-transform: uppercase; letter-spacing: 1.29px; margin-bottom: 88px; }
 .page-template-about .past-clients, .page-template-about .accolades { margin-bottom: 92px; }
 .page-template-about .past-clients p, .page-template-about .accolades p { font-family: 'Fortescue-Regular'; font-size: 28px; line-height: 33px; letter-spacing: 0.2px; }
 @media only screen and (min-width: 768px) { .page-template-about h2 { font-size: 30px; line-height: 35px; }
@@ -252,7 +253,7 @@ body.page-template-contact .header-link-home, body.page-template-contact .header
   .page-template-about .past-clients p, .page-template-about .accolades p { font-size: 48px; line-height: 56px; letter-spacing: 0.2px; } }
 @media only screen and (min-width: 1200px) { .page-template-about h2 { font-size: 36px; line-height: 43px; margin-bottom: 45px; }
   .page-template-about .about-content { padding: 206px 90px 0; }
-  .page-template-about .skills { padding-right: 400px; margin-bottom: 132px; }
+  .page-template-about .skills { padding-right: 300px; margin-bottom: 132px; }
   .page-template-about .preamble { font-size: 36px; line-height: 44px; margin-bottom: 33px; }
   .page-template-about .skills { font-size: 14px; letter-spacing: 2px; line-height: 31px; }
   .page-template-about .past-clients p, .page-template-about .accolades p { font-size: 60px; letter-spacing: 0.2px; line-height: 70px; } }
@@ -306,7 +307,7 @@ body.page-template-contact .header-link-home, body.page-template-contact .header
 @media only screen and (min-width: 1200px) { .view-by-category { font-size: 14px; letter-spacing: 2px; } }
 .view-by-category:hover { color: #2D2D2C; }
 
-.project-list { margin: 16px 0 0 0; padding-bottom: 12px; *zoom: 1; font-size: 0; text-align: left; }
+.project-list { *zoom: 1; font-size: 0; margin: 16px 0 0 0; padding-bottom: 12px; text-align: left; }
 .project-list:after { content: ""; display: table; clear: both; }
 .project-list li { padding: 0 27px; margin-bottom: 25px; }
 @media only screen and (min-width: 768px) { .project-list li { display: inline-block; margin-bottom: 34px; padding: 0; width: 48.04216867469879%; vertical-align: top; }

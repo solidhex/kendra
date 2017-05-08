@@ -954,11 +954,11 @@ body.page-template-contact {
 		margin-bottom: 28px;
 	}
 	.skills {
-		font-family: 'MaisonNeue-Mono' monospace;
+		font-family: 'MaisonNeue-Mono', monospace;
 		font-size: 9px;
 		text-transform: uppercase;
 		letter-spacing: 1.29px;
-		padding-right: 36px;
+		//padding-right: 36px;
 		margin-bottom: 88px;
 	}
 	.past-clients, .accolades {
@@ -1015,7 +1015,7 @@ body.page-template-contact {
 		}
 		
 		.skills {
-			padding-right: 400px;
+			padding-right: 300px;
 			margin-bottom: 132px;
 		}
 		

@@ -32,29 +32,24 @@
 </div>
 <pre>
 	<?php
+	$post_meta = get_post_meta( $post->ID );
 	// $balce = get_post_meta( $post->ID );
 	// echo count( $balce['related'] );
 	// var_dump( $balce['related'] );
-	
+	$related = $post_meta['related'];
+	var_dump( $related );
 	?>
 </pre>
 <div class="projects-sort-container">
 	<h2>Related Projects</h2>
-	<ul class="project-list">
-		<li>
-			<img src="<?php bloginfo( 'template_directory' ); ?>/assets/img/fpo-work-large.jpg">
-		</li><li>
-			<img src="<?php bloginfo( 'template_directory' ); ?>/assets/img/fpo-work-large.jpg">
-		</li><li>
-			<img src="<?php bloginfo( 'template_directory' ); ?>/assets/img/fpo-work-large.jpg">
-		</li><li>
-			<img src="<?php bloginfo( 'template_directory' ); ?>/assets/img/fpo-work-large.jpg">
-		</li><li>
-			<img src="<?php bloginfo( 'template_directory' ); ?>/assets/img/fpo-work-large.jpg">
-		</li><li>
-			<img src="<?php bloginfo( 'template_directory' ); ?>/assets/img/fpo-work-large.jpg">
-		</li>
-	</ul>
+	<?php if ( count($related) > 0 ): ?>
+		<ul class="project-list">
+			<?php foreach ($related as $key => $value) {
+				echo 'work'
+			} ?>
+		</ul>	
+	<?php endif ?>
+	
 	<a href="#" class="view-by-category">view projects by category</a>
 </div>
 
