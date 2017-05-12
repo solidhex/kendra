@@ -24,13 +24,16 @@
 		<?php if ( is_front_page() ): ?>
 			<div class="home-hero">
 				<div class="home-hero-media">
-					<img src="<?php header_image(); ?>" width="<?php echo get_custom_header()->width ?>" height="<?php echo get_custom_header()->height; ?>">
+					<div class="slider-wrap">
+						<div class="slides">
+							<?php echo get_attached_images( array( 'size' => 'xlarge' ) ); ?>
+						</div>
+					</div>
 				</div>
 				<div class="home-hero-message">
 					<h1><?php bloginfo( 'name' ); ?></h1>
 					<span class="tagline"><?php bloginfo( 'description' ); ?></span>
 				</div>
-				<a href="#main"><div class="down"></div></a>
 			</div>
 		<?php endif ?>
 		<div role="main" class="main" id="main">

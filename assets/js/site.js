@@ -82,32 +82,17 @@
 		
 		var $container = $('.slider-wrap');
 		
-		var $slider = $('.slider-wrap > .slides').bxSlider({
+		$('.slider-wrap > .slides').bxSlider({
 			pager: false,
 			controls: false,
 			auto: true,
 			mode: "fade",
-			speed: 600,
+			speed: 5000,
 			hideControlOnEnd: true, 
 			onSliderLoad: function () {
 				$container.css('visibility', 'visible');
 			}
-		});
-		
-		$($container).on('click', function (e) {
-			window.console.log(e.type, 'next slide');
-			e.preventDefault();
-			$slider.goToNextSlide();
-		});
-		
-		$('.arrows a').on('click', function (e) {
-			e.preventDefault();
-			if ($(this).hasClass('arrow-prev')) {
-				$slider.goToPrevSlide();
-			} else if ($(this).hasClass('arrow-next')) {
-				$slider.goToNextSlide();
-			}
-		});
+		});	
 		
 	});
 	  

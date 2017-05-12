@@ -142,7 +142,7 @@ body.page-template-contact .header-link-home, body.page-template-contact .header
 .home-hero { position: relative; }
 .home-hero .home-hero-media { height: 100vh; max-height: 100%; overflow: hidden; }
 .home-hero .home-hero-media img { height: 100%; left: 0; object-fit: cover; top: 0; width: 100%; }
-.home-hero .home-hero-message { color: #fff; left: 0; text-align: center; top: 50%; width: 100%; position: absolute; -moz-transform: translateY(-50%); -ms-transform: translateY(-50%); -webkit-transform: translateY(-50%); transform: translateY(-50%); }
+.home-hero .home-hero-message { color: #fff; left: 0; text-align: center; top: 50%; width: 100%; position: absolute; -moz-transform: translateY(-50%); -ms-transform: translateY(-50%); -webkit-transform: translateY(-50%); transform: translateY(-50%); z-index: 1000; }
 .home-hero .home-hero-message h1 { font: 60px/55px 'Fortescue-Regular'; margin: 0 0 2px; letter-spacing: 1.6px; }
 @media only screen and (min-width: 768px) { .home-hero .home-hero-message h1 { font-size: 76px; line-height: 76px; margin-bottom: 5px; } }
 @media only screen and (min-width: 1200px) { .home-hero .home-hero-message h1 { font-size: 95px; line-height: 1; letter-spacing: 2px; margin-bottom: 0; } }
