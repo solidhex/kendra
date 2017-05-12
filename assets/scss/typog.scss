@@ -34,6 +34,19 @@
 	font-style: normal;
 }
 
+@font-face {
+	font-family: 'FuturaBT-Light';
+	src: url('../fonts/futura-light-regular/FuturaBT-Light.eot');
+	src: url('../fonts/futura-light-regular/FuturaBT-Light.woff2') format('woff2'),
+		url('../fonts/futura-light-regular/FuturaBT-Light.woff') format('woff'),
+		url('../fonts/futura-light-regular/FuturaBT-Light.ttf') format('truetype'),
+		url('../fonts/futura-light-regular/FuturaBT-Light.svg#FuturaBT-Light') format('svg'),
+		url('../fonts/futura-light-regular/FuturaBT-Light.eot?#iefix') format('embedded-opentype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
 
 @font-face {
 	font-family: 'MaisonNeue-Mono';

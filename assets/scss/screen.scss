@@ -28,6 +28,7 @@ body, html {
 	color: $dark;
 	font: 14px/19px 'Futura-Book', sans-serif;
 	height: 100%;
+	-webkit-font-smoothing: antialiased;
 }
 
 
@@ -895,7 +896,7 @@ body.page-template-contact {
 				li {
 					display: inline-block;
 					a:link, a:visited {
-						font-size: 20px;
+						font-size: 24px;
 						color: #fff;
 						@include link-border;
 					}
@@ -909,7 +910,7 @@ body.page-template-contact {
 				display: inline-block;
 				font: 14px 'Fortescue-Regular';
 			}
-			.copyright { font-size: 9px; text-indent: 86px; }
+			.copyright { font-size: 9px; text-indent: 82px; text-align: left; }
 		}
 		.footer-client-links {
 			font-size: 14px;
@@ -927,6 +928,9 @@ body.page-template-contact {
 			span { margin: 0 42px 0 1em; position: static; }
 			a:link, a:visited {
 				@include link-border;
+				&:before {
+					transform: translateY(-50%);
+				}
 			}
 		}
 	}
@@ -1072,12 +1076,12 @@ body.page-template-contact {
 	.contact-content {
 		text-align: center;
 		padding: 146px 0 0 0;
-		min-height: 95vh;
+//		min-height: 100vh;
 		@include respond-to('tablet') {
 			padding-top: 200px;
 		}
 		@include respond-to('laptop') {
-			padding-top: 260px;
+			padding-top: 200px;
 		}
 		h2 {
 			font-size: 9px;
@@ -1135,6 +1139,11 @@ body.page-template-contact {
 			@include respond-to('laptop') {
 				padding-top: 104px;
 			}
+		}
+	}
+	@include respond-to('laptop') {
+		footer .footer-row {
+			padding-top: 0;
 		}
 	}
 }

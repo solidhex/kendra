@@ -45,7 +45,7 @@
 	<?php if ( count($related) > 0 ): ?>
 		<ul class="project-list">
 			<?php foreach ($related as $key => $value) {
-				echo 'work'
+				//echo 'work'
 			} ?>
 		</ul>	
 	<?php endif ?>
