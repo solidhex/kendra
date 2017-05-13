@@ -248,7 +248,7 @@ body.page-template-contact .header-link-home, body.page-template-contact .header
 .page-template-about { background-color: #2D2D2C; color: #fff; }
 .page-template-about h2 { font-size: 24px; text-align: center; margin-bottom: 35px; }
 .page-template-about .about-content { padding: 82px 26px 0; }
-.page-template-about .preamble { font-size: 18px; line-height: 26px; margin-bottom: 28px; }
+.page-template-about .preamble { font-size: 18px; line-height: 26px; margin-bottom: 28px; font-family: 'FuturaLight'; }
 .page-template-about .skills { font-family: 'MaisonNeue-Mono', monospace; font-size: 9px; text-transform: uppercase; letter-spacing: 1.29px; margin-bottom: 88px; }
 .page-template-about .past-clients, .page-template-about .accolades { margin-bottom: 92px; }
 .page-template-about .past-clients p, .page-template-about .accolades p { font-family: 'Fortescue-Regular'; font-size: 28px; line-height: 33px; letter-spacing: 0.2px; }
