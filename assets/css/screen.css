@@ -46,8 +46,8 @@ a { color: #1F15F0; text-decoration: none; }
   .arrows .arrow.arrow-right { right: 90px; }
   .arrows .arrow:hover { background-position: 0 -46px; } }
 
-.page > header { position: fixed; top: 0; right: 0; left: 0; min-height: 62px; z-index: 100; }
-.page > header .burger-container { z-index: 100; width: 20px; height: 14px; position: absolute; left: 26px; top: 26px; }
+.page > header { position: fixed; top: 0; right: 0; left: 0; min-height: 0; z-index: 1002; }
+.page > header .burger-container { z-index: 1002; width: 20px; height: 14px; position: absolute; left: 26px; top: 26px; }
 @media only screen and (min-width: 768px) { .page > header .burger-container { height: 18px; left: 50px; top: 52px; width: 26px; } }
 @media only screen and (min-width: 1200px) { .page > header .burger-container { height: 22px; left: 82px; top: 60px; width: 32px; } }
 .page > header .burgle-the-ham { border: 2px solid #fff; border-style: solid none; cursor: pointer; height: 14px; width: 20px; z-index: 100; }
@@ -122,7 +122,7 @@ body.page-template-contact .header-link-home, body.page-template-contact .header
 .page .nav-overlay a:link, .page .nav-overlay a:visited { color: #2D2D2C; display: inline-block; position: relative; }
 .page .nav-overlay a:link:before, .page .nav-overlay a:visited:before { content: ''; display: inline-block; width: 0; background-color: #FFFF00; position: absolute; height: 6px; top: 50%; left: 0; z-index: 10; transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1); }
 .page .nav-overlay a:link:hover:before, .page .nav-overlay a:visited:hover:before { width: 100%; }
-.page .nav-overlay.active { opacity: 1; overflow: hidden; z-index: 1000; }
+.page .nav-overlay.active { opacity: 1; overflow: hidden; z-index: 1003; }
 .page .nav-overlay .nav-overlay-content { display: -webkit-flex; -webkit-align-items: center; -webkit-justify-content: center; display: flex; align-items: center; justify-content: center; height: 100%; }
 .page .nav-overlay nav li { font-size: 28px; line-height: 54px; text-align: center; }
 @media only screen and (min-width: 1200px) { .page .nav-overlay nav li { font-size: 36px; display: inline-block; margin-right: 40px; }
