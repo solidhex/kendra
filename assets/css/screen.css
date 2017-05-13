@@ -268,13 +268,15 @@ body.page-template-contact .header-link-home, body.page-template-contact .header
   .page-template-about .past-clients p, .page-template-about .accolades p { font-size: 60px; letter-spacing: 0.2px; line-height: 70px; } }
 
 .page-template-contact { background-color: #FAEADA; }
+.page-template-contact .page { display: -webkit-flex; display: -moz-flex; display: -ms-flex; display: -o-flex; display: flex; -webkit-flex-direction: column; flex-direction: column; min-height: 100vh; }
+.page-template-contact .page .main { flex: 1; }
 .page-template-contact .page > header .burgle-the-ham { border-color: #2D2D2C; }
 .page-template-contact .page > header .burgle-the-ham:before { background: #2D2D2C; }
 .page-template-contact .footer-row nav, .page-template-contact .footer-row .title-wrap { display: none; }
 .page-template-contact .footer-row .copyright { text-align: center; text-indent: 0; }
 @media only screen and (min-width: 768px) { .page-template-contact .footer-row .copyright { text-align: left; text-indent: 50px; } }
 @media only screen and (min-width: 1200px) { .page-template-contact .footer-row .copyright { text-indent: 90px; padding-top: 12px; } }
-.page-template-contact .contact-content { text-align: center; padding: 146px 0 0 0; min-height: 95vh; }
+.page-template-contact .contact-content { text-align: center; padding: 146px 0 0 0; }
 @media only screen and (min-width: 768px) { .page-template-contact .contact-content { padding-top: 200px; } }
 @media only screen and (min-width: 1200px) { .page-template-contact .contact-content { padding-top: 260px; } }
 .page-template-contact .contact-content h2 { font-size: 9px; letter-spacing: 1.29px; font-family: 'MaisonNeue-Mono'; text-transform: uppercase; margin-bottom: 18px; }
@@ -282,7 +284,7 @@ body.page-template-contact .header-link-home, body.page-template-contact .header
 .page-template-contact .contact-content a[href^=mailto] { font-size: 20px; }
 @media only screen and (min-width: 768px) { .page-template-contact .contact-content a[href^=mailto] { font-size: 30px; } }
 @media only screen and (min-width: 1200px) { .page-template-contact .contact-content a[href^=mailto] { font-size: 36px; } }
-.page-template-contact .contact-content nav { line-height: 30px; margin-bottom: 98px; }
+.page-template-contact .contact-content nav { line-height: 30px; }
 .page-template-contact .contact-content nav a:link, .page-template-contact .contact-content nav a:visited { display: block; font-size: 28px; color: #2D2D2C; margin-bottom: 24px; }
 @media only screen and (min-width: 768px) { .page-template-contact .contact-content nav a:link, .page-template-contact .contact-content nav a:visited { display: inline-block; }
   .page-template-contact .contact-content nav a:link:nth-child(2), .page-template-contact .contact-content nav a:visited:nth-child(2) { margin-right: 32px; margin-left: 32px; } }
