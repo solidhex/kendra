@@ -550,12 +550,55 @@ body.page-template-contact {
 		height: 100vh;
 		max-height: 100%;
 		overflow: hidden;
+		.bx-wrapper, 
+		.bx-viewport, 
+		.slides,
+		div {
+			height: 100vh !important;
+			max-height: 100% !important;
+			overflow: hidden !important;
+			width: 100% !important;
+		}
 		img {
 			height: 100%;
 			left: 0;
 			object-fit: cover;
 			top: 0;
 			width: 100%;
+		}
+	}
+	.controls {
+		position: absolute;
+		background: transparent;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		z-index: 1001;
+		.control {
+			position: absolute;
+			height: 100%;
+			display: block;
+			width: 50%;
+			@include hide-text;
+			&#slider-prev {
+				left: 0;
+				a {
+					display: block;
+					cursor: w-resize;
+					height: 100%;
+					width: 100%;
+				}
+			}
+			&#slider-next {
+				right: 0;
+				a {
+					display: block;
+					cursor: e-resize;
+					height: 100%;
+					width: 100%;
+				}
+			}
 		}
 	}
 	.home-hero-message {

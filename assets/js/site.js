@@ -82,13 +82,13 @@
 		
 		var $container = $('.slider-wrap');
 		
-		$('.slider-wrap > .slides').bxSlider({
+		$('.home-hero-media > .slides').bxSlider({
 			pager: false,
-			controls: false,
-			auto: true,
+			auto: false,
 			mode: "fade",
-			speed: 5000,
-			hideControlOnEnd: true, 
+			speed: 800,
+			nextSelector: '#slider-next',
+			prevSelector: '#slider-prev',
 			onSliderLoad: function () {
 				$container.css('visibility', 'visible');
 			}

@@ -24,11 +24,13 @@
 		<?php if ( is_front_page() ): ?>
 			<div class="home-hero">
 				<div class="home-hero-media">
-					<div class="slider-wrap">
-						<div class="slides">
-							<?php echo get_attached_images( array( 'size' => 'xlarge' ) ); ?>
-						</div>
+					<div class="slides">
+						<?php echo get_attached_images( array( 'size' => 'xlarge', 'prepend' => '<div>', 'append' => '</div>' ) ); ?>
 					</div>
+				</div>
+				<div class="controls">
+					<span class="control" id="slider-prev"></span>
+					<span class="control" id="slider-next"></span>
 				</div>
 				<div class="home-hero-message">
 					<h1><?php bloginfo( 'name' ); ?></h1>
