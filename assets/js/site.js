@@ -36,7 +36,7 @@
 		
 	}
 	
-	window.addEventListener('scroll', handleNavContainer);
+	//window.addEventListener('scroll', handleNavContainer);
 	
 	$('.down').on('click', function (e) {
 
@@ -76,7 +76,7 @@
 		window.open($(this).attr('href'));
 	});
 	
-	$(window).on('load', handleNavContainer);
+	//$(window).on('load', handleNavContainer);
 	
 	$(document).ready(function () {
 		
@@ -91,6 +91,7 @@
 			prevSelector: '#slider-prev',
 			onSliderLoad: function () {
 				$container.css('visibility', 'visible');
+				$('.loader').remove();
 			}
 		});	
 		

@@ -23,7 +23,8 @@
 		</header>
 		<?php if ( is_front_page() ): ?>
 			<div class="home-hero">
-				<div class="home-hero-media">
+				<div class="loader"><img src="<?php bloginfo( 'template_directory' ); ?>/assets/img/loader.gif" alt=""></div>
+				<div class="home-hero-media slider-wrap">
 					<div class="slides">
 						<?php echo get_attached_images( array( 'size' => 'xlarge', 'prepend' => '<div>', 'append' => '</div>' ) ); ?>
 					</div>
