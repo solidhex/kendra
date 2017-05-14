@@ -250,7 +250,7 @@ body.page-template-contact .header-link-home, body.page-template-contact .header
 .page-template-about { background-color: #2D2D2C; color: #fff; }
 .page-template-about h2 { font-size: 24px; text-align: center; margin-bottom: 35px; }
 .page-template-about .about-content { padding: 82px 26px 0; }
-.page-template-about .preamble { font-size: 18px; line-height: 26px; margin-bottom: 28px; font-family: 'FuturaBT-Light'; }
+.page-template-about .preamble { font-size: 18px; line-height: 26px; margin-bottom: 28px; }
 .page-template-about .skills { font-family: 'MaisonNeue-Mono', monospace; font-size: 9px; text-transform: uppercase; letter-spacing: 1.29px; margin-bottom: 88px; }
 .page-template-about .past-clients, .page-template-about .accolades { margin-bottom: 92px; }
 .page-template-about .past-clients p, .page-template-about .accolades p { font-family: 'Fortescue-Regular'; font-size: 28px; line-height: 33px; letter-spacing: 0.2px; }
@@ -263,9 +263,9 @@ body.page-template-contact .header-link-home, body.page-template-contact .header
 @media only screen and (min-width: 1200px) { .page-template-about h2 { font-size: 36px; line-height: 43px; margin-bottom: 45px; }
   .page-template-about .about-content { padding: 206px 90px 0; }
   .page-template-about .skills { padding-right: 300px; margin-bottom: 132px; }
-  .page-template-about .preamble { font-size: 36px; line-height: 44px; margin-bottom: 33px; }
+  .page-template-about .preamble { font-size: 36px; line-height: 44px; margin-bottom: 33px; letter-spacing: 0.45px; }
   .page-template-about .skills { font-size: 14px; letter-spacing: 2px; line-height: 31px; }
-  .page-template-about .past-clients p, .page-template-about .accolades p { font-size: 60px; letter-spacing: 0.2px; line-height: 70px; } }
+  .page-template-about .past-clients p, .page-template-about .accolades p { font-size: 60px; letter-spacing: 0.45px; line-height: 70px; } }
 
 .page-template-contact { background-color: #FAEADA; }
 .page-template-contact .page { display: -webkit-flex; display: -moz-flex; display: -ms-flex; display: -o-flex; display: flex; -webkit-flex-direction: column; flex-direction: column; min-height: 100vh; }

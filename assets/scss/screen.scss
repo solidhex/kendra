@@ -1003,7 +1003,7 @@ body.page-template-contact {
 		font-size: 18px;
 		line-height: 26px;
 		margin-bottom: 28px;
-		font-family: 'FuturaBT-Light';
+		//font-family: 'FuturaBT-Light';
 	}
 	.skills {
 		font-family: 'MaisonNeue-Mono', monospace;
@@ -1075,6 +1075,7 @@ body.page-template-contact {
 			font-size: 36px;
 			line-height: 44px;
 			margin-bottom: 33px;
+			letter-spacing: 0.45px;
 		}
 		
 		.skills {
@@ -1085,7 +1086,7 @@ body.page-template-contact {
 		.past-clients p,
 		.accolades p {
 			font-size: 60px;
-			letter-spacing: 0.2px;
+			letter-spacing: 0.45px;
 			line-height: 70px;
 		}
 	}
