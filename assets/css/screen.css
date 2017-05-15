@@ -127,7 +127,7 @@ body.page-id-18 .header-link-home, body.page-id-18 .header-link-work, body.page-
   .page .category-overlay .cats span { display: inline-block; } }
 
 .home-hero { position: relative; }
-.home-hero .loader { width: 32px; height: 32px; position: absolute; top: 50%; left: 50%; }
+.home-hero .loader { width: 32px; height: 32px; position: absolute; top: 50%; left: 50%; margin-top: -16px; margin-left: -16px; }
 .home-hero .home-hero-media { height: 100vh; max-height: 100%; overflow: hidden; }
 .home-hero .home-hero-media .bx-wrapper, .home-hero .home-hero-media .bx-viewport, .home-hero .home-hero-media .slides, .home-hero .home-hero-media div { height: 100vh !important; max-height: 100% !important; overflow: hidden !important; width: 100% !important; }
 .home-hero .home-hero-media img { height: 100%; left: 0; object-fit: cover; top: 0; width: 100%; }
