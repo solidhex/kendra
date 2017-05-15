@@ -1,54 +1,4 @@
 (function($) {
-
-	var readMoreLink = $('.read-more');
-	
-	function handleLink(e) {
-		e. preventDefault();
-		
-		var target = $('.more');
-		
-		if (!target.hasClass('showing')) {
-			target.addClass('showing');
-			readMoreLink.html('<span>Read</span> <span>Less</span>');
-		} else {
-			target.removeClass('showing');
-			readMoreLink.html('<span>Read</span> <span>More</span>');
-		}
-		
-	}
-	
-	readMoreLink.on('click', handleLink);
-	
-	
-	function handleNavContainer() {
-		
-		if ($('body').hasClass('home')) {
-			var mainDiv = $('.main'),
-				mainOffset = mainDiv.offset(),
-				header = $('.page > header');
-				
-				if (window.scrollY >=  mainOffset.top - header.height()) {
-					header.addClass('alt');
-				} else {
-					header.removeClass('alt');
-				}
-		}
-		
-	}
-	
-	//window.addEventListener('scroll', handleNavContainer);
-	
-	$('.down').on('click', function (e) {
-
-		e.preventDefault();
-		
-		var workDiv = $('.work'),
-			offset = workDiv.offset().top;
-
-		$('html, body').animate({
-			scrollTop: offset
-		}, 500);
-	});
 	
 	$('.burger-container').on('click', function (e) {
 		e.preventDefault();
@@ -75,9 +25,7 @@
 		e.preventDefault();
 		window.open($(this).attr('href'));
 	});
-	
-	//$(window).on('load', handleNavContainer);
-	
+		
 	$(document).ready(function () {
 		
 		var $container = $('.slider-wrap');
@@ -98,5 +46,3 @@
 	});
 	  
 })(jQuery);
-
-

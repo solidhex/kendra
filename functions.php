@@ -57,7 +57,7 @@ function kendra_scripts()
 	wp_enqueue_style( 'screen', get_template_directory_uri() . '/assets/css/screen.css' );
 	
 	// Theme JS
-	wp_enqueue_script(	'site', get_template_directory_uri() . '/assets/js/site.js', array('jquery'), false, true	);
+	wp_enqueue_script(	'site', get_template_directory_uri() . '/assets/js/min/site-min.js', array('jquery'), false, true	);
 	wp_enqueue_script(	'bxslider', get_template_directory_uri() . '/assets/js/jquery.bxslider.min.js', array('jquery'), false, true );
 }
 
