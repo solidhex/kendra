@@ -8,6 +8,7 @@ $link: #994B3F;
 $fullnavBg: #FFEBDB;
 $lightRose: #fff8f2;
 $yeller: #FFFF00;
+$bluer: #457FFA;
 
 // Import typography
 
@@ -281,8 +282,8 @@ body.page-template {
 					color: $dark; 
 					margin-right: 4px;
 					margin-left: 4px;
-					border-bottom: 3px solid transparent;
-					padding-bottom: 3px;
+					border-bottom: 6px solid transparent;
+					padding-bottom: 6px;
 				}
 			}
 		}
@@ -771,7 +772,7 @@ body.page-id-18 {
 			}
 			@include respond-to('laptop') {
 				text-indent: 90px;
-				padding-top: 12px;
+				padding-top: 2px;
 			}
 		}
 	}
@@ -940,6 +941,7 @@ footer {
 				position: relative;
 				top: 5px;
 				text-indent: 90px;
+				padding-top: 2px
 			}
 			.title-wrap {
 				position: relative;
