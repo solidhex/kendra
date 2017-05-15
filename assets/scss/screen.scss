@@ -199,9 +199,7 @@ h2 {
 	}
 }
 
-body.home,
-body.page-template-work-parent, 
-body.page-template-work-detail {
+body.page-id-22 {
 	
 	.header-link-home,
 	.header-link-about,
@@ -283,6 +281,8 @@ body.page-template {
 					color: $dark; 
 					margin-right: 4px;
 					margin-left: 4px;
+					border-bottom: 3px solid transparent;
+					padding-bottom: 3px;
 				}
 			}
 		}
@@ -346,7 +346,7 @@ body.page-template-about {
 	}
 }
 
-body.page-template-contact {
+body.page-id-18 {
 	
 	.page > header:hover {
 		a.header-link-contact {
@@ -778,14 +778,14 @@ body.page-template-contact {
 	.contact-content {
 		text-align: center;
 		//padding: 146px 0 0 0;
-		padding: 84px 0 0;
+		padding: 78px 0 0;
 		@include respond-to('tablet') {
 			//padding-top: 200px;
-			padding-top: 130px;
+			padding-top: 124px;
 		}
 		@include respond-to('laptop') {
 			//padding-top: 260px;
-			padding-top: 186px;
+			padding-top: 180px;
 		}
 		h2 {
 			font-size: 9px;
