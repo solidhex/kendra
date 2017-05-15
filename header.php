@@ -26,7 +26,7 @@
 				<div class="loader"><img src="<?php bloginfo( 'template_directory' ); ?>/assets/img/loader.gif" alt=""></div>
 				<div class="home-hero-media slider-wrap">
 					<div class="slides">
-						<?php echo get_attached_images( array( 'size' => 'xlarge', 'prepend' => '<div>', 'append' => '</div>', 'orderby' => 'menu_order', 'order' => 'ASC' ) ); ?>
+						<?php echo get_attached_images( array( 'size' => 'full', 'prepend' => '<div>', 'append' => '</div>', 'orderby' => 'menu_order', 'order' => 'ASC' ) ); ?>
 					</div>
 				</div>
 				<div class="controls">

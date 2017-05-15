@@ -274,7 +274,6 @@ body.page-template-contact .header-link-home, body.page-template-contact .header
 .page-template-contact .page > header .burgle-the-ham { border-color: #2D2D2C; }
 .page-template-contact .page > header .burgle-the-ham:before { background: #2D2D2C; }
 .page-template-contact .footer-row { padding-bottom: 18px; }
-.page-template-contact .footer-row nav, .page-template-contact .footer-row .title-wrap { display: none; }
 .page-template-contact .footer-row .copyright { text-align: center; text-indent: 0; }
 @media only screen and (min-width: 768px) { .page-template-contact .footer-row .copyright { text-align: left; text-indent: 50px; } }
 @media only screen and (min-width: 1200px) { .page-template-contact .footer-row .copyright { text-indent: 90px; padding-top: 12px; } }
