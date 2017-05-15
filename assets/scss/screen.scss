@@ -51,60 +51,6 @@ h2 {
 	visibility: hidden;
 }
 
-.arrows {
-	position: relative;
-	z-index: 2;
-	.arrow {
-		position: absolute;
-		display: inline-block;
-		width: 14px;
-		height: 24px;
-		top: 5px;
-		background: transparent url('../img/arrow-mobile.png') 0 0 no-repeat;
-		&.arrow-prev {
-			left: 28px;
-			@include transform(rotate(180deg));
-		}
-		&.arrow-next {
-			right: 28px;
-		}
-		&:hover,
-		&:focus {
-			//background-position: 0 -24px;
-		}
-		@include respond-to('tablet') {
-			background-image: url('../img/arrow-tablet.png');
-			height: 30px;
-			width: 17px;
-			top: 8px;
-			&.arrow-prev {
-				left: 50px;
-			}
-			&.arrow-next {
-				right: 50px;
-			}
-			&:hover {
-				background-position: 0 -30px;
-			}
-		}
-		@include respond-to('laptop') {
-			width: 25px;
-			height: 46px;
-			background-image: url('../img/arrow-lap.png');
-			top: 20px;
-			&.arrow-prev {
-				left: 90px;
-			}
-			&.arrow-right {
-				right: 90px;
-			}
-			&:hover {
-				background-position: 0 -46px;
-			}
-		}
-	}
-}
-
 .page > header {
 	position: fixed;
 	top: 0;
@@ -223,6 +169,7 @@ h2 {
 			nav {
 				padding-top: 55px;
 				font-size: 36px;
+				line-height: 38px;
 				a {
 					margin-right: 12px;
 					margin-left: 12px;
@@ -341,8 +288,9 @@ body.page-template {
 		}
 		@include respond-to('laptop') {
 			nav {
-				padding-top: 55px;
+				padding-top: 49px;
 				font-size: 36px;
+				line-height: 38px;
 				a {
 					margin-right: 12px;
 					margin-left: 12px;
@@ -350,12 +298,23 @@ body.page-template {
 			}
 		}
 	}
+	.footer-row {
+		padding-bottom: 12px;
+	}
 }
 
 
 
 body.page-template-about {
 	.page > header {
+		min-height: 62px;
+		background-color: $dark;
+		@include respond-to('tablet') {
+			min-height: 124px;
+		}
+		@include respond-to('laptop') {
+				min-height: 140px;
+		}
 		nav {
 			a:link,
 			a:visited {
@@ -459,8 +418,10 @@ body.page-template-contact {
 		}
 		nav li {
 			font-size: 28px;
-			line-height: 54px;
+			line-height: 30px;
+			//line-height: 54px;
 			text-align: center;
+			margin-bottom: 28px;
 		}
 		
 		@include respond-to('laptop') {
@@ -650,340 +611,6 @@ body.page-template-contact {
 			}
 		}
 	}
-	.down {
-		border: solid #fff;
-		display: inline-block;
-		@include transform(rotate(45deg));
-		position: absolute;
-		cursor: pointer;
-		border-width: 0 1px 1px 0;
-		width: 24px;
-		height: 24px;
-		bottom: 66px;
-		left: 50%;
-		@include respond-to('tablet') {
-			border-width: 0 2px 2px 0;
-			width: 30px;
-			height: 30px;
-		}
-		@include respond-to('laptop') {
-			border-width: 0 3px 3px 0;
-			width: 35px;
-			height: 35px;
-			bottom: 53px;
-		}
-	}
-}
-
-// Home page work section
-.work {
-	background-color: #fdf8f2;
-	min-height: 100vh;
-	padding-top: 108px;
-	@include respond-to('tablet') {
-		padding-top: 136px;
-	}
-	@include respond-to('laptop') {
-		padding-top: 142px;
-	}
-}
-
-.work-heading {
-	padding-top: 32px;
-	@include respond-to('tablet') {
-		padding: 16px 0 0 0;
-	}
-	@include respond-to('laptop') {
-		padding: 64px 0 0 0;
-	}
-	h2 {
-		font-family: 'Fortescue-Regular', sans-serif;
-		position: relative;
-		font-size: 28px;
-		line-height: 33px;
-		margin-bottom: 26px;
-		padding: 0 18px;
-		@include respond-to('tablet') {
-			font-size: 48px;
-			line-height: 51px;
-			padding: 0 28px 0 55px;
-			margin-bottom: 28px;
-		}
-		@include respond-to('laptop') {
-			font-size: 80px;
-			line-height: 82px;
-			margin: 0 0 60px;
-			padding: 0 72px;
-		}
-	}
-}
-
-.work-image-wrap {
-	margin: 0 auto;
-	padding: 0 27px;
-	@include respond-to('tablet') {
-		padding: 0;
-		max-width: 506px;
-	}
-	@include respond-to ('laptop') {
-		max-width: 791px;
-		padding: 0;
-	}
-}
-
-.read-more {
-	display: inline-block;
-	font-family: 'MaisonNeue-Mono', monospace;
-	position: relative;
-	text-transform: uppercase;
-	font-size: 9px;
-	line-height: 11px;
-	margin: 0 0 0 9px;
-	top: 1px;
-	span { display: block; }
-	@include respond-to('tablet') {
-		font-size: 10px;
-		line-height: 12px;
-		top: -1px;
-		margin: 0 0 0 9px;
-	}
-	@include respond-to('laptop') {
-		margin: 0 0 0 26px;
-		top: -6px;
-		font-size: 14px;
-		line-height: 17px;
-	}
-	&.alt {
-		margin: 26px 0 0;
-		top: 0;
-		left: 50%;
-		@include transform(translateX(-50%));
-		transition: all 200ms cubic-bezier(0.420, 0.000, 0.580, 1.000);
-		span { display: inline-block; }
-		&:hover {
-			color: $dark;
-			border-bottom: 1px solid $dark;
-		}
-		@include respond-to('tablet') {
-			margin-top: 32px;
-		}
-	}
-}
-
-.more {
-	max-height: 0;
-	overflow: hidden;
-	transition: all 300ms cubic-bezier(0.420, 0.000, 0.580, 1.000); /* ease-in-out */
-	margin: 0 auto;
-	padding-bottom: 0;
-	font-size: 16px;
-	line-height: 24px;
-	padding-left: 27px;
-	padding-right: 27px;
-	&.showing {
-		max-height: 1000px;
-		padding-bottom: 56px;
-	}
-	@include respond-to('tablet') {
-		font-size: 18px;
-		line-height: 28px;
-		padding-right: 0;
-		padding-left: 0;
-		max-width: 612px;
-	}
-	@include respond-to('laptop') {
-		font-size: 24px;
-		line-height: 36px;
-		max-width: 1058px;
-		padding-left: 0;
-		padding-right: 0;
-		&.showing {
-			padding-bottom: 96px;
-		}
-	}
-}
-
-.work-detail {
-	.more {}
-	.showing {
-		padding-bottom: 8px;
-		padding-top: 30px;
-	}
-}
-
-// Home Footer
-.home footer {
-	background-color: $dark;
-	color: #fff;
-	padding-top: 40px;
-	padding-bottom: 16px;
-	text-align: left;
-	.footer-client-links {
-		// going mobile
-		font-size: 12px;
-		font-family: 'MaisonNeue-Mono', monospace;
-		text-transform: uppercase;
-		letter-spacing: 1.71px;
-		span { 
-			display: block;
-			text-align: center; 
-			margin-bottom: 22px;
-		}	
-		a:link, a:visited {
-			color: #fff;
-		}
-		li {
-			line-height: 28px;
-			padding: 0 28px 0 28px;
-		}
-	}
-	
-	.footer-link-msg-wrap {
-		h2 {
-			font-size: 28px;
-			line-height: 30px;
-			padding: 68px 0 72px 28px;
-		}
-	}
-	
-	.sosumi {
-		.title-wrap {
-			display: none;
-		}
-		.social {
-			text-align: center;
-			margin-bottom: 20px;
-			li { 
-				display: inline-block; 
-				&:nth-child(2) {
-					margin-left: 16px;
-					margin-right: 16px;
-				}
-			}
-			a:link, a:visited {
-				color: #fff;
-				font-size: 16px;
-			}
-		}
-		.copyright {
-			font-size: 9px;
-			text-align: center;
-		}
-	}
-	
-	@include respond-to('tablet') {
-		padding: 0 0 34px;
-		.footer-link-msg-wrap {
-			display: flex;
-			align-items: center;
-		}
-		.footer-client-links {
-			flex: 1;
-			order: 2;
-			position: relative;
-			padding: 66px 0 0 0;
-			span { position: absolute; top: 70px; left: -178px; }
-			li { padding: 0 18px; }
-		}
-		.footer-msg {
-			flex: 1;
-			order: 1;
-			h2 {
-				padding: 0 0 0 50px;
-				font-size: 30px;
-				line-height: 36px;
-			}
-		}
-		.sosumi {
-			display: flex;
-			padding: 68px 0 0 0;
-			.copyright, .title-wrap, .social { display: block; flex: 1; }
-			.copyright { order: 1; text-indent: 50px; position: relative; top: 3px; }
-			.title-wrap { text-align: right; order: 3; }
-			.social {
-				order: 2;
-				margin-bottom: 0;
-				text-align: center;
-				ul { margin-left: 24px; }
-			}
-			.title {
-				font: 12px 'Fortescue-Regular';
-				letter-spacing: 2px;
-				padding-right: 50px;
-			}
-		}
-	}
-	
-	
-	@include respond-to('laptop') {
-		padding: 0 0 32px 0;
-		.footer-link-msg-wrap {
-			display: flex;
-			align-items: center;
-			> * {
-				flex: 1;
-			}
-			.footer-msg {
-				text-indent: 86px;
-				order: 1;
-				h2 {
-					padding: 0;
-					font-size: 36px;
-				}
-			}
-		}
-		.sosumi {
-			display: flex;
-			padding: 105px 0 0 0;
-			.copyright, .title-wrap { display: block; flex: 1; }
-			.copyright {
-				order: 1;
-			}
-			.title-wrap { text-align: right; order: 3; }
-			.social { flex: 2; order: 2; }
-			.social {
-				text-align: center;
-				li {
-					display: inline-block;
-					a:link, a:visited {
-						font-size: 20px;
-						color: #fff;
-						@include link-border;
-					}
-				}
-				ul li:nth-child(2) {
-					margin: 0 28px;
-				}
-			}
-			.title {
-				margin-right: 90px;
-				display: inline-block;
-				font: 14px 'Fortescue-Regular';
-			}
-			.copyright { font-size: 9px; text-indent: 86px; }
-		}
-		.footer-client-links {
-			font-size: 14px;
-			line-height: 32px;
-			letter-spacing: 2px;
-			padding: 62px 0 0 0;
-			order: 2;
-			span, ul {
-				float: left;
-			}
-			li {
-				line-height: 32px;
-				padding: 0;
-			}
-			span { margin: 0 42px 0 1em; position: static; }
-			a:link, a:visited {
-				@include link-border;
-			}
-		}
-	}
-	@include respond-to('desktop') {
-		.footer-client-links span { margin-left: 0; }
-	}
 }
 
 // About 
@@ -1121,9 +748,19 @@ body.page-template-contact {
 	}
 	background-color: $fullnavBg;
 	.footer-row {
-		padding-bottom: 18px;
-		nav, .title-wrap {
+		nav,
+		.title-wrap {
+			display: none;
+			@include respond-to('laptop') {
+				display: block;
+			}
+		}
+		nav {
 			//display: none;
+			a:link,
+			a:visited {
+				color: $dark;
+			}
 		}
 		.copyright { 
 			text-align: center;
@@ -1211,272 +848,7 @@ body.page-template-contact {
 }
 
 // Work page
-.page-template-work-parent {
-	.page > header {
-		.burgle-the-ham {
-			border-color: $dark;
-			&:before {
-				background: $dark;
-			}
-		}
-	}
-	.work-parent {
-		background-color: $lightRose;
-	}
-	.work-parent-content {
-		padding-top: 94px;
-		@include respond-to('tablet') {
-			padding: 136px 0 0 0;
-		}
-	}
-	
-	.work-feature {
-		.work-feature-copy {
-			padding-top: 22px;
-		}
-	}
-	
-	.footer-row {
-		nav {
-			a:link, a:visited {
-				color: $dark;
-			}
-		}
-		@include respond-to('tablet') {
-			padding: 0;
-		}
-	}
-	
-	footer {
-		@include respond-to('tablet') {
-			padding: 18px 0 20px;
-		}
-		@include respond-to('laptop') {
-			padding: 24px 0 44px;
-		}
-	}
-}
 
-// Sort
-
-.projects-sort-container {
-	text-align: center;
-	padding: 22px 0 0 0;
-	@include respond-to('tablet') {
-		padding: 34px 52px 0 52px;
-	}
-	@include respond-to('laptop') {
-		padding: 52px 88px 0 88px;
-	}
-	h2 {
-		font-size: 28px;
-		line-height: 58px;
-		margin-bottom: -3px;
-		@include respond-to('tablet') {
-			margin-bottom: 0;
-		}
-		@include respond-to('laptop') {
-			font-size: 36px;
-			margin-bottom: 18px;
-		}
-	}
-}
-
-.view-by-category {
-	font-family: 'MaisonNeue-Mono';
-	font-size: 10px;
-	letter-spacing: 1.43px;
-	text-transform: uppercase;
-	transition: color 200ms cubic-bezier(0.420, 0.000, 0.580, 1.000);
-	@include respond-to('laptop') {
-		font-size: 14px;
-		letter-spacing: 2px;
-	}
-	&:hover {
-		color: $dark;
-	}
-}
-
-.project-list  {
-	@include pie-clearfix;
-	font-size: 0;
-	margin: 16px 0 0 0;
-	padding-bottom: 12px;
-	text-align: left;
-	li {
-		padding: 0 27px;
-		margin-bottom: 25px;
-		@include respond-to('tablet') {
-			display: inline-block;
-			margin-bottom: 34px;
-			padding: 0;
-			width: 48.04216867469879%;
-			vertical-align: top;
-			//width: 319px;
-			
-			&:nth-child(2n+2) {
-				margin-left: 3.91566265060241%;
-				//margin-right: 3.91566265060241%;
-			}
-		}
-		@include respond-to('laptop') {
-			&:nth-child(2n+2) {
-				margin-left: 0;
-			}
-			width: 31.116389548693586%;
-			margin-right: 3.32541567695962%;
-			&:nth-child(3n+3) {
-				margin-right: 0;
-			}
-		}
-		img { display: block; }
-	}
-	@include respond-to('tablet') {
-		margin-top: 21px;
-	}
-	@include respond-to('laptop') {
-		margin-top: 36px;
-	}
-	+ .view-by-category {
-		margin-top: 5px;
-		margin-bottom: 64px;
-		display: inline-block;
-		@include respond-to('tablet') {
-			margin-top: -1px;
-			margin-bottom: 46px;
-		}
-	}
-}
-
-// Work Detail
-
-.page-template-work-detail {
-	.page > header {
-		.burgle-the-ham {
-			border-color: $dark;
-			&:before {
-				background: $dark;
-			}
-		}
-	}
-	.work-detail {
-		background-color: $lightRose;
-		padding: 74px 0 44px;
-		@include respond-to('tablet') {
-			padding: 100px 0 38px;
-		}
-		@include respond-to('laptop') {
-			padding: 123px 0 70px;
-		}
-	}
-	
-	
-	.slider {
-		padding-top: 31px;
-		@include respond-to('tablet') {
-			padding-top: 29px;
-		}
-		@include respond-to('laptop') {
-			padding-top: 42px;
-		}
-		h2 {
-//			display: none;
-			font-family: 'Fortescue-Regular';
-			font-size: 28px;
-			line-height: 32px;
-			text-align: center;
-//			padding: 26px 64px 0;
-			padding: 0 64px 16px;
-			position: relative;
-			@include respond-to('tablet') {
-				font-size: 48px;
-				line-height: 1;
-			}
-			@include respond-to('laptop') {
-				font-size: 80px;
-				line-height: 1;
-			}
-		}
-		.intro {
-			font-size: 20px;
-			line-height: 28px;
-			text-align: center;
-//			padding: 16px 62px 0;
-			padding: 0 62px 0;
-			@include respond-to('tablet') {
-				font-size: 24px;
-				line-height: 34px;
-				padding-top: 6px;
-			}
-			@include respond-to('laptop') {
-				font-size: 32px;
-				line-height: 40px;
-				padding: 18px 200px 10px;
-			}
-		}
-	}
-	
-	.footer-row {
-		nav {
-			a:link, a:visited {
-				color: $dark;
-			}
-		}
-		@include respond-to('tablet') {
-			padding: 0;
-		}
-	}
-	
-	footer {
-		@include respond-to('tablet') {
-			padding: 18px 0 20px;
-		}
-		@include respond-to('laptop') {
-			padding: 24px 0 44px;
-		}
-	}
-}
-
-// Projects page
-
-.page-template-projects {
-	.page > header {
-		.burgle-the-ham {
-			border-color: $dark;
-			&:before {
-				background: $dark;
-			}
-		}
-	}
-	.projects-sort-container {
-		padding-top: 57px;
-		@include respond-to('tablet') {
-			padding-top: 29px;
-		}
-		@include respond-to('laptop') {
-			padding-top: 43px;
-		}
-	}
-	
-	.footer-row {
-		nav {
-			a:link, a:visited {
-				color: $dark;
-			}
-		}
-		@include respond-to('tablet') {
-			padding: 0;
-		}
-		footer {
-			@include respond-to('tablet') {
-				padding: 18px 0 20px;
-			}
-			@include respond-to('laptop') {
-				padding: 24px 0 44px;
-			}
-		}
-	}
-}
 
 // Main footer
 footer {

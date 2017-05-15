@@ -22,20 +22,10 @@
 @mixin link-border {
 	display: inline-block;
 	position: relative;
-	&:before {
-		content: '';
-		display: inline-block;
-		width: 0;
-		background-color: #457FFA;
-		position: absolute;
-		height: 6px;
-		top: 50%;
-		left: 0;
-		z-index: 10;
-		//transform: translateY(-50%);
-		transition: all 200ms cubic-bezier(0.420, 0.000, 0.580, 1.000);
-	}
-	&:hover:before {
-		width: 100%;
+	border-bottom: 3px solid transparent;
+	padding-bottom: 3px;
+	transition: all 200ms cubic-bezier(0.420, 0.000, 0.580, 1.000);
+	&:hover {
+		border-color: #994B3F;
 	}
 }
