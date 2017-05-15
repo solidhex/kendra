@@ -62,6 +62,8 @@ a { color: #994B3F; text-decoration: none; }
 .page > header:hover a { opacity: 1; transform: translateX(0); display: inline-block; position: relative; border-bottom: 6px solid transparent; padding-bottom: 6px; transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1); }
 .page > header:hover a:hover { border-color: #457FFA; }
 
+body.page-id-22 .contact-content { padding-top: 0; }
+body.page-id-22 .work { position: absolute; top: 50%; width: 100%; -moz-transform: translateY(-50%); -ms-transform: translateY(-50%); -webkit-transform: translateY(-50%); transform: translateY(-50%); }
 body.page-id-22 .header-link-home, body.page-id-22 .header-link-about, body.page-id-22 .header-link-contact { opacity: 0; }
 @media only screen and (min-width: 768px) { body.page-id-22 .header-link-work { transform: translateX(55px); } }
 @media only screen and (min-width: 1200px) { body.page-id-22 .header-link-work { transform: translateX(78px); } }

@@ -21,8 +21,10 @@
 			</nav>
 		</div>
 	<?php else: ?>
-		<h2>Request to View my Portfolio</h2>
-		<a href="mailto:&#104;&#101;&#108;&#108;&#111;&#064;&#107;&#101;&#110;&#100;&#114;&#097;&#105;&#110;&#109;&#097;&#110;&#046;&#099;&#111;&#109;">hello@kendrainman.com</a>
+		<div class="work">
+			<h2>Request to View my Portfolio</h2>
+			<a href="mailto:&#104;&#101;&#108;&#108;&#111;&#064;&#107;&#101;&#110;&#100;&#114;&#097;&#105;&#110;&#109;&#097;&#110;&#046;&#099;&#111;&#109;">hello@kendrainman.com</a>
+		</div>
 	<?php endif ?>
 	
 </div>
