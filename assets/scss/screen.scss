@@ -593,6 +593,7 @@ body.page-id-18 {
 //		transform: translateY(-50%);
 		@include transform(translateY(-50%));
 		z-index: 1000;
+		opacity: 1;
 		h1 {
 			font: 60px/55px 'Fortescue-Regular';
 			margin: 0 0 2px;

@@ -144,4 +144,103 @@ function get_attached_images( $args = null )
 	}
 }
 
+/**
+* Adding custom image size
+*/
+add_action('init', 'add_image_sizes');
+
+function add_image_sizes() {
+	// lets add iphone6-landscape size 
+	add_image_size( 'iphone6-landscape', 667, 375, TRUE ); // force crop true
+	add_image_size( 'iphone6-portrait', 375, 667, TRUE ); // force crop true
+	add_image_size( 'ipad-landscape', 1024, 768, TRUE);
+	add_image_size( 'ipad-portrait', 768, 1024, TRUE);
+
+}// end
+
+/**
+* filter function to force wordpress to add our custom srcset values
+* @param array  $sources {
+*     One or more arrays of source data to include in the 'srcset'.
+*
+*     @type type array $width {
+*          @type type string $url        The URL of an image source.
+*          @type type string $descriptor The descriptor type used in the image candidate string,
+*                                        either 'w' or 'x'.
+*          @type type int    $value      The source width, if paired with a 'w' descriptor or a
+*                                        pixel density value if paired with an 'x' descriptor.
+*     }
+* }
+* @param array  $size_array    Array of width and height values in pixels (in that order).
+* @param string $image_src     The 'src' of the image.
+* @param array  $image_meta    The image meta data as returned by 'wp_get_attachment_metadata()'.
+* @param int    $attachment_id Image attachment ID.
+* @author: Aakash Dodiya
+* @website: http://www.developersq.com
+*/
+add_filter( 'wp_calculate_image_srcset', 'dq_add_custom_image_srcset', 10, 5 );
+function dq_add_custom_image_srcset( $sources, $size_array, $image_src, $image_meta, $attachment_id ){
+			
+	// image base name		
+	$image_basename = wp_basename( $image_meta['file'] );
+	// upload directory info array
+	$upload_dir_info_arr = wp_get_upload_dir();
+	// base url of upload directory
+	$baseurl = $upload_dir_info_arr['baseurl'];
+	
+	// Uploads are (or have been) in year/month sub-directories.
+	if ( $image_basename !== $image_meta['file'] ) {
+		$dirname = dirname( $image_meta['file'] );
+		
+		if ( $dirname !== '.' ) {
+			$image_baseurl = trailingslashit( $baseurl ) . $dirname; 
+		}
+	}
+
+	$image_baseurl = trailingslashit( $image_baseurl );
+	// check whether our custom image size exists in image meta	
+	if( array_key_exists('iphone6-landscape', $image_meta['sizes'] ) ){
+
+		// add source value to create srcset
+		$sources[ $image_meta['sizes']['iphone6-landscape']['width'] ] = array(
+				 'url'        => $image_baseurl .  $image_meta['sizes']['iphone6-landscape']['file'],
+				 'descriptor' => 'w',
+				 'value'      => $image_meta['sizes']['iphone6-landscape']['width'],
+		);
+	}
+	
+	if( array_key_exists('iphone6-portrait', $image_meta['sizes'] ) ){
+
+		// add source value to create srcset
+		$sources[ $image_meta['sizes']['iphone6-portrait']['width'] ] = array(
+				 'url'        => $image_baseurl .  $image_meta['sizes']['iphone6-portrait']['file'],
+				 'descriptor' => 'w',
+				 'value'      => $image_meta['sizes']['iphone6-portrait']['width'],
+		);
+	}
+	
+	if( array_key_exists('ipad-landscape', $image_meta['sizes'] ) ){
+
+		// add source value to create srcset
+		$sources[ $image_meta['sizes']['ipad-landscape']['width'] ] = array(
+				 'url'        => $image_baseurl .  $image_meta['sizes']['ipad-landscape']['file'],
+				 'descriptor' => 'w',
+				 'value'      => $image_meta['sizes']['ipad-landscape']['width'],
+		);
+	}
+	
+	if( array_key_exists('ipad-portrait', $image_meta['sizes'] ) ){
+
+		// add source value to create srcset
+		$sources[ $image_meta['sizes']['ipad-portrait']['width'] ] = array(
+				 'url'        => $image_baseurl .  $image_meta['sizes']['ipad-portrait']['file'],
+				 'descriptor' => 'w',
+				 'value'      => $image_meta['sizes']['ipad-portrait']['width'],
+		);
+	}
+	
+	//return sources with new srcset value
+	return $sources;
+}
+
 ?>

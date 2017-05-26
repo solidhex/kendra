@@ -28,7 +28,8 @@
 		
 	$(document).ready(function () {
 		
-		var $container = $('.slider-wrap');
+		var $container = $('.slider-wrap'),
+			$message = $('.home-hero-message');
 		
 		$('.home-hero-media > .slides').bxSlider({
 			pager: false,
@@ -40,6 +41,9 @@
 			onSliderLoad: function () {
 				$container.css('visibility', 'visible');
 				$('.loader').remove();
+				$message.animate({
+					opacity: 1
+				}, 300);
 			}
 		});	
 		

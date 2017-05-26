@@ -137,7 +137,7 @@ body.page-id-18 .header-link-home, body.page-id-18 .header-link-work, body.page-
 .home-hero .controls .control#slider-prev a { display: block; cursor: w-resize; height: 100%; width: 100%; }
 .home-hero .controls .control#slider-next { right: 0; }
 .home-hero .controls .control#slider-next a { display: block; cursor: e-resize; height: 100%; width: 100%; }
-.home-hero .home-hero-message { color: #fff; left: 0; text-align: center; top: 50%; width: 100%; position: absolute; -moz-transform: translateY(-50%); -ms-transform: translateY(-50%); -webkit-transform: translateY(-50%); transform: translateY(-50%); z-index: 1000; }
+.home-hero .home-hero-message { color: #fff; left: 0; text-align: center; top: 50%; width: 100%; position: absolute; -moz-transform: translateY(-50%); -ms-transform: translateY(-50%); -webkit-transform: translateY(-50%); transform: translateY(-50%); z-index: 1000; opacity: 1; }
 .home-hero .home-hero-message h1 { font: 60px/55px 'Fortescue-Regular'; margin: 0 0 2px; letter-spacing: 1.6px; }
 @media only screen and (min-width: 768px) { .home-hero .home-hero-message h1 { font-size: 76px; line-height: 76px; margin-bottom: 5px; } }
 @media only screen and (min-width: 1200px) { .home-hero .home-hero-message h1 { font-size: 95px; line-height: 1; letter-spacing: 2px; margin-bottom: 0; } }
