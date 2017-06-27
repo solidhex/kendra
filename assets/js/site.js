@@ -30,11 +30,12 @@
 		
 		var $container = $('.slider-wrap'),
 			$message = $('.home-hero-message');
-		
+		// test comment
 		$('.home-hero-media > .slides').bxSlider({
 			pager: false,
 			auto: false,
 			mode: "fade",
+			video: true, 
 			speed: 800,
 			nextSelector: '#slider-next',
 			prevSelector: '#slider-prev',

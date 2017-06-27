@@ -58,6 +58,7 @@ function kendra_scripts()
 	
 	// Theme JS
 	wp_enqueue_script(	'site', get_template_directory_uri() . '/assets/js/min/site-min.js', array('jquery'), false, true	);
+	wp_enqueue_script( 'fitvid', get_template_directory_uri() . '/assets/js/vendor/jquery.fitvids.js', array('jquery'), false, true);
 	wp_enqueue_script(	'bxslider', get_template_directory_uri() . '/assets/js/jquery.bxslider.min.js', array('jquery'), false, true );
 }
 

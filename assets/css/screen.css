@@ -34,6 +34,8 @@ a { color: #994B3F; text-decoration: none; }
 
 .slider-wrap { visibility: hidden; }
 
+video.bgvid { position: fixed; min-width: 100%; min-height: 100%; width: auto; height: auto; z-index: -100; object-fit: cover; }
+
 .page > header { position: fixed; top: 0; right: 0; left: 0; min-height: 0; z-index: 1002; }
 .page > header .burger-container { z-index: 1002; width: 20px; height: 14px; position: absolute; left: 26px; top: 26px; }
 @media only screen and (min-width: 768px) { .page > header .burger-container { height: 18px; left: 50px; top: 52px; width: 26px; } }
