@@ -45,6 +45,11 @@
 				$message.animate({
 					opacity: 1
 				}, 300);
+				
+				if ($('video:visible')) {
+					$('video').first().get(0).play();
+				}
+				
 			},
 			onSlideAfter: function ($slideElement) {
 				
