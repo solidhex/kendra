@@ -34,8 +34,6 @@ a { color: #994B3F; text-decoration: none; }
 
 .slider-wrap { visibility: hidden; }
 
-video.bgvid { position: fixed; min-width: 100%; min-height: 100%; width: auto; height: auto; z-index: -100; object-fit: cover; }
-
 .page > header { position: fixed; top: 0; right: 0; left: 0; min-height: 0; z-index: 1002; }
 .page > header .burger-container { z-index: 1002; width: 20px; height: 14px; position: absolute; left: 26px; top: 26px; }
 @media only screen and (min-width: 768px) { .page > header .burger-container { height: 18px; left: 50px; top: 52px; width: 26px; } }
@@ -127,6 +125,8 @@ body.page-id-18 .header-link-home, body.page-id-18 .header-link-work, body.page-
 @media only screen and (min-width: 768px) { .page .category-overlay .cats { font-size: 72px; line-height: 105px; letter-spacing: 0.45px; } }
 @media only screen and (min-width: 1200px) { .page .category-overlay .cats { font-size: 80px; letter-spacing: 1px; line-height: 110px; padding: 0 80px; }
   .page .category-overlay .cats span { display: inline-block; } }
+
+.haz-vid video { min-height: 100%; min-width: 100%; }
 
 .home-hero { position: relative; }
 .home-hero .loader { width: 32px; height: 32px; position: absolute; top: 50%; left: 50%; margin-top: -16px; margin-left: -16px; }
