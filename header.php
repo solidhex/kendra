@@ -43,7 +43,6 @@
 							?>
 										<div class="haz-vid">
 											<video playsinline autoplay muted loop class="bgvid">
-												<source src="http://kendrainman.com/wp-content/uploads/2017/04/SampleVideo_1280x720_1mb1.mp4" type="video/webm">
 												<source src="<?php echo $asset->guid; ?>" type="video/mp4">
 											</video>
 										</div>

@@ -126,7 +126,7 @@ body.page-id-18 .header-link-home, body.page-id-18 .header-link-work, body.page-
 @media only screen and (min-width: 1200px) { .page .category-overlay .cats { font-size: 80px; letter-spacing: 1px; line-height: 110px; padding: 0 80px; }
   .page .category-overlay .cats span { display: inline-block; } }
 
-.haz-vid video { min-height: 100%; min-width: 100%; }
+.haz-vid video { min-height: 100%; min-width: 100%; width: auto; height: auto; }
 
 .home-hero { position: relative; }
 .home-hero .loader { width: 32px; height: 32px; position: absolute; top: 50%; left: 50%; margin-top: -16px; margin-left: -16px; }

@@ -27,7 +27,7 @@
 	});
 		
 	$(document).ready(function () {
-		
+				
 		var $container = $('.slider-wrap'),
 			$message = $('.home-hero-message');
 		$('.home-hero-media > .slides').bxSlider({
@@ -45,6 +45,18 @@
 				$message.animate({
 					opacity: 1
 				}, 300);
+			},
+			onSlideAfter: function ($slideElement) {
+				
+				var $allVids = $('.slides video');
+				
+				$allVids.each(function() {
+					$(this).get(0).pause();
+				});
+				
+				if ($slideElement.hasClass('haz-vid')) {
+					$slideElement.find('video').get(0).play();
+				}
 			}
 		});	
 		
